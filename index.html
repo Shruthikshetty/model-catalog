@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Model Catalog</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -224,7 +225,64 @@
     .cap-badge.reasoning { background: #3b1b4d; border-color: #6b21a8; color: #d8b4fe; }
     .cap-badge.tools { background: #1e3a5f; border-color: #1d4ed8; color: #93c5fd; }
     .cap-badge.image { background: #4a2810; border-color: #9a3412; color: #fdba74; }
+    .cap-badge.video { background: #3b102f; border-color: #831843; color: #f472b6; }
     .cap-badge.tts { background: #451a30; border-color: #9d174d; color: #f472b6; }
+    .cap-badge.stt { background: #1c2e3d; border-color: #0284c7; color: #38bdf8; }
+    .cap-badge.search { background: #1b3838; border-color: #0d9488; color: #5eead4; }
+
+    /* Pagination */
+    .pagination-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px;
+      padding: 12px 18px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .pagination-info {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .pagination-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .page-btn {
+      background: #1e293b;
+      border: 1px solid var(--badge-border);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .page-btn:hover:not(:disabled) {
+      background: #334155;
+      border-color: #475569;
+    }
+
+    .page-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .page-current {
+      font-size: 13px;
+      color: var(--text);
+      font-weight: 500;
+      padding: 0 6px;
+    }
 
     /* Modal */
     .modal-backdrop {
@@ -302,10 +360,12 @@
 
     <div class="filter-pills" id="modality-pills">
       <div class="pill active" data-filter="all">All Models</div>
+      <div class="pill" data-filter="text">💬 Text / LLM</div>
       <div class="pill" data-filter="vision">👁 Vision</div>
       <div class="pill" data-filter="reasoning">🧠 Reasoning</div>
       <div class="pill" data-filter="tools">🔧 Tools</div>
       <div class="pill" data-filter="image">🎨 Image Gen</div>
+      <div class="pill" data-filter="video">🎬 Video Gen</div>
       <div class="pill" data-filter="tts">🔊 TTS</div>
       <div class="pill" data-filter="whisper">🎙️ STT</div>
     </div>
@@ -331,6 +391,16 @@
         </tbody>
       </table>
     </div>
+
+    <!-- Pagination Bar -->
+    <div class="pagination-bar" id="pagination-bar">
+      <div class="pagination-info" id="pagination-info">Showing 0 models</div>
+      <div class="pagination-controls">
+        <button class="page-btn" id="prev-btn" onclick="changePage(-1)">&larr; Previous</button>
+        <span class="page-current" id="page-indicator">Page 1 of 1</span>
+        <button class="page-btn" id="next-btn" onclick="changePage(1)">Next &rarr;</button>
+      </div>
+    </div>
   </div>
 
   <!-- Detail Modal -->
@@ -347,7 +417,11 @@
 
   <script>
     let allModels = [];
+    let currentFiltered = [];
     let currentFilter = 'all';
+    let currentPage = 1;
+    const PAGE_SIZE = 100;
+    let searchDebounceTimer = null;
 
     function formatNumber(num) {
       if (!num) return '-';
@@ -366,7 +440,7 @@
         document.getElementById('model-count').textContent = `${allModels.length} models`;
 
         // Populate provider filter
-        const providers = Array.from(new Set(allModels.map(m => m.provider_id)));
+        const providers = Array.from(new Set(allModels.map(m => m.provider_id))).sort();
         const providerSelect = document.getElementById('provider-filter');
         providers.forEach(p => {
           const opt = document.createElement('option');
@@ -393,15 +467,17 @@
       const search = document.getElementById('search-input').value.toLowerCase().trim();
       const provider = document.getElementById('provider-filter').value;
 
-      const filtered = allModels.filter(m => {
+      currentFiltered = allModels.filter(m => {
         // Provider filter
         if (provider !== 'all' && m.provider_id !== provider) return false;
 
         // Modality pill filter
+        if (currentFilter === 'text' && (!m.outputs?.includes('text') || m.outputs?.includes('image') || m.outputs?.includes('video') || m.outputs?.includes('audio'))) return false;
         if (currentFilter === 'vision' && !m.capabilities?.vision) return false;
         if (currentFilter === 'reasoning' && !m.capabilities?.reasoning?.supported) return false;
         if (currentFilter === 'tools' && !m.capabilities?.functionCalling) return false;
         if (currentFilter === 'image' && !m.outputs?.includes('image')) return false;
+        if (currentFilter === 'video' && !m.outputs?.includes('video')) return false;
         if (currentFilter === 'tts' && !m.outputs?.includes('audio')) return false;
         if (currentFilter === 'whisper' && !m.inputs?.includes('audio')) return false;
 
@@ -417,27 +493,61 @@
         return true;
       });
 
+      const totalCount = currentFiltered.length;
+      const totalPages = Math.ceil(totalCount / PAGE_SIZE) || 1;
+      if (currentPage > totalPages) currentPage = 1;
+
+      // Slice the current page (100 rows max)
+      const startIdx = (currentPage - 1) * PAGE_SIZE;
+      const endIdx = Math.min(startIdx + PAGE_SIZE, totalCount);
+      const pageModels = currentFiltered.slice(startIdx, endIdx);
+
+      // Update Pagination UI
+      const infoEl = document.getElementById('pagination-info');
+      const indicatorEl = document.getElementById('page-indicator');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      if (totalCount === 0) {
+        infoEl.textContent = 'Showing 0 models';
+        indicatorEl.textContent = 'Page 0 of 0';
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+      } else {
+        infoEl.textContent = `Showing ${startIdx + 1}–${endIdx} of ${totalCount.toLocaleString()} models`;
+        indicatorEl.textContent = `Page ${currentPage} of ${totalPages}`;
+        prevBtn.disabled = currentPage <= 1;
+        nextBtn.disabled = currentPage >= totalPages;
+      }
+
       const tbody = document.getElementById('table-body');
-      if (filtered.length === 0) {
+      if (totalCount === 0) {
         tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 40px;">No matching models found.</td></tr>`;
         return;
       }
 
-      tbody.innerHTML = filtered.map((m, idx) => {
+      tbody.innerHTML = pageModels.map((m) => {
         const inOut = `${m.inputs.join(', ')} &rarr; ${m.outputs.join(', ')}`;
 
         const badges = [];
+        if (m.outputs?.includes('video')) badges.push(`<span class="cap-badge video">🎬 Video Gen</span>`);
+        if (m.outputs?.includes('image')) badges.push(`<span class="cap-badge image">🎨 Image Gen</span>`);
+        if (m.outputs?.includes('audio')) badges.push(`<span class="cap-badge tts">🔊 TTS</span>`);
+        if (m.inputs?.includes('audio')) badges.push(`<span class="cap-badge stt">🎙️ STT</span>`);
         if (m.capabilities?.vision) badges.push(`<span class="cap-badge vision">👁 Vision</span>`);
         if (m.capabilities?.reasoning?.supported) {
           const levels = m.capabilities.reasoning.effort_levels ? ` (${m.capabilities.reasoning.effort_levels.join('/')})` : '';
           badges.push(`<span class="cap-badge reasoning">🧠 Reasoning${levels}</span>`);
         }
         if (m.capabilities?.functionCalling) badges.push(`<span class="cap-badge tools">🔧 Tools</span>`);
-        if (m.outputs?.includes('image')) badges.push(`<span class="cap-badge image">🎨 Image Gen</span>`);
-        if (m.outputs?.includes('audio')) badges.push(`<span class="cap-badge tts">🔊 TTS</span>`);
+        if (m.capabilities?.webSearch) badges.push(`<span class="cap-badge search">🌐 Search</span>`);
+
+        const emptyFallback = m.outputs?.includes('text')
+          ? '<span style="color:var(--text-muted); font-size:12px;">Chat / Text</span>'
+          : '<span style="color:var(--text-muted); font-size:12px;">-</span>';
 
         return `
-          <tr onclick="openModal(${idx})">
+          <tr onclick="openModal('${encodeURIComponent(m.canonical_id)}')">
             <td><span class="provider-tag">${m.provider_id}</span></td>
             <td>
               <div class="model-name">${m.name}</div>
@@ -446,17 +556,21 @@
             <td style="font-size: 13px; color: var(--text-muted);">${inOut}</td>
             <td class="token-val">${formatNumber(m.context_length)}</td>
             <td class="token-val">${formatNumber(m.max_output_tokens)}</td>
-            <td><div class="capabilities-list">${badges.join('') || '<span style="color:var(--text-muted); font-size:12px;">Text</span>'}</div></td>
+            <td><div class="capabilities-list">${badges.join('') || emptyFallback}</div></td>
           </tr>
         `;
       }).join('');
-
-      // Store filtered subset for modal lookup
-      window._currentFiltered = filtered;
     }
 
-    function openModal(idx) {
-      const model = window._currentFiltered[idx];
+    function changePage(delta) {
+      currentPage += delta;
+      renderTable();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openModal(encodedCanonicalId) {
+      const canonicalId = decodeURIComponent(encodedCanonicalId);
+      const model = allModels.find(m => m.canonical_id === canonicalId);
       if (!model) return;
 
       document.getElementById('modal-title').textContent = model.name;
@@ -466,6 +580,12 @@
         <p><strong>Context Window:</strong> ${model.context_length ? model.context_length.toLocaleString() + ' tokens' : 'N/A'}</p>
         <p><strong>Max Output Tokens:</strong> ${model.max_output_tokens ? model.max_output_tokens.toLocaleString() + ' tokens' : 'N/A'}</p>
       `;
+
+      if (model.video_options) {
+        detailsHtml += `<p style="margin-top: 8px;"><strong>Video Durations:</strong> ${model.video_options.durations?.join(', ')}s</p>`;
+        detailsHtml += `<p><strong>Aspect Ratios:</strong> ${model.video_options.aspect_ratios?.join(', ')}</p>`;
+        detailsHtml += `<p><strong>Resolutions:</strong> ${model.video_options.resolutions?.join(', ')}</p>`;
+      }
 
       if (model.image_options) {
         detailsHtml += `<p style="margin-top: 8px;"><strong>Image Sizes:</strong> ${model.image_options.sizes?.join(', ') || 'Default'}</p>`;
@@ -487,14 +607,25 @@
     }
 
     // Event listeners
-    document.getElementById('search-input').addEventListener('input', renderTable);
-    document.getElementById('provider-filter').addEventListener('change', renderTable);
+    document.getElementById('search-input').addEventListener('input', () => {
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        currentPage = 1;
+        renderTable();
+      }, 100);
+    });
+
+    document.getElementById('provider-filter').addEventListener('change', () => {
+      currentPage = 1;
+      renderTable();
+    });
 
     document.querySelectorAll('#modality-pills .pill').forEach(pill => {
       pill.addEventListener('click', () => {
         document.querySelectorAll('#modality-pills .pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         currentFilter = pill.getAttribute('data-filter');
+        currentPage = 1;
         renderTable();
       });
     });

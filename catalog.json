@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-14T09:10:46.944Z",
+  "updated_at": "2026-11-14T16:27:15.893Z",
   "total_models": 546,
   "models": [
     {
@@ -7182,7 +7182,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 163840,
-      "max_output_tokens": 32768,
+      "max_output_tokens": 32000,
       "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active...",
       "tags": [
         "reasoning",
@@ -25627,7 +25627,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 204800,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 182476,
       "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
       "tags": [
         "reasoning",
