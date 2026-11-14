@@ -1,15 +1,50 @@
-# model-catalog
+# AI Model Catalog
 
-To install dependencies:
+> A unified, automated registry and capability database for AI models across providers. Normalizes model IDs, context windows, token limits, and multimodal options into a single source of truth.
 
+---
+
+## 🌐 Public Endpoints
+
+* **Interactive Catalog Viewer**: [https://shruthikshetty.github.io/model-catalog/](https://shruthikshetty.github.io/model-catalog/)
+* **Static Catalog JSON API**: [https://shruthikshetty.github.io/model-catalog/catalog.json](https://shruthikshetty.github.io/model-catalog/catalog.json)
+
+---
+
+## 🚀 How It Works
+
+1. **Provider Extraction**: Discovers canonical models directly from AI provider APIs (OpenAI, xAI, etc.).
+2. **Metadata Hydration**: Enriches models with token limits (`context_length`, `max_output_tokens`) and capability flags (`vision`, `functionCalling`, `reasoning`) from verified reference registries.
+3. **Multimodal Configurations**: Standardizes feature options for image generation (dimensions, aspect ratios, qualities) and text-to-speech (voices, audio formats).
+4. **Zod Validation**: Validates every entry against strict type schemas defined in `types.ts`.
+5. **Static Distribution**: Generates a single, lightweight `catalog.json` and deploys to GitHub Pages for instant consumption by web, desktop, and mobile applications.
+
+---
+
+## 💻 Local Development
+
+### Prerequisites
+* [Bun](https://bun.com) (v1.3+ recommended)
+
+### 1. Install dependencies
 ```bash
 bun install
 ```
 
-To run:
-
-```bash
-bun run index.ts
+### 2. Configure environment (optional, for live provider APIs)
+Create a `.env` file at the root:
+```env
+OPENAI_API_KEY=your_key_here
 ```
 
-This project was created using `bun init` in bun v1.3.3. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+### 3. Build the catalog
+```bash
+bun run build
+```
+Fetches models, hydrates capabilities, and updates `./catalog.json`.
+
+### 4. View the catalog locally
+```bash
+bun run view
+```
+Launches the interactive web viewer at [http://localhost:3000](http://localhost:3000) with instant search and modality filters.
