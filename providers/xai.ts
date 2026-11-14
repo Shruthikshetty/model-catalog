@@ -84,12 +84,20 @@ export async function getXAiCatalog(): Promise<CatalogModel[]> {
     const lite = await getLiteLlmModelDetails(modelId, "xai");
 
     // Purely metadata-driven modality categorization
-    const mode = lite?.mode ?? (modelId.includes("video") ? "video_generation" : modelId.includes("image") ? "image_generation" : "chat");
+    const mode =
+      lite?.mode ??
+      (modelId.includes("video")
+        ? "video_generation"
+        : modelId.includes("image")
+          ? "image_generation"
+          : "chat");
     const isImage = mode === "image_generation";
     const isVideo = mode === "video_generation";
     const isAudio = mode === "audio_transcription";
 
-    const isVision = Boolean(lite?.supports_vision ?? modelId.includes("vision"));
+    const isVision = Boolean(
+      lite?.supports_vision ?? modelId.includes("vision"),
+    );
     const isExplicitlyNonReasoning = modelId.includes("non-reasoning");
     const rawEfforts = raw.capabilities?.reasoning_effort;
     const isReasoning =
@@ -165,7 +173,11 @@ export async function getXAiCatalog(): Promise<CatalogModel[]> {
       image_options: isImage ? XAI_IMAGE_OPTIONS : null,
       tts_options: null,
       video_options: isVideo ? XAI_VIDEO_OPTIONS : null,
-      context_length: raw.context_length ?? lite?.max_input_tokens ?? lite?.max_tokens ?? null,
+      context_length:
+        raw.context_length ??
+        lite?.max_input_tokens ??
+        lite?.max_tokens ??
+        null,
       max_output_tokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,

@@ -23,10 +23,12 @@ export const ReasoningTypeSchema = z.enum([
 
 export const ReasoningEffortLevelSchema = z.enum([
   "none",
+  "minimal",
   "low",
   "medium",
   "high",
   "xhigh",
+  "max",
 ]);
 
 // schemas -------------------------------------

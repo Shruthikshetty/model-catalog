@@ -9,6 +9,7 @@ config();
 const EnvSchema = z.object({
   OPENAI_API_KEY: z.string(),
   XAI_API_KEY: z.string(),
+  OPENROUTER_API_KEY: z.string().optional(),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;
