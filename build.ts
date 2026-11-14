@@ -1,25 +1,38 @@
 import { getOpenAiCatalog } from "./providers/openai";
+import { getXAiCatalog } from "./providers/xai";
 import { CatalogSchema, type CatalogModel } from "./types";
 
+// constants ---------------------------------
+const OUTPUT_PATH = "./catalog.json";
+
+const PROVIDERS = [
+  { name: "OpenAI", fetcher: getOpenAiCatalog },
+  { name: "xAI", fetcher: getXAiCatalog },
+];
+
+// functions ---------------------------------
 /**
- * main function to build the whole catalog
+ * Main function to build the whole catalog by fetching all providers concurrently
  */
 async function buildCatalog(): Promise<void> {
   console.log("Building model catalog...");
 
-  // Collect models from all providers (starting with OpenAI)
-  const models: CatalogModel[] = [];
+  // Fetch all providers in parallel
+  const results = await Promise.all(
+    PROVIDERS.map(async ({ name, fetcher }) => {
+      try {
+        console.log(`Fetching & hydrating ${name} models...`);
+        const models = await fetcher();
+        console.log(`Loaded ${models.length} ${name} models.`);
+        return models;
+      } catch (error) {
+        console.error(`Failed to build ${name} catalog:`, error);
+        throw error;
+      }
+    }),
+  );
 
-  try {
-    console.log("Fetching & hydrating OpenAI models...");
-    // @TODO late rdo a parallel operation
-    const openAiModels = await getOpenAiCatalog();
-    models.push(...openAiModels);
-    console.log(`Loaded ${openAiModels.length} OpenAI models.`);
-  } catch (error) {
-    console.error("Failed to build OpenAI catalog:", error);
-    process.exit(1);
-  }
+  const models: CatalogModel[] = results.flat();
 
   // Sort deterministically by provider_id, then id
   models.sort((a, b) => {
@@ -41,11 +54,10 @@ async function buildCatalog(): Promise<void> {
   const catalog = CatalogSchema.parse(rawCatalog);
 
   // Write to catalog.json
-  const outputPath = "./catalog.json";
-  await Bun.write(outputPath, JSON.stringify(catalog, null, 2));
+  await Bun.write(OUTPUT_PATH, JSON.stringify(catalog, null, 2));
 
   console.log(
-    `Successfully generated ${outputPath} with ${catalog.total_models} models!`,
+    `Successfully generated ${OUTPUT_PATH} with ${catalog.total_models} models!`,
   );
 }
 

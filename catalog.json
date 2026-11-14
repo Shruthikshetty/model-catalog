@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-14T07:52:56.301Z",
-  "total_models": 62,
+  "updated_at": "2026-11-14T09:02:42.231Z",
+  "total_models": 75,
   "models": [
     {
       "provider_id": "openai",
@@ -3234,6 +3234,677 @@
       "tags": [
         "audio",
         "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.20-0309-non-reasoning",
+      "canonical_id": "xai/grok-4.20-0309-non-reasoning",
+      "name": "grok 4.20 0309 non reasoning",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 1000000,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.20-0309-reasoning",
+      "canonical_id": "xai/grok-4.20-0309-reasoning",
+      "name": "grok 4.20 0309 reasoning",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 1000000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.20-multi-agent-0309",
+      "canonical_id": "xai/grok-4.20-multi-agent-0309",
+      "name": "grok 4.20 multi agent 0309",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 1000000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.3",
+      "canonical_id": "xai/grok-4.3",
+      "name": "grok 4.3",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 1000000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.5",
+      "canonical_id": "xai/grok-4.5",
+      "name": "grok 4.5",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 500000,
+      "max_output_tokens": 500000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.6",
+      "canonical_id": "xai/grok-4.6",
+      "name": "grok 4.6",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 500000,
+      "max_output_tokens": 500000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-4.7",
+      "canonical_id": "xai/grok-4.7",
+      "name": "grok 4.7",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 500000,
+      "max_output_tokens": 500000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-build-0.1",
+      "canonical_id": "xai/grok-build-0.1",
+      "name": "grok build 0.1",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 256000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-imagine-image",
+      "canonical_id": "xai/grok-imagine-image",
+      "name": "grok imagine image",
+      "origin_provider": "xai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "16:9",
+          "9:16"
+        ],
+        "qualities": [
+          "standard"
+        ],
+        "styles": null,
+        "supports_seed": true,
+        "provider_param_key": "xai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16000,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-imagine-image-2.0",
+      "canonical_id": "xai/grok-imagine-image-2.0",
+      "name": "grok imagine image 2.0",
+      "origin_provider": "xai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "16:9",
+          "9:16"
+        ],
+        "qualities": [
+          "standard"
+        ],
+        "styles": null,
+        "supports_seed": true,
+        "provider_param_key": "xai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 64000,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-imagine-video",
+      "canonical_id": "xai/grok-imagine-video",
+      "name": "grok imagine video",
+      "origin_provider": "xai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "video"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": {
+        "durations": [
+          5,
+          10
+        ],
+        "aspect_ratios": [
+          "16:9",
+          "9:16",
+          "1:1"
+        ],
+        "resolutions": [
+          "720p",
+          "1080p"
+        ],
+        "default_duration": 5,
+        "default_aspect_ratio": "16:9",
+        "default_resolution": "720p"
+      },
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "video"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-imagine-video-1.5",
+      "canonical_id": "xai/grok-imagine-video-1.5",
+      "name": "grok imagine video 1.5",
+      "origin_provider": "xai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "video"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": {
+        "durations": [
+          5,
+          10
+        ],
+        "aspect_ratios": [
+          "16:9",
+          "9:16",
+          "1:1"
+        ],
+        "resolutions": [
+          "720p",
+          "1080p"
+        ],
+        "default_duration": 5,
+        "default_aspect_ratio": "16:9",
+        "default_resolution": "720p"
+      },
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "video"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "xai",
+      "id": "grok-imagine-video-1.5-lite",
+      "canonical_id": "xai/grok-imagine-video-1.5-lite",
+      "name": "grok imagine video 1.5 lite",
+      "origin_provider": "xai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "video"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": {
+        "durations": [
+          5,
+          10
+        ],
+        "aspect_ratios": [
+          "16:9",
+          "9:16",
+          "1:1"
+        ],
+        "resolutions": [
+          "720p",
+          "1080p"
+        ],
+        "default_duration": 5,
+        "default_aspect_ratio": "16:9",
+        "default_resolution": "720p"
+      },
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "video"
       ],
       "is_deprecated": false
     }

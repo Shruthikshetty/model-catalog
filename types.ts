@@ -21,7 +21,13 @@ export const ReasoningTypeSchema = z.enum([
   "fixed", // Model always reasons, no parameters (e.g. o1-preview)
 ]);
 
-export const ReasoningEffortLevelSchema = z.enum(["low", "medium", "high"]);
+export const ReasoningEffortLevelSchema = z.enum([
+  "none",
+  "low",
+  "medium",
+  "high",
+  "xhigh",
+]);
 
 // schemas -------------------------------------
 export const ReasoningConfigSchema = z.object({
