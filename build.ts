@@ -1,6 +1,7 @@
 import { getOpenAiCatalog } from "./providers/openai";
 import { getOpenRouterCatalog } from "./providers/openrouter";
 import { getXAiCatalog } from "./providers/xai";
+import { getGoogleCatalog } from "./providers/google";
 import { CatalogSchema, type CatalogModel } from "./types";
 
 // constants ---------------------------------
@@ -9,6 +10,7 @@ const OUTPUT_PATH = "./catalog.json";
 const PROVIDERS = [
   { name: "OpenAI", fetcher: getOpenAiCatalog },
   { name: "xAI", fetcher: getXAiCatalog },
+  { name: "Google AI Studio", fetcher: getGoogleCatalog },
   { name: "OpenRouter", fetcher: getOpenRouterCatalog },
 ];
 

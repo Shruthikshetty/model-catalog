@@ -8,4 +8,5 @@ export const URL = {
   LITELLM_MODELS:
     "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
   OPENROUTER_MODELS: "https://openrouter.ai/api/v1/models",
+  GOOGLE_MODELS: "https://generativelanguage.googleapis.com/v1beta/models",
 } as const;

@@ -13,6 +13,9 @@ export interface LiteLlmModelEntry {
   supports_pdf_input?: boolean;
   supports_system_messages?: boolean;
   supports_response_schema?: boolean;
+  supports_web_search?: boolean;
+  supported_modalities?: string[];
+  supported_output_modalities?: string[];
   litellm_provider?: string;
   deprecation_date?: string;
   [key: string]: unknown;
