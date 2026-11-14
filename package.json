@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bun run scripts/build-catalog.ts"
+    "build": "bun run build.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -13,6 +13,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "dotenv": "^18.0.10",
     "zod": "^4.6.7"
   }
 }

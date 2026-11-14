@@ -1,0 +1,3241 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-14T07:43:38.689Z",
+  "total_models": 62,
+  "models": [
+    {
+      "provider_id": "openai",
+      "id": "chat-latest",
+      "canonical_id": "openai/chat-latest",
+      "name": "chat latest",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "chatgpt-image-latest",
+      "canonical_id": "openai/chatgpt-image-latest",
+      "name": "chatgpt image latest",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4.1",
+      "canonical_id": "openai/gpt-4.1",
+      "name": "gpt 4.1",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1047576,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4.1-mini",
+      "canonical_id": "openai/gpt-4.1-mini",
+      "name": "gpt 4.1 mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1047576,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4o",
+      "canonical_id": "openai/gpt-4o",
+      "name": "gpt 4o",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4o-mini",
+      "canonical_id": "openai/gpt-4o-mini",
+      "name": "gpt 4o mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4o-mini-transcribe",
+      "canonical_id": "openai/gpt-4o-mini-transcribe",
+      "name": "gpt 4o mini transcribe",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16000,
+      "max_output_tokens": 2000,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4o-mini-tts",
+      "canonical_id": "openai/gpt-4o-mini-tts",
+      "name": "gpt 4o mini tts",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "alloy",
+            "label": "Alloy"
+          },
+          {
+            "id": "ash",
+            "label": "Ash"
+          },
+          {
+            "id": "ballad",
+            "label": "Ballad"
+          },
+          {
+            "id": "coral",
+            "label": "Coral"
+          },
+          {
+            "id": "echo",
+            "label": "Echo"
+          },
+          {
+            "id": "fable",
+            "label": "Fable"
+          },
+          {
+            "id": "nova",
+            "label": "Nova"
+          },
+          {
+            "id": "onyx",
+            "label": "Onyx"
+          },
+          {
+            "id": "sage",
+            "label": "Sage"
+          },
+          {
+            "id": "shimmer",
+            "label": "Shimmer"
+          },
+          {
+            "id": "verse",
+            "label": "Verse"
+          },
+          {
+            "id": "marin",
+            "label": "Marin"
+          },
+          {
+            "id": "cedar",
+            "label": "Cedar"
+          }
+        ],
+        "formats": [
+          "mp3",
+          "opus",
+          "aac",
+          "flac",
+          "wav",
+          "pcm"
+        ],
+        "speeds": {
+          "min": 0.25,
+          "max": 4
+        }
+      },
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tts",
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4o-transcribe",
+      "canonical_id": "openai/gpt-4o-transcribe",
+      "name": "gpt 4o transcribe",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16000,
+      "max_output_tokens": 2000,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-4o-transcribe-diarize",
+      "canonical_id": "openai/gpt-4o-transcribe-diarize",
+      "name": "gpt 4o transcribe diarize",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16000,
+      "max_output_tokens": 2000,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5",
+      "canonical_id": "openai/gpt-5",
+      "name": "gpt 5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5-mini",
+      "canonical_id": "openai/gpt-5-mini",
+      "name": "gpt 5 mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5-nano",
+      "canonical_id": "openai/gpt-5-nano",
+      "name": "gpt 5 nano",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5-pro",
+      "canonical_id": "openai/gpt-5-pro",
+      "name": "gpt 5 pro",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 272000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5-search-api",
+      "canonical_id": "openai/gpt-5-search-api",
+      "name": "gpt 5 search api",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.1",
+      "canonical_id": "openai/gpt-5.1",
+      "name": "gpt 5.1",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.2",
+      "canonical_id": "openai/gpt-5.2",
+      "name": "gpt 5.2",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.2-pro",
+      "canonical_id": "openai/gpt-5.2-pro",
+      "name": "gpt 5.2 pro",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.3-codex",
+      "canonical_id": "openai/gpt-5.3-codex",
+      "name": "gpt 5.3 codex",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.4",
+      "canonical_id": "openai/gpt-5.4",
+      "name": "gpt 5.4",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.4-mini",
+      "canonical_id": "openai/gpt-5.4-mini",
+      "name": "gpt 5.4 mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.4-nano",
+      "canonical_id": "openai/gpt-5.4-nano",
+      "name": "gpt 5.4 nano",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 272000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.4-pro",
+      "canonical_id": "openai/gpt-5.4-pro",
+      "name": "gpt 5.4 pro",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.5",
+      "canonical_id": "openai/gpt-5.5",
+      "name": "gpt 5.5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.5-pro",
+      "canonical_id": "openai/gpt-5.5-pro",
+      "name": "gpt 5.5 pro",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.6-luna",
+      "canonical_id": "openai/gpt-5.6-luna",
+      "name": "gpt 5.6 luna",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.6-sol",
+      "canonical_id": "openai/gpt-5.6-sol",
+      "name": "gpt 5.6 sol",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-5.6-terra",
+      "canonical_id": "openai/gpt-5.6-terra",
+      "name": "gpt 5.6 terra",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-6-astra",
+      "canonical_id": "openai/gpt-6-astra",
+      "name": "gpt 6 astra",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-6-luna",
+      "canonical_id": "openai/gpt-6-luna",
+      "name": "gpt 6 luna",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-6-sol",
+      "canonical_id": "openai/gpt-6-sol",
+      "name": "gpt 6 sol",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-6.1-sol",
+      "canonical_id": "openai/gpt-6.1-sol",
+      "name": "gpt 6.1 sol",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-6.1-terra",
+      "canonical_id": "openai/gpt-6.1-terra",
+      "name": "gpt 6.1 terra",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 922000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-audio",
+      "canonical_id": "openai/gpt-audio",
+      "name": "gpt audio",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-audio-1.5",
+      "canonical_id": "openai/gpt-audio-1.5",
+      "name": "gpt audio 1.5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-audio-mini",
+      "canonical_id": "openai/gpt-audio-mini",
+      "name": "gpt audio mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-1-mini",
+      "canonical_id": "openai/gpt-image-1-mini",
+      "name": "gpt image 1 mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-1.5",
+      "canonical_id": "openai/gpt-image-1.5",
+      "name": "gpt image 1.5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-2",
+      "canonical_id": "openai/gpt-image-2",
+      "name": "gpt image 2",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-2.5-flare",
+      "canonical_id": "openai/gpt-image-2.5-flare",
+      "name": "gpt image 2.5 flare",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-2.5-sunburst",
+      "canonical_id": "openai/gpt-image-2.5-sunburst",
+      "name": "gpt image 2.5 sunburst",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-2.6-flare",
+      "canonical_id": "openai/gpt-image-2.6-flare",
+      "name": "gpt image 2.6 flare",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-image-2.6-sunburst",
+      "canonical_id": "openai/gpt-image-2.6-sunburst",
+      "name": "gpt image 2.6 sunburst",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [
+          "1024x1024",
+          "1024x1792",
+          "1792x1024",
+          "512x512",
+          "256x256"
+        ],
+        "aspect_ratios": [
+          "1:1",
+          "9:16",
+          "16:9"
+        ],
+        "qualities": [
+          "standard",
+          "hd"
+        ],
+        "styles": [
+          "vivid",
+          "natural"
+        ],
+        "supports_seed": false,
+        "provider_param_key": "openai"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-live-1",
+      "canonical_id": "openai/gpt-live-1",
+      "name": "gpt live 1",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-live-transcribe",
+      "canonical_id": "openai/gpt-live-transcribe",
+      "name": "gpt live transcribe",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime",
+      "canonical_id": "openai/gpt-realtime",
+      "name": "gpt realtime",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32000,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-1.5",
+      "canonical_id": "openai/gpt-realtime-1.5",
+      "name": "gpt realtime 1.5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32000,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-2",
+      "canonical_id": "openai/gpt-realtime-2",
+      "name": "gpt realtime 2",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 32000,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-2.1",
+      "canonical_id": "openai/gpt-realtime-2.1",
+      "name": "gpt realtime 2.1",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 32000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-2.1-mini",
+      "canonical_id": "openai/gpt-realtime-2.1-mini",
+      "name": "gpt realtime 2.1 mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 32000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-mini",
+      "canonical_id": "openai/gpt-realtime-mini",
+      "name": "gpt realtime mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32000,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-translate",
+      "canonical_id": "openai/gpt-realtime-translate",
+      "name": "gpt realtime translate",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16000,
+      "max_output_tokens": 2000,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-realtime-whisper",
+      "canonical_id": "openai/gpt-realtime-whisper",
+      "name": "gpt realtime whisper",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "gpt-transcribe",
+      "canonical_id": "openai/gpt-transcribe",
+      "name": "gpt transcribe",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "o3",
+      "canonical_id": "openai/o3",
+      "name": "o3",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 100000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "omni-moderation-latest",
+      "canonical_id": "openai/omni-moderation-latest",
+      "name": "omni moderation latest",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 0,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "text-embedding-3-large",
+      "canonical_id": "openai/text-embedding-3-large",
+      "name": "text embedding 3 large",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8191,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "text-embedding-3-small",
+      "canonical_id": "openai/text-embedding-3-small",
+      "name": "text embedding 3 small",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8191,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "text-embedding-ada-002",
+      "canonical_id": "openai/text-embedding-ada-002",
+      "name": "text embedding ada 002",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8191,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "tts-1",
+      "canonical_id": "openai/tts-1",
+      "name": "tts 1",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "alloy",
+            "label": "Alloy"
+          },
+          {
+            "id": "ash",
+            "label": "Ash"
+          },
+          {
+            "id": "ballad",
+            "label": "Ballad"
+          },
+          {
+            "id": "coral",
+            "label": "Coral"
+          },
+          {
+            "id": "echo",
+            "label": "Echo"
+          },
+          {
+            "id": "fable",
+            "label": "Fable"
+          },
+          {
+            "id": "nova",
+            "label": "Nova"
+          },
+          {
+            "id": "onyx",
+            "label": "Onyx"
+          },
+          {
+            "id": "sage",
+            "label": "Sage"
+          },
+          {
+            "id": "shimmer",
+            "label": "Shimmer"
+          },
+          {
+            "id": "verse",
+            "label": "Verse"
+          },
+          {
+            "id": "marin",
+            "label": "Marin"
+          },
+          {
+            "id": "cedar",
+            "label": "Cedar"
+          }
+        ],
+        "formats": [
+          "mp3",
+          "opus",
+          "aac",
+          "flac",
+          "wav",
+          "pcm"
+        ],
+        "speeds": {
+          "min": 0.25,
+          "max": 4
+        }
+      },
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tts",
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "tts-1-hd",
+      "canonical_id": "openai/tts-1-hd",
+      "name": "tts 1 hd",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "alloy",
+            "label": "Alloy"
+          },
+          {
+            "id": "ash",
+            "label": "Ash"
+          },
+          {
+            "id": "ballad",
+            "label": "Ballad"
+          },
+          {
+            "id": "coral",
+            "label": "Coral"
+          },
+          {
+            "id": "echo",
+            "label": "Echo"
+          },
+          {
+            "id": "fable",
+            "label": "Fable"
+          },
+          {
+            "id": "nova",
+            "label": "Nova"
+          },
+          {
+            "id": "onyx",
+            "label": "Onyx"
+          },
+          {
+            "id": "sage",
+            "label": "Sage"
+          },
+          {
+            "id": "shimmer",
+            "label": "Shimmer"
+          },
+          {
+            "id": "verse",
+            "label": "Verse"
+          },
+          {
+            "id": "marin",
+            "label": "Marin"
+          },
+          {
+            "id": "cedar",
+            "label": "Cedar"
+          }
+        ],
+        "formats": [
+          "mp3",
+          "opus",
+          "aac",
+          "flac",
+          "wav",
+          "pcm"
+        ],
+        "speeds": {
+          "min": 0.25,
+          "max": 4
+        }
+      },
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tts",
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openai",
+      "id": "whisper-1",
+      "canonical_id": "openai/whisper-1",
+      "name": "whisper 1",
+      "origin_provider": "openai",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    }
+  ]
+}
