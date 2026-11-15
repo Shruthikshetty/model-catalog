@@ -1,8 +1,1498 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T05:18:49.665Z",
-  "total_models": 1394,
+  "updated_at": "2026-11-15T05:34:35.061Z",
+  "total_models": 1425,
   "models": [
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "canonical_id": "fireworks/accounts/fireworks/models/deepseek-v4p1-flash",
+      "name": "deepseek v4p1 flash",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 393216,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/deepseek-v4p1-flash-1017",
+      "canonical_id": "fireworks/accounts/fireworks/models/deepseek-v4p1-flash-1017",
+      "name": "deepseek v4p1 flash 1017",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 393216,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/ember-1",
+      "canonical_id": "fireworks/accounts/fireworks/models/ember-1",
+      "name": "ember 1",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/glm-5p3",
+      "canonical_id": "fireworks/accounts/fireworks/models/glm-5p3",
+      "name": "glm 5p3",
+      "origin_provider": "zhipu",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/glm-5p3-flash",
+      "canonical_id": "fireworks/accounts/fireworks/models/glm-5p3-flash",
+      "name": "glm 5p3 flash",
+      "origin_provider": "zhipu",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/gpt-oss-120b",
+      "canonical_id": "fireworks/accounts/fireworks/models/gpt-oss-120b",
+      "name": "gpt oss 120b",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/inkling",
+      "canonical_id": "fireworks/accounts/fireworks/models/inkling",
+      "name": "inkling",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/kimi-k3",
+      "canonical_id": "fireworks/accounts/fireworks/models/kimi-k3",
+      "name": "kimi k3",
+      "origin_provider": "moonshot",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/kimi-k3p1-pro",
+      "canonical_id": "fireworks/accounts/fireworks/models/kimi-k3p1-pro",
+      "name": "kimi k3p1 pro",
+      "origin_provider": "moonshot",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/minimax-m3",
+      "canonical_id": "fireworks/accounts/fireworks/models/minimax-m3",
+      "name": "minimax m3",
+      "origin_provider": "minimax",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 512000,
+      "max_output_tokens": 512000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/minimax-m3p1-flash",
+      "canonical_id": "fireworks/accounts/fireworks/models/minimax-m3p1-flash",
+      "name": "minimax m3p1 flash",
+      "origin_provider": "minimax",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/muse-spark-open",
+      "canonical_id": "fireworks/accounts/fireworks/models/muse-spark-open",
+      "name": "muse spark open",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+      "canonical_id": "fireworks/accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+      "name": "nemotron 3 ultra nvfp4",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "canonical_id": "fireworks/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "name": "nemotron lightning 3p5 30b a3b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/qwen3-embedding-8b",
+      "canonical_id": "fireworks/accounts/fireworks/models/qwen3-embedding-8b",
+      "name": "qwen3 embedding 8b",
+      "origin_provider": "qwen",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 40960,
+      "max_output_tokens": 40960,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/qwen3-reranker-8b",
+      "canonical_id": "fireworks/accounts/fireworks/models/qwen3-reranker-8b",
+      "name": "qwen3 reranker 8b",
+      "origin_provider": "qwen",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 40960,
+      "max_output_tokens": 40960,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/qwen3p8-2p4t-a95b",
+      "canonical_id": "fireworks/accounts/fireworks/models/qwen3p8-2p4t-a95b",
+      "name": "qwen3p8 2p4t a95b",
+      "origin_provider": "qwen",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/qwen3p8-max",
+      "canonical_id": "fireworks/accounts/fireworks/models/qwen3p8-max",
+      "name": "qwen3p8 max",
+      "origin_provider": "qwen",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/models/rune",
+      "canonical_id": "fireworks/accounts/fireworks/models/rune",
+      "name": "rune",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
+      "canonical_id": "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
+      "name": "deepseek v4p1 flash 1017 spot",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 393216,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast",
+      "canonical_id": "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast",
+      "name": "deepseek v4p1 flash 1017 ultrafast",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 393216,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/deepseek-v4p1-flash-spot",
+      "canonical_id": "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-spot",
+      "name": "deepseek v4p1 flash spot",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 393216,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/glm-5p2-fast",
+      "canonical_id": "fireworks/accounts/fireworks/routers/glm-5p2-fast",
+      "name": "glm 5p2 fast",
+      "origin_provider": "zhipu",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/glm-5p3-fast",
+      "canonical_id": "fireworks/accounts/fireworks/routers/glm-5p3-fast",
+      "name": "glm 5p3 fast",
+      "origin_provider": "zhipu",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/glm-5p3-spot",
+      "canonical_id": "fireworks/accounts/fireworks/routers/glm-5p3-spot",
+      "name": "glm 5p3 spot",
+      "origin_provider": "zhipu",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/kimi-k3-fast",
+      "canonical_id": "fireworks/accounts/fireworks/routers/kimi-k3-fast",
+      "name": "kimi k3 fast",
+      "origin_provider": "moonshot",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/kimi-k3-spot",
+      "canonical_id": "fireworks/accounts/fireworks/routers/kimi-k3-spot",
+      "name": "kimi k3 spot",
+      "origin_provider": "moonshot",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/rune",
+      "canonical_id": "fireworks/accounts/fireworks/routers/rune",
+      "name": "rune",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "accounts/fireworks/routers/spot-deepseek-v4-flash",
+      "canonical_id": "fireworks/accounts/fireworks/routers/spot-deepseek-v4-flash",
+      "name": "spot deepseek v4 flash",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 384000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "auto",
+      "canonical_id": "fireworks/auto",
+      "name": "auto",
+      "origin_provider": "fireworks_ai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "fireworks",
+      "id": "firerouter/auto",
+      "canonical_id": "fireworks/firerouter/auto",
+      "name": "auto",
+      "origin_provider": "fireworks",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": false,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "tools",
+        "chat",
+        "router"
+      ],
+      "is_deprecated": false
+    },
     {
       "provider_id": "google",
       "id": "antigravity-preview-latest",

@@ -12,4 +12,5 @@ export const URL = {
   VERCEL_MODELS: "https://ai-gateway.vercel.sh/v1/models",
   GROQ_MODELS: "https://api.groq.com/openai/v1/models",
   TOGETHER_MODELS: "https://api.together.ai/v1/models",
+  FIREWORKS_MODELS: "https://api.fireworks.ai/inference/v1/models",
 } as const;

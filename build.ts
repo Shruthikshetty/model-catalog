@@ -6,6 +6,7 @@ import { getVercelCatalog } from "./providers/vercel";
 import { CatalogSchema, type CatalogModel } from "./types";
 import { getGroqCatalog } from "./providers/groq";
 import { getTogetherCatalog } from "./providers/together";
+import { getFireworksCatalog } from "./providers/fireworks";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -18,6 +19,7 @@ const PROVIDERS = [
   { name: "Vercel AI Gateway", fetcher: getVercelCatalog },
   { name: "Groq", fetcher: getGroqCatalog },
   { name: "Together AI", fetcher: getTogetherCatalog },
+  { name: "Fireworks AI", fetcher: getFireworksCatalog },
 ];
 
 // functions ---------------------------------
