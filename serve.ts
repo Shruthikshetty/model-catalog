@@ -5,6 +5,12 @@
 // constants ---------------------------------
 const PORT = Number(process.env.PORT) || 3000;
 
+const ALLOWED_FILES: Record<string, string> = {
+  "/": "./index.html",
+  "/index.html": "./index.html",
+  "/catalog.json": "./catalog.json",
+};
+
 // functions ---------------------------------
 const server = Bun.serve({
   port: PORT,
@@ -14,15 +20,21 @@ const server = Bun.serve({
       return new Response(null, { status: 204 });
     }
 
-    const filePath = url.pathname === "/" ? "./index.html" : `.${url.pathname}`;
-    const file = Bun.file(filePath);
-
-    if (!(await file.exists())) {
-      return new Response("Not found", { status: 404 });
+    const filePath = ALLOWED_FILES[url.pathname];
+    if (!filePath) {
+      return new Response("Not Found", { status: 404 });
     }
 
-    return new Response(file);
+    const file = Bun.file(filePath);
+    if (await file.exists()) {
+      return new Response(file);
+    }
+
+    return new Response("Not Found", { status: 404 });
   },
 });
 
-console.log(`Model Catalog Viewer is running at: http://localhost:${server.port}`);
+console.log(
+  `\n🚀 Model Catalog Viewer is running at: http://localhost:${server.port}`,
+);
+console.log(`   Press Ctrl+C to stop.\n`);

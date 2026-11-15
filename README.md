@@ -13,7 +13,7 @@
 
 ## 🚀 How It Works
 
-1. **Provider Extraction**: Discovers canonical models directly from AI provider APIs (OpenAI, xAI, Google AI Studio, Vercel AI Gateway, OpenRouter, etc.).
+1. **Provider Extraction**: Discovers canonical models directly from AI provider APIs (OpenAI, xAI, Google AI Studio, Vercel AI Gateway, OpenRouter, Groq, Together AI, Fireworks AI, etc.).
 2. **Metadata Hydration**: Enriches models with token limits (`context_length`, `max_output_tokens`) and capability flags (`vision`, `functionCalling`, `reasoning`) from verified reference registries.
 3. **Multimodal Configurations**: Standardizes feature options for image generation (dimensions, aspect ratios, qualities) and text-to-speech (voices, audio formats).
 4. **Zod Validation**: Validates every entry against strict type schemas defined in `types.ts`.
@@ -31,12 +31,15 @@
 bun install
 ```
 
-### 2. Configure environment (optional, for live provider APIs)
+### 2. Configure environment (required for building the catalog)
 Create a `.env` file at the root:
 ```env
 OPENAI_API_KEY=your_key_here
 XAI_API_KEY=your_key_here
 GEMINI_API_KEY=your_key_here
+GROQ_API_KEY=your_key_here
+TOGETHER_API_KEY=your_key_here
+FIREWORKS_API_KEY=your_key_here
 OPENROUTER_API_KEY=your_key_here # optional
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "model-catalog",
-  "module": "index.ts",
+  "module": "build.ts",
   "type": "module",
   "private": true,
   "scripts": {
@@ -14,7 +14,6 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "dotenv": "^18.0.10",
     "zod": "^4.6.7"
   }
 }

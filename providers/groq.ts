@@ -144,7 +144,7 @@ export async function getGroqCatalog(): Promise<CatalogModel[]> {
         videoReasoning: false,
         fileInput: false,
         supportsStreaming:
-          !outputs.includes("audio") ||
+          !outputs.includes("audio") &&
           !raw.output_modalities?.includes("transcription"),
         supportsSystemPrompt: lite?.supports_system_messages ?? true,
         reasoning: {
