@@ -1,27 +1,31 @@
 // this file provides env in a type safe way
 
-import { config } from "dotenv";
 import { z } from "zod";
-
-config();
 
 // main schema
 const EnvSchema = z.object({
-  OPENAI_API_KEY: z.string(),
-  XAI_API_KEY: z.string(),
-  OPENROUTER_API_KEY: z.string().optional(),
-  GEMINI_API_KEY: z.string(),
-  GROQ_API_KEY: z.string(),
-  TOGETHER_API_KEY: z.string(),
-  FIREWORKS_API_KEY: z.string(),
+  OPENAI_API_KEY: z.string().min(1),
+  XAI_API_KEY: z.string().min(1),
+  OPENROUTER_API_KEY: z
+    .string()
+    .optional()
+    .transform((val) => (val === "" ? undefined : val)),
+  GEMINI_API_KEY: z.string().min(1),
+  GROQ_API_KEY: z.string().min(1),
+  TOGETHER_API_KEY: z.string().min(1),
+  FIREWORKS_API_KEY: z.string().min(1),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;
 
-const { data: env, error } = EnvSchema.safeParse(process.env);
-if (error) {
-  console.error("Invalid environment variables: ", error.flatten());
+const parsed = EnvSchema.safeParse(process.env);
+if (!parsed.success) {
+  console.error(
+    "Invalid or missing environment variables:\n" +
+      z.prettifyError(parsed.error),
+  );
   process.exit(1);
 }
-//export type safe env
-export default env as ENV;
+
+// export type safe env
+export default parsed.data as ENV;

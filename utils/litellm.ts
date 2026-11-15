@@ -25,35 +25,43 @@ export type LiteLlmCatalog = Record<string, LiteLlmModelEntry>;
 
 // state -------------------------------------
 // In-memory cache so we only download the LiteLLM catalog once
-let cachedCatalog: LiteLlmCatalog | null = null;
+let catalogPromise: Promise<LiteLlmCatalog> | null = null;
 
 // utils -------------------------------------
 /**
  * Loads the raw LiteLLM catalog once and caches it in memory.
  */
 async function loadCatalog(): Promise<LiteLlmCatalog> {
-  // in case already in memory then return it
-  if (cachedCatalog) {
-    return cachedCatalog;
+  // in case already fetching or in memory then return it
+  if (catalogPromise) {
+    return catalogPromise;
   }
 
-  // fetch the catalog
-  const response = await fetch(URL.LITELLM_MODELS, {
-    method: "GET",
+  // fetch and cache the catalog
+  catalogPromise = (async () => {
+    // fetch the catalog
+    const response = await fetch(URL.LITELLM_MODELS, {
+      method: "GET",
+    });
+
+    // in case of error
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(
+        `Failed to download LiteLLM catalog (${response.status}): ${errorText}`,
+      );
+    }
+
+    // store in memory and return
+    return (await response.json()) as LiteLlmCatalog;
+  })().catch((err) => {
+    // reset cache on error so next call can retry
+    catalogPromise = null;
+    throw err;
   });
 
-  // in case of error
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(
-      `Failed to download LiteLLM catalog (${response.status}): ${errorText}`,
-    );
-  }
-
-  // store in memory
-  cachedCatalog = (await response.json()) as LiteLlmCatalog;
   // return
-  return cachedCatalog;
+  return catalogPromise;
 }
 
 // functions ---------------------------------
@@ -80,30 +88,44 @@ export async function getLiteLlmModelDetails(
     }
   }
 
-  // Try stripped match if modelId already had a slash
+  // Try stripped match preserving nested slashes if modelId already had a slash
   if (modelId.includes("/")) {
-    const bareId = modelId.split("/")[1];
-    if (bareId && catalog[bareId]) {
-      return catalog[bareId];
+    const bare = modelId.split("/").slice(1).join("/");
+    if (bare && catalog[bare]) {
+      return catalog[bare];
     }
   }
 
-  // Try matching by trailing model slug (e.g. "aiml/dall-e-3" matches "dall-e-3")
-  const suffixMatch = Object.keys(catalog).find((key) => {
-    return key.endsWith(`/${modelId}`) || key.split("/").pop() === modelId;
-  });
-  if (suffixMatch) {
-    return catalog[suffixMatch];
+  // Try matching by trailing model slug (case-insensitive)
+  const lowerId = modelId.toLowerCase();
+  for (const [key, entry] of Object.entries(catalog)) {
+    const lowerKey = key.toLowerCase();
+    if (
+      lowerKey === lowerId ||
+      lowerKey.endsWith(`/${lowerId}`) ||
+      lowerKey.split("/").pop() === lowerId
+    ) {
+      return entry;
+    }
   }
 
-  // Fallback prefix match (some entries have version suffix)
-  const candidateKey = Object.keys(catalog).find((key) => {
-    return (
-      key === modelId ||
-      key.startsWith(`${modelId}-`) ||
-      (provider && key.startsWith(`${provider}/${modelId}`))
-    );
-  });
+  // Fallback prefix match: find closest base model match
+  const bareLowerId = lowerId.includes("/") ? lowerId.split("/").pop()! : lowerId;
+  if (!provider || bareLowerId.length >= 6) {
+    let bestMatch: LiteLlmModelEntry | undefined;
+    let bestLength = Infinity;
+    for (const [key, entry] of Object.entries(catalog)) {
+      const bareKey = (key.includes("/") ? key.split("/").pop()! : key).toLowerCase();
+      if (
+        (bareKey === bareLowerId || bareKey.startsWith(`${bareLowerId}-`)) &&
+        bareKey.length < bestLength
+      ) {
+        bestMatch = entry;
+        bestLength = bareKey.length;
+      }
+    }
+    if (bestMatch) return bestMatch;
+  }
 
-  return candidateKey ? catalog[candidateKey] : undefined;
+  return undefined;
 }
