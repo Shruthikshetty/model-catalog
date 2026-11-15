@@ -13,4 +13,5 @@ export const URL = {
   GROQ_MODELS: "https://api.groq.com/openai/v1/models",
   TOGETHER_MODELS: "https://api.together.ai/v1/models",
   FIREWORKS_MODELS: "https://api.fireworks.ai/inference/v1/models",
+  POE_MODELS: "https://api.poe.com/v1/models",
 } as const;

@@ -7,6 +7,7 @@ import { CatalogSchema, type CatalogModel } from "./types";
 import { getGroqCatalog } from "./providers/groq";
 import { getTogetherCatalog } from "./providers/together";
 import { getFireworksCatalog } from "./providers/fireworks";
+import { getPoeCatalog } from "./providers/poe";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -20,6 +21,7 @@ const PROVIDERS = [
   { name: "Groq", fetcher: getGroqCatalog },
   { name: "Together AI", fetcher: getTogetherCatalog },
   { name: "Fireworks AI", fetcher: getFireworksCatalog },
+  { name: "Poe", fetcher: getPoeCatalog },
 ];
 
 // functions ---------------------------------
