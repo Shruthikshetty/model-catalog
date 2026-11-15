@@ -19,4 +19,5 @@ export const URL = {
   ELEVENLABS_MODELS: "https://api.elevenlabs.io/v1/models",
   ELEVENLABS_VOICES: "https://api.elevenlabs.io/v1/voices",
   NVIDIA_MODELS: "https://integrate.api.nvidia.com/v1/models",
+  COHERE_MODELS: "https://api.cohere.com/v1/models",
 } as const;

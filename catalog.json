@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T15:04:15.086Z",
-  "total_models": 1766,
+  "updated_at": "2026-11-15T17:40:38.464Z",
+  "total_models": 1803,
   "models": [
     {
       "provider_id": "cerebras",
@@ -98,6 +98,1616 @@
         "vision",
         "reasoning",
         "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "c4ai-aya-expanse-32b",
+      "canonical_id": "cohere/c4ai-aya-expanse-32b",
+      "name": "c4ai aya expanse 32b",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 4000,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "c4ai-aya-vision-32b",
+      "canonical_id": "cohere/c4ai-aya-vision-32b",
+      "name": "c4ai aya vision 32b",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "cohere-transcribe-03-2026",
+      "canonical_id": "cohere/cohere-transcribe-03-2026",
+      "name": "cohere transcribe 03 2026",
+      "origin_provider": "cohere",
+      "inputs": [
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "audio",
+        "stt"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-a-03-2025",
+      "canonical_id": "cohere/command-a-03-2025",
+      "name": "command a 03 2025",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 288000,
+      "max_output_tokens": 8000,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-a-plus-05-2026",
+      "canonical_id": "cohere/command-a-plus-05-2026",
+      "name": "command a plus 05 2026",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 436000,
+      "max_output_tokens": 64000,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-a-reasoning-08-2025",
+      "canonical_id": "cohere/command-a-reasoning-08-2025",
+      "name": "command a reasoning 08 2025",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 288768,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-a-translate-08-2025",
+      "canonical_id": "cohere/command-a-translate-08-2025",
+      "name": "command a translate 08 2025",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8992,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-a-vision-07-2025",
+      "canonical_id": "cohere/command-a-vision-07-2025",
+      "name": "command a vision 07 2025",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-r-08-2024",
+      "canonical_id": "cohere/command-r-08-2024",
+      "name": "command r 08 2024",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-r-plus-08-2024",
+      "canonical_id": "cohere/command-r-plus-08-2024",
+      "name": "command r plus 08 2024",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-r7b-12-2024",
+      "canonical_id": "cohere/command-r7b-12-2024",
+      "name": "command r7b 12 2024",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 132000,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "command-r7b-arabic-02-2025",
+      "canonical_id": "cohere/command-r7b-arabic-02-2025",
+      "name": "command r7b arabic 02 2025",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-english-light-v3.0",
+      "canonical_id": "cohere/embed-english-light-v3.0",
+      "name": "embed english light v3.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 512,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-english-light-v3.0-image",
+      "canonical_id": "cohere/embed-english-light-v3.0-image",
+      "name": "embed english light v3.0 image",
+      "origin_provider": "cohere",
+      "inputs": [
+        "image"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding",
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-english-v3.0",
+      "canonical_id": "cohere/embed-english-v3.0",
+      "name": "embed english v3.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 512,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-english-v3.0-image",
+      "canonical_id": "cohere/embed-english-v3.0-image",
+      "name": "embed english v3.0 image",
+      "origin_provider": "cohere",
+      "inputs": [
+        "image"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding",
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-multilingual-light-v3.0",
+      "canonical_id": "cohere/embed-multilingual-light-v3.0",
+      "name": "embed multilingual light v3.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 512,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-multilingual-light-v3.0-image",
+      "canonical_id": "cohere/embed-multilingual-light-v3.0-image",
+      "name": "embed multilingual light v3.0 image",
+      "origin_provider": "cohere",
+      "inputs": [
+        "image"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding",
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-multilingual-v3.0",
+      "canonical_id": "cohere/embed-multilingual-v3.0",
+      "name": "embed multilingual v3.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 512,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-multilingual-v3.0-image",
+      "canonical_id": "cohere/embed-multilingual-v3.0-image",
+      "name": "embed multilingual v3.0 image",
+      "origin_provider": "cohere",
+      "inputs": [
+        "image"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding",
+        "image"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-v4.0",
+      "canonical_id": "cohere/embed-v4.0",
+      "name": "embed v4.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-v5.0-fast",
+      "canonical_id": "cohere/embed-v5.0-fast",
+      "name": "embed v5.0 fast",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "embed-v5.0-pro",
+      "canonical_id": "cohere/embed-v5.0-pro",
+      "name": "embed v5.0 pro",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "north-mini-code-1.0",
+      "canonical_id": "cohere/north-mini-code-1.0",
+      "name": "north mini code 1.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 436000,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "north-small-translate-1.0",
+      "canonical_id": "cohere/north-small-translate-1.0",
+      "name": "north small translate 1.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "parse-v5.0",
+      "canonical_id": "cohere/parse-v5.0",
+      "name": "parse v5.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-english-v3.0",
+      "canonical_id": "cohere/rerank-english-v3.0",
+      "name": "rerank english v3.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-multilingual-v3.0",
+      "canonical_id": "cohere/rerank-multilingual-v3.0",
+      "name": "rerank multilingual v3.0",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-v3.5",
+      "canonical_id": "cohere/rerank-v3.5",
+      "name": "rerank v3.5",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": 4096,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-v4.0-fast",
+      "canonical_id": "cohere/rerank-v4.0-fast",
+      "name": "rerank v4.0 fast",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-v4.0-pro",
+      "canonical_id": "cohere/rerank-v4.0-pro",
+      "name": "rerank v4.0 pro",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-v5.0-fast",
+      "canonical_id": "cohere/rerank-v5.0-fast",
+      "name": "rerank v5.0 fast",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "rerank-v5.0-pro",
+      "canonical_id": "cohere/rerank-v5.0-pro",
+      "name": "rerank v5.0 pro",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "rerank"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "tiny-aya-earth",
+      "canonical_id": "cohere/tiny-aya-earth",
+      "name": "tiny aya earth",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "tiny-aya-fire",
+      "canonical_id": "cohere/tiny-aya-fire",
+      "name": "tiny aya fire",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "tiny-aya-global",
+      "canonical_id": "cohere/tiny-aya-global",
+      "name": "tiny aya global",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cohere",
+      "id": "tiny-aya-water",
+      "canonical_id": "cohere/tiny-aya-water",
+      "name": "tiny aya water",
+      "origin_provider": "cohere",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "search",
+        "chat"
       ],
       "is_deprecated": false
     },
@@ -7535,7 +9145,7 @@
       "video_options": null,
       "context_length": 8192,
       "max_output_tokens": null,
-      "description": "Official mistral-embed-2312 Mistral model",
+      "description": "Our state-of-the-art semantic for extracting representation of text extracts.",
       "tags": [
         "embedding"
       ],
@@ -7577,7 +9187,7 @@
       "video_options": null,
       "context_length": 8192,
       "max_output_tokens": null,
-      "description": "Official mistral-embed-2312 Mistral model",
+      "description": "Our state-of-the-art semantic for extracting representation of text extracts.",
       "tags": [
         "embedding"
       ],

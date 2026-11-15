@@ -12,6 +12,7 @@ import { getMistralCatalog } from "./providers/mistral";
 import { getCerebrasCatalog } from "./providers/cerebras";
 import { getElevenLabsCatalog } from "./providers/elevenlabs";
 import { getNvidiaCatalog } from "./providers/nvidia";
+import { getCohereCatalog } from "./providers/cohere";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -30,6 +31,7 @@ const PROVIDERS = [
   { name: "Cerebras", fetcher: getCerebrasCatalog },
   { name: "ElevenLabs", fetcher: getElevenLabsCatalog },
   { name: "NVIDIA NIM", fetcher: getNvidiaCatalog },
+  { name: "Cohere", fetcher: getCohereCatalog },
 ];
 
 // functions ---------------------------------
