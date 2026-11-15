@@ -16,6 +16,7 @@ const EnvSchema = z.object({
   FIREWORKS_API_KEY: z.string().min(1),
   MISTRAL_API_KEY: z.string().min(1),
   CEREBRAS_API_KEY: z.string().min(1),
+  ELEVENLABS_API_KEY: z.string().min(1),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;

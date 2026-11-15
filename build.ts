@@ -10,6 +10,7 @@ import { getFireworksCatalog } from "./providers/fireworks";
 import { getPoeCatalog } from "./providers/poe";
 import { getMistralCatalog } from "./providers/mistral";
 import { getCerebrasCatalog } from "./providers/cerebras";
+import { getElevenLabsCatalog } from "./providers/elevenlabs";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -26,6 +27,7 @@ const PROVIDERS = [
   { name: "Poe", fetcher: getPoeCatalog },
   { name: "Mistral", fetcher: getMistralCatalog },
   { name: "Cerebras", fetcher: getCerebrasCatalog },
+  { name: "ElevenLabs", fetcher: getElevenLabsCatalog },
 ];
 
 // functions ---------------------------------

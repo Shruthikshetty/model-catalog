@@ -16,4 +16,6 @@ export const URL = {
   POE_MODELS: "https://api.poe.com/v1/models",
   MISTRAL_MODELS: "https://api.mistral.ai/v1/models",
   CEREBRAS_MODELS: "https://api.cerebras.ai/v1/models",
+  ELEVENLABS_MODELS: "https://api.elevenlabs.io/v1/models",
+  ELEVENLABS_VOICES: "https://api.elevenlabs.io/v1/voices",
 } as const;

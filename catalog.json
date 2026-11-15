@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T12:08:45.178Z",
-  "total_models": 1675,
+  "updated_at": "2026-11-15T12:53:29.446Z",
+  "total_models": 1686,
   "models": [
     {
       "provider_id": "cerebras",
@@ -98,6 +98,1838 @@
         "vision",
         "reasoning",
         "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_english_sts_v2",
+      "canonical_id": "elevenlabs/eleven_english_sts_v2",
+      "name": "Eleven English v2",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 5000,
+      "max_output_tokens": null,
+      "description": "Our state-of-the-art speech to speech model suitable for scenarios where you need maximum control over the content and prosody of your generations.",
+      "tags": [
+        "audio",
+        "tts",
+        "sts",
+        "voice-conversion"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_flash_v2",
+      "canonical_id": "elevenlabs/eleven_flash_v2",
+      "name": "Eleven Flash v2",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 30000,
+      "max_output_tokens": null,
+      "description": "Our ultra low latency model in english. Ideal for conversational use cases.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_flash_v2_5",
+      "canonical_id": "elevenlabs/eleven_flash_v2_5",
+      "name": "Eleven Flash v2.5",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 40000,
+      "max_output_tokens": null,
+      "description": "Our ultra low latency model in 32 languages. Ideal for conversational use cases.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_multilingual_sts_v2",
+      "canonical_id": "elevenlabs/eleven_multilingual_sts_v2",
+      "name": "Eleven Multilingual v2",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 10000,
+      "max_output_tokens": null,
+      "description": "Our cutting-edge, multilingual speech-to-speech model is designed for situations that demand unparalleled control over both the content and the prosody of the generated speech across various languages.",
+      "tags": [
+        "audio",
+        "tts",
+        "sts",
+        "voice-conversion"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_multilingual_v2",
+      "canonical_id": "elevenlabs/eleven_multilingual_v2",
+      "name": "Eleven Multilingual v2",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 10000,
+      "max_output_tokens": null,
+      "description": "Our most life-like, emotionally rich mode in 29 languages. Best for voice overs, audiobooks, post-production, or any other content creation needs.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_turbo_v2",
+      "canonical_id": "elevenlabs/eleven_turbo_v2",
+      "name": "Eleven Turbo v2",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 30000,
+      "max_output_tokens": null,
+      "description": "Our English-only, low latency model. Best for developer use cases where speed matters and you only need English. Performance is on par with Turbo v2.5.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_turbo_v2_5",
+      "canonical_id": "elevenlabs/eleven_turbo_v2_5",
+      "name": "Eleven Turbo v2.5",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 40000,
+      "max_output_tokens": null,
+      "description": "Our high quality, low latency model in 32 languages. Best for developer use cases where speed matters and you need non-English languages.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_v3",
+      "canonical_id": "elevenlabs/eleven_v3",
+      "name": "Eleven v3",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 5000,
+      "max_output_tokens": null,
+      "description": "Our highly expressive model. Supports 70+ languages. Requires more prompt engineering than our previous models.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_v3_conversational",
+      "canonical_id": "elevenlabs/eleven_v3_conversational",
+      "name": "Eleven v3 Conversational",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 5000,
+      "max_output_tokens": null,
+      "description": "Our highly expressive model, optimized for natural dialogue in conversational agents. Supports 70+ languages. Requires more prompt engineering than our previous models.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_v4",
+      "canonical_id": "elevenlabs/eleven_v4",
+      "name": "Eleven v4",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 10000,
+      "max_output_tokens": null,
+      "description": "Our fastest and most emotive model. Supports 90+ languages.",
+      "tags": [
+        "audio",
+        "tts"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "elevenlabs",
+      "id": "eleven_v4_turbo",
+      "canonical_id": "elevenlabs/eleven_v4_turbo",
+      "name": "Eleven v4 Turbo",
+      "origin_provider": "elevenlabs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": {
+        "voices": [
+          {
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "label": "Roger - Laid-Back, Casual, Resonant",
+            "gender": "male"
+          },
+          {
+            "id": "EXAVITQu4vr4xnSDxMaL",
+            "label": "Sarah - Mature, Reassuring, Confident",
+            "gender": "female"
+          },
+          {
+            "id": "FGY2WhTYpPnrIDTdsKH5",
+            "label": "Laura - Enthusiast, Quirky Attitude",
+            "gender": "female"
+          },
+          {
+            "id": "IKne3meq5aSn9XLyUdCD",
+            "label": "Charlie - Deep, Confident, Energetic",
+            "gender": "male"
+          },
+          {
+            "id": "JBFqnCBsd6RMkjVDRZzb",
+            "label": "George - Warm, Captivating Storyteller",
+            "gender": "male"
+          },
+          {
+            "id": "N2lVS1w4EtoT3dr4eOWO",
+            "label": "Callum - Husky Trickster",
+            "gender": "male"
+          },
+          {
+            "id": "SAz9YHcvj6GT2YYXdXww",
+            "label": "River - Relaxed, Neutral, Informative",
+            "gender": "neutral"
+          },
+          {
+            "id": "SOYHLrjzK2X1ezoPC6cr",
+            "label": "Harry - Fierce Warrior",
+            "gender": "male"
+          },
+          {
+            "id": "TX3LPaxmHKxFdv7VOQHJ",
+            "label": "Liam - Energetic, Social Media Creator",
+            "gender": "male"
+          },
+          {
+            "id": "Xb7hH8MSUJpSbSDYk0k2",
+            "label": "Alice - Clear, Engaging Educator",
+            "gender": "female"
+          },
+          {
+            "id": "XrExE9yKIg1WjnnlVkGX",
+            "label": "Matilda - Knowledgable, Professional",
+            "gender": "female"
+          },
+          {
+            "id": "bIHbv24MWmeRgasZH58o",
+            "label": "Will - Relaxed Optimist",
+            "gender": "male"
+          },
+          {
+            "id": "cgSgspJ2msm6clMCkdW9",
+            "label": "Jessica - Playful, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "cjVigY5qzO86Huf0OWal",
+            "label": "Eric - Smooth, Trustworthy",
+            "gender": "male"
+          },
+          {
+            "id": "hpp4J3VqNfWAUOO0d1Us",
+            "label": "Bella - Professional, Bright, Warm",
+            "gender": "female"
+          },
+          {
+            "id": "iP95p4xoKVk53GoZ742B",
+            "label": "Chris - Charming, Down-to-Earth",
+            "gender": "male"
+          },
+          {
+            "id": "nPczCjzI2devNBz1zQrb",
+            "label": "Brian - Deep, Resonant and Comforting",
+            "gender": "male"
+          },
+          {
+            "id": "onwK4e9ZLuTAKqWW03F9",
+            "label": "Daniel - Steady Broadcaster",
+            "gender": "male"
+          },
+          {
+            "id": "pFZP5JQG7iQjIQuC4Bku",
+            "label": "Lily - Velvety Actress",
+            "gender": "female"
+          },
+          {
+            "id": "pNInz6obpgDQGcFmaJgB",
+            "label": "Adam - Dominant, Firm",
+            "gender": "male"
+          },
+          {
+            "id": "pqHfZKP75CvOlQylNhV4",
+            "label": "Bill - Wise, Mature, Balanced",
+            "gender": "male"
+          }
+        ],
+        "formats": [
+          "mp3_44100_128",
+          "mp3_44100_192",
+          "pcm_16000",
+          "pcm_22050",
+          "pcm_24000",
+          "pcm_44100",
+          "ulaw_8000",
+          "alaw_8000",
+          "opus_codecs"
+        ],
+        "speeds": {
+          "min": 0.5,
+          "max": 2
+        }
+      },
+      "video_options": null,
+      "context_length": 10000,
+      "max_output_tokens": null,
+      "description": "Our fastest and most emotive model, optimized for low latency. Supports 90+ languages.",
+      "tags": [
+        "audio",
+        "tts"
       ],
       "is_deprecated": false
     },
@@ -15053,7 +16885,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": 384000,
+      "max_output_tokens": 393216,
       "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
       "tags": [
         "vision",
