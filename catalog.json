@@ -1,8 +1,106 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T11:47:35.060Z",
-  "total_models": 1673,
+  "updated_at": "2026-11-15T12:08:45.178Z",
+  "total_models": 1675,
   "models": [
+    {
+      "provider_id": "cerebras",
+      "id": "gpt-oss-120b",
+      "canonical_id": "cerebras/gpt-oss-120b",
+      "name": "gpt oss 120b",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "cerebras",
+      "id": "qwen-3.8-27b",
+      "canonical_id": "cerebras/qwen-3.8-27b",
+      "name": "qwen 3.8 27b",
+      "origin_provider": "alibaba",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
     {
       "provider_id": "fireworks",
       "id": "accounts/fireworks/models/deepseek-v4p1-flash",

@@ -15,4 +15,5 @@ export const URL = {
   FIREWORKS_MODELS: "https://api.fireworks.ai/inference/v1/models",
   POE_MODELS: "https://api.poe.com/v1/models",
   MISTRAL_MODELS: "https://api.mistral.ai/v1/models",
+  CEREBRAS_MODELS: "https://api.cerebras.ai/v1/models",
 } as const;
