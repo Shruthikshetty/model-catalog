@@ -12,17 +12,17 @@ import {
 } from "../types";
 
 // types -------------------------------------
-export interface OpenAiRawModel {
+export type OpenAiRawModel = {
   id: string;
   object: string;
   created: number;
   owned_by: string;
-}
+};
 
-interface OpenAiModelsResponse {
+type OpenAiModelsResponse = {
   object: string;
   data: OpenAiRawModel[];
-}
+};
 
 // constants ---------------------------------
 export const EXCLUDED_MODEL_PREFIXES = [

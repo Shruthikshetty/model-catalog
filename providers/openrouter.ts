@@ -40,7 +40,7 @@ export interface OpenRouterRawReasoning {
  * Shape of a raw model object returned by OpenRouter's `/api/v1/models` endpoint.
  * Documentation: https://openrouter.ai/docs/api-reference/models/get-models
  */
-export interface OpenRouterRawModel {
+export type OpenRouterRawModel = {
   id: string;
   name?: string | null;
   description?: string | null;
@@ -53,11 +53,11 @@ export interface OpenRouterRawModel {
   expiration_date?: string | null;
   endpoints?: string[] | null;
   reasoning?: OpenRouterRawReasoning | null;
-}
+};
 
-export interface OpenRouterModelsResponse {
+export type OpenRouterModelsResponse = {
   data: OpenRouterRawModel[];
-}
+};
 
 // constants ---------------------------------
 const KNOWN_MODALITIES: Set<string> = new Set([
@@ -84,7 +84,9 @@ export function isKnownModality(mod: string): mod is Modality {
   return KNOWN_MODALITIES.has(mod);
 }
 
-export function isKnownEffortLevel(level: string): level is ReasoningEffortLevel {
+export function isKnownEffortLevel(
+  level: string,
+): level is ReasoningEffortLevel {
   return KNOWN_EFFORT_LEVELS.has(level);
 }
 

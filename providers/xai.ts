@@ -12,7 +12,7 @@ import {
 } from "../types";
 
 // types -------------------------------------
-export interface XAiRawModel {
+export type XAiRawModel = {
   id: string;
   context_length?: number;
   object?: string;
@@ -23,11 +23,11 @@ export interface XAiRawModel {
     [key: string]: unknown;
   };
   [key: string]: unknown;
-}
+};
 
-interface XAiModelsResponse {
+type XAiModelsResponse = {
   data: XAiRawModel[];
-}
+};
 
 // constants ---------------------------------
 // Source: https://docs.x.ai/docs/guides/image-generation

@@ -15,7 +15,7 @@ import {
  * Documentation: https://ai.google.dev/api/models#Method:-models.list
  * Reference: https://ai.google.dev/gemini-api/docs/models/gemini
  */
-export interface GoogleRawModel {
+export type GoogleRawModel = {
   name: string; // e.g. "models/gemini-1.5-pro"
   baseModelId?: string;
   version?: string;
@@ -28,11 +28,11 @@ export interface GoogleRawModel {
   topP?: number;
   topK?: number;
   maxTemperature?: number;
-}
+};
 
-interface GoogleModelsResponse {
+type GoogleModelsResponse = {
   models?: GoogleRawModel[];
-}
+};
 
 // constants ---------------------------------
 // Source: https://ai.google.dev/gemini-api/docs/imagen
@@ -99,7 +99,7 @@ export async function getGoogleCatalog(): Promise<CatalogModel[]> {
   const catalogModels: CatalogModel[] = [];
 
   for (const raw of rawModels) {
-    const modelId = raw.name.replace(/^models\//, "");
+    const modelId = raw.name.replace(/^models\//, ""); // remove the model prefix
     const lite = await getLiteLlmModelDetails(modelId, "gemini");
 
     const mode = lite?.mode ?? "chat";

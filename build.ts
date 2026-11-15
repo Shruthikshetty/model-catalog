@@ -4,6 +4,7 @@ import { getXAiCatalog } from "./providers/xai";
 import { getGoogleCatalog } from "./providers/google";
 import { getVercelCatalog } from "./providers/vercel";
 import { CatalogSchema, type CatalogModel } from "./types";
+import { getGroqCatalog } from "./providers/groq";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -14,6 +15,7 @@ const PROVIDERS = [
   { name: "Google AI Studio", fetcher: getGoogleCatalog },
   { name: "OpenRouter", fetcher: getOpenRouterCatalog },
   { name: "Vercel AI Gateway", fetcher: getVercelCatalog },
+  { name: "Groq", fetcher: getGroqCatalog },
 ];
 
 // functions ---------------------------------

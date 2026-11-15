@@ -31,7 +31,7 @@ export interface VercelRawPricing {
  * Documentation: https://ai-gateway.vercel.sh/v1/models
  * Reference: https://vercel.com/docs/ai-gateway
  */
-export interface VercelRawModel {
+export type VercelRawModel = {
   id: string; // e.g. "openai/gpt-4o", "alibaba/qwen-3-14b"
   object?: string;
   name?: string;
@@ -46,12 +46,12 @@ export interface VercelRawModel {
   tags?: string[];
   pricing?: VercelRawPricing;
   [key: string]: unknown;
-}
+};
 
-interface VercelModelsResponse {
+type VercelModelsResponse = {
   object?: string;
   data: VercelRawModel[];
-}
+};
 
 // constants ---------------------------------
 const KNOWN_MODALITIES: Set<string> = new Set([

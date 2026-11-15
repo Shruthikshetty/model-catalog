@@ -10,4 +10,5 @@ export const URL = {
   OPENROUTER_MODELS: "https://openrouter.ai/api/v1/models",
   GOOGLE_MODELS: "https://generativelanguage.googleapis.com/v1beta/models",
   VERCEL_MODELS: "https://ai-gateway.vercel.sh/v1/models",
+  GROQ_MODELS: "https://api.groq.com/openai/v1/models",
 } as const;
