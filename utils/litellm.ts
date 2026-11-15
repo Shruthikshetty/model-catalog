@@ -109,13 +109,17 @@ export async function getLiteLlmModelDetails(
     }
   }
 
-  // Fallback prefix match: find longest LiteLLM key that starts with modelId
-  if (!provider || modelId.length >= 6) {
+  // Fallback prefix match: find closest base model match
+  const bareLowerId = lowerId.includes("/") ? lowerId.split("/").pop()! : lowerId;
+  if (!provider || bareLowerId.length >= 6) {
     let bestMatch: LiteLlmModelEntry | undefined;
-    let bestLength = 0;
+    let bestLength = Infinity;
     for (const [key, entry] of Object.entries(catalog)) {
       const bareKey = (key.includes("/") ? key.split("/").pop()! : key).toLowerCase();
-      if (bareKey.startsWith(lowerId) && bareKey.length > bestLength) {
+      if (
+        (bareKey === bareLowerId || bareKey.startsWith(`${bareLowerId}-`)) &&
+        bareKey.length < bestLength
+      ) {
         bestMatch = entry;
         bestLength = bareKey.length;
       }

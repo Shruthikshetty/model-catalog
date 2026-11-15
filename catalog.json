@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T05:34:35.061Z",
-  "total_models": 1425,
+  "updated_at": "2026-11-15T06:28:00.484Z",
+  "total_models": 1422,
   "models": [
     {
       "provider_id": "fireworks",
@@ -4411,7 +4411,7 @@
         "realtime": false,
         "videoReasoning": false,
         "fileInput": false,
-        "supportsStreaming": true,
+        "supportsStreaming": false,
         "supportsSystemPrompt": true,
         "reasoning": {
           "supported": false,
@@ -4453,7 +4453,7 @@
         "realtime": false,
         "videoReasoning": false,
         "fileInput": false,
-        "supportsStreaming": true,
+        "supportsStreaming": false,
         "supportsSystemPrompt": true,
         "reasoning": {
           "supported": false,
@@ -4773,7 +4773,7 @@
         "realtime": false,
         "videoReasoning": false,
         "fileInput": false,
-        "supportsStreaming": true,
+        "supportsStreaming": false,
         "supportsSystemPrompt": true,
         "reasoning": {
           "supported": false,
@@ -4815,7 +4815,7 @@
         "realtime": false,
         "videoReasoning": false,
         "fileInput": false,
-        "supportsStreaming": true,
+        "supportsStreaming": false,
         "supportsSystemPrompt": true,
         "reasoning": {
           "supported": false,
@@ -31840,7 +31840,7 @@
       },
       "tts_options": null,
       "video_options": null,
-      "context_length": null,
+      "context_length": 32000,
       "max_output_tokens": null,
       "description": null,
       "tags": [
@@ -31966,7 +31966,7 @@
       },
       "tts_options": null,
       "video_options": null,
-      "context_length": null,
+      "context_length": 32000,
       "max_output_tokens": null,
       "description": null,
       "tags": [
@@ -32645,7 +32645,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -32731,7 +32731,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -32774,7 +32774,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -32817,7 +32817,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -33032,7 +33032,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 16384,
       "description": null,
       "tags": [
         "tools",
@@ -33047,13 +33047,14 @@
       "name": "Deepseek OCR 2",
       "origin_provider": "deepseek",
       "inputs": [
-        "text"
+        "text",
+        "image"
       ],
       "outputs": [
         "text"
       ],
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "functionCalling": true,
         "webSearch": false,
         "codeExecution": false,
@@ -33075,9 +33076,10 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 8192,
-      "max_output_tokens": null,
+      "max_output_tokens": 8192,
       "description": null,
       "tags": [
+        "vision",
         "tools",
         "chat"
       ],
@@ -33970,7 +33972,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 8192,
-      "max_output_tokens": null,
+      "max_output_tokens": 8192,
       "description": null,
       "tags": [
         "tools",
@@ -34375,14 +34377,13 @@
       "name": "Gemma 4 26B A4b It",
       "origin_provider": "google",
       "inputs": [
-        "text",
-        "image"
+        "text"
       ],
       "outputs": [
         "text"
       ],
       "capabilities": {
-        "vision": true,
+        "vision": false,
         "functionCalling": true,
         "webSearch": false,
         "codeExecution": false,
@@ -34408,10 +34409,9 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 262144,
-      "max_output_tokens": 262144,
+      "max_output_tokens": 256000,
       "description": null,
       "tags": [
-        "vision",
         "reasoning",
         "tools",
         "chat"
@@ -34688,7 +34688,7 @@
         "default_aspect_ratio": "16:9",
         "default_resolution": "720p"
       },
-      "context_length": null,
+      "context_length": 1024,
       "max_output_tokens": null,
       "description": null,
       "tags": [
@@ -34746,7 +34746,7 @@
         "default_aspect_ratio": "16:9",
         "default_resolution": "720p"
       },
-      "context_length": null,
+      "context_length": 1024,
       "max_output_tokens": null,
       "description": null,
       "tags": [
@@ -34759,7 +34759,7 @@
       "id": "HappyHorse/HappyHorse-1.0-T2V",
       "canonical_id": "together/HappyHorse/HappyHorse-1.0-T2V",
       "name": "HappyHorse 1.0 T2V",
-      "origin_provider": "happyhorse",
+      "origin_provider": "dashscope",
       "inputs": [
         "text"
       ],
@@ -35231,7 +35231,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 8192,
       "description": null,
       "tags": [
         "tools",
@@ -35296,7 +35296,7 @@
       ],
       "capabilities": {
         "vision": false,
-        "functionCalling": false,
+        "functionCalling": true,
         "webSearch": false,
         "codeExecution": false,
         "realtime": false,
@@ -35317,9 +35317,10 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 8192,
       "description": null,
       "tags": [
+        "tools",
         "chat"
       ],
       "is_deprecated": false
@@ -35546,13 +35547,14 @@
       "name": "Llama 4 Scout (17Bx16E)",
       "origin_provider": "meta",
       "inputs": [
-        "text"
+        "text",
+        "image"
       ],
       "outputs": [
         "text"
       ],
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "functionCalling": true,
         "webSearch": false,
         "codeExecution": false,
@@ -35574,13 +35576,14 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 262144,
-      "max_output_tokens": 1048576,
+      "max_output_tokens": 16384,
       "description": null,
       "tags": [
+        "vision",
         "tools",
         "chat"
       ],
-      "is_deprecated": true
+      "is_deprecated": false
     },
     {
       "provider_id": "together",
@@ -35795,7 +35798,7 @@
         "tools",
         "chat"
       ],
-      "is_deprecated": true
+      "is_deprecated": false
     },
     {
       "provider_id": "together",
@@ -36337,21 +36340,26 @@
         "supportsStreaming": true,
         "supportsSystemPrompt": true,
         "reasoning": {
-          "supported": false,
-          "type": null,
-          "effort_levels": null,
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
           "budget_tokens": null,
           "can_toggle_off": false,
-          "default_state": "disabled"
+          "default_state": "enabled"
         }
       },
       "image_options": null,
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": null,
+      "max_output_tokens": 40000,
       "description": null,
       "tags": [
+        "reasoning",
         "tools",
         "chat"
       ],
@@ -36564,7 +36572,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -36779,7 +36787,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 32768,
-      "max_output_tokens": null,
+      "max_output_tokens": 4096,
       "description": null,
       "tags": [
         "tools",
@@ -37307,7 +37315,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -37394,7 +37402,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 128000,
       "description": null,
       "tags": [
         "vision",
@@ -37439,7 +37447,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 2048,
       "description": null,
       "tags": [
         "vision",
@@ -37483,7 +37491,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 8192,
       "description": null,
       "tags": [
         "tools",
@@ -37655,7 +37663,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -37698,7 +37706,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 16384,
-      "max_output_tokens": null,
+      "max_output_tokens": 131072,
       "description": null,
       "tags": [
         "tools",
@@ -37741,7 +37749,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 32768,
-      "max_output_tokens": null,
+      "max_output_tokens": 32768,
       "description": null,
       "tags": [
         "tools",
@@ -39089,7 +39097,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 32768,
-      "max_output_tokens": null,
+      "max_output_tokens": 32768,
       "description": null,
       "tags": [
         "chat"
@@ -39110,7 +39118,7 @@
       ],
       "capabilities": {
         "vision": false,
-        "functionCalling": true,
+        "functionCalling": false,
         "webSearch": false,
         "codeExecution": false,
         "realtime": false,
@@ -39131,10 +39139,9 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 32768,
-      "max_output_tokens": null,
+      "max_output_tokens": 32768,
       "description": null,
       "tags": [
-        "tools",
         "chat"
       ],
       "is_deprecated": false
@@ -39174,7 +39181,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 32768,
-      "max_output_tokens": null,
+      "max_output_tokens": 32768,
       "description": null,
       "tags": [
         "chat"
@@ -39433,7 +39440,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 128000,
       "description": null,
       "tags": [
         "tools",
@@ -39691,7 +39698,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": null,
+      "max_output_tokens": 32768,
       "description": null,
       "tags": [
         "tools",
@@ -40419,7 +40426,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 262144,
-      "max_output_tokens": null,
+      "max_output_tokens": 262144,
       "description": null,
       "tags": [
         "tools",
@@ -40450,21 +40457,26 @@
         "supportsStreaming": true,
         "supportsSystemPrompt": true,
         "reasoning": {
-          "supported": false,
-          "type": null,
-          "effort_levels": null,
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
           "budget_tokens": null,
           "can_toggle_off": false,
-          "default_state": "disabled"
+          "default_state": "enabled"
         }
       },
       "image_options": null,
       "tts_options": null,
       "video_options": null,
       "context_length": 40960,
-      "max_output_tokens": null,
+      "max_output_tokens": 40960,
       "description": null,
       "tags": [
+        "reasoning",
         "tools",
         "chat"
       ],
@@ -40590,13 +40602,13 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 262144,
-      "max_output_tokens": null,
+      "max_output_tokens": 32768,
       "description": null,
       "tags": [
         "tools",
         "chat"
       ],
-      "is_deprecated": false
+      "is_deprecated": true
     },
     {
       "provider_id": "together",
@@ -41160,7 +41172,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 262144,
-      "max_output_tokens": 262144,
+      "max_output_tokens": 65536,
       "description": null,
       "tags": [
         "vision",
@@ -41168,7 +41180,7 @@
         "tools",
         "chat"
       ],
-      "is_deprecated": true
+      "is_deprecated": false
     },
     {
       "provider_id": "together",
@@ -41635,21 +41647,26 @@
         "supportsStreaming": true,
         "supportsSystemPrompt": true,
         "reasoning": {
-          "supported": false,
-          "type": null,
-          "effort_levels": null,
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
           "budget_tokens": null,
           "can_toggle_off": false,
-          "default_state": "disabled"
+          "default_state": "enabled"
         }
       },
       "image_options": null,
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 24000,
       "description": null,
       "tags": [
+        "reasoning",
         "tools",
         "chat"
       ],
@@ -42190,21 +42207,26 @@
         "supportsStreaming": true,
         "supportsSystemPrompt": true,
         "reasoning": {
-          "supported": false,
-          "type": null,
-          "effort_levels": null,
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
           "budget_tokens": null,
           "can_toggle_off": false,
-          "default_state": "disabled"
+          "default_state": "enabled"
         }
       },
       "image_options": null,
       "tts_options": null,
       "video_options": null,
       "context_length": 32768,
-      "max_output_tokens": null,
+      "max_output_tokens": 32000,
       "description": null,
       "tags": [
+        "reasoning",
         "tools",
         "chat"
       ],
@@ -42956,13 +42978,14 @@
       "name": "GLM 4.5V",
       "origin_provider": "zai org",
       "inputs": [
-        "text"
+        "text",
+        "image"
       ],
       "outputs": [
         "text"
       ],
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "functionCalling": true,
         "webSearch": false,
         "codeExecution": false,
@@ -42972,21 +42995,27 @@
         "supportsStreaming": true,
         "supportsSystemPrompt": true,
         "reasoning": {
-          "supported": false,
-          "type": null,
-          "effort_levels": null,
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
           "budget_tokens": null,
           "can_toggle_off": false,
-          "default_state": "disabled"
+          "default_state": "enabled"
         }
       },
       "image_options": null,
       "tts_options": null,
       "video_options": null,
       "context_length": 65536,
-      "max_output_tokens": null,
+      "max_output_tokens": 16384,
       "description": null,
       "tags": [
+        "vision",
+        "reasoning",
         "tools",
         "chat"
       ],
@@ -53114,105 +53143,6 @@
     },
     {
       "provider_id": "vercel",
-      "id": "inception/mercury-2",
-      "canonical_id": "vercel/inception/mercury-2",
-      "name": "Mercury 2",
-      "origin_provider": "inception",
-      "inputs": [
-        "text"
-      ],
-      "outputs": [
-        "text"
-      ],
-      "capabilities": {
-        "vision": false,
-        "functionCalling": true,
-        "webSearch": false,
-        "codeExecution": false,
-        "realtime": false,
-        "videoReasoning": false,
-        "fileInput": false,
-        "supportsStreaming": true,
-        "supportsSystemPrompt": true,
-        "reasoning": {
-          "supported": true,
-          "type": "effort",
-          "effort_levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "budget_tokens": null,
-          "can_toggle_off": true,
-          "default_state": "enabled"
-        }
-      },
-      "image_options": null,
-      "tts_options": null,
-      "video_options": null,
-      "context_length": 128000,
-      "max_output_tokens": 128000,
-      "description": "A diffusion-based reasoning LLM that generates text via parallel refinement (not token-by-token), delivering real-time latency with ~1k tokens/sec plus 128K context and built-in tool/JSON support.",
-      "tags": [
-        "reasoning",
-        "tool-use",
-        "structured-output",
-        "chat"
-      ],
-      "is_deprecated": false
-    },
-    {
-      "provider_id": "vercel",
-      "id": "inception/mercury-2.5",
-      "canonical_id": "vercel/inception/mercury-2.5",
-      "name": "Mercury 2.5",
-      "origin_provider": "inception",
-      "inputs": [
-        "text"
-      ],
-      "outputs": [
-        "text"
-      ],
-      "capabilities": {
-        "vision": false,
-        "functionCalling": true,
-        "webSearch": false,
-        "codeExecution": false,
-        "realtime": false,
-        "videoReasoning": false,
-        "fileInput": false,
-        "supportsStreaming": true,
-        "supportsSystemPrompt": true,
-        "reasoning": {
-          "supported": true,
-          "type": "effort",
-          "effort_levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "budget_tokens": null,
-          "can_toggle_off": true,
-          "default_state": "enabled"
-        }
-      },
-      "image_options": null,
-      "tts_options": null,
-      "video_options": null,
-      "context_length": 260000,
-      "max_output_tokens": 65536,
-      "description": "Mercury 2.5 is Inception’s diffusion-based reasoning model for chat, agents, and structured workflows, with tool calling, structured outputs, and a 260K context window.",
-      "tags": [
-        "implicit-caching",
-        "reasoning",
-        "tool-use",
-        "structured-output",
-        "chat"
-      ],
-      "is_deprecated": false
-    },
-    {
-      "provider_id": "vercel",
       "id": "inception/mercury-3",
       "canonical_id": "vercel/inception/mercury-3",
       "name": "Mercury 3",
@@ -53257,50 +53187,6 @@
         "reasoning",
         "structured-output",
         "tool-use",
-        "chat"
-      ],
-      "is_deprecated": false
-    },
-    {
-      "provider_id": "vercel",
-      "id": "inception/mercury-coder-small",
-      "canonical_id": "vercel/inception/mercury-coder-small",
-      "name": "Mercury Coder Small Beta",
-      "origin_provider": "inception",
-      "inputs": [
-        "text"
-      ],
-      "outputs": [
-        "text"
-      ],
-      "capabilities": {
-        "vision": false,
-        "functionCalling": true,
-        "webSearch": false,
-        "codeExecution": false,
-        "realtime": false,
-        "videoReasoning": false,
-        "fileInput": false,
-        "supportsStreaming": true,
-        "supportsSystemPrompt": true,
-        "reasoning": {
-          "supported": false,
-          "type": null,
-          "effort_levels": null,
-          "budget_tokens": null,
-          "can_toggle_off": true,
-          "default_state": "disabled"
-        }
-      },
-      "image_options": null,
-      "tts_options": null,
-      "video_options": null,
-      "context_length": 32000,
-      "max_output_tokens": 16384,
-      "description": "Mercury Coder Small is ideal for code generation, debugging, and refactoring tasks with minimal latency.",
-      "tags": [
-        "tool-use",
-        "structured-output",
         "chat"
       ],
       "is_deprecated": false

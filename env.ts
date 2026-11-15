@@ -6,7 +6,10 @@ import { z } from "zod";
 const EnvSchema = z.object({
   OPENAI_API_KEY: z.string().min(1),
   XAI_API_KEY: z.string().min(1),
-  OPENROUTER_API_KEY: z.string().optional(),
+  OPENROUTER_API_KEY: z
+    .string()
+    .optional()
+    .transform((val) => (val === "" ? undefined : val)),
   GEMINI_API_KEY: z.string().min(1),
   GROQ_API_KEY: z.string().min(1),
   TOGETHER_API_KEY: z.string().min(1),
@@ -18,8 +21,8 @@ export type ENV = z.infer<typeof EnvSchema>;
 const parsed = EnvSchema.safeParse(process.env);
 if (!parsed.success) {
   console.error(
-    "Invalid or missing environment variables:",
-    parsed.error.format(),
+    "Invalid or missing environment variables:\n" +
+      z.prettifyError(parsed.error),
   );
   process.exit(1);
 }
