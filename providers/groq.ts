@@ -118,7 +118,7 @@ export async function getGroqCatalog(): Promise<CatalogModel[]> {
       outputs.includes("audio") ||
       lite?.mode === "audio_transcription";
 
-    //  Build descriptive tags
+    // Descriptive tags
     const tags: string[] = [];
     if (isVision) tags.push("vision");
     if (isAudio) tags.push("audio");

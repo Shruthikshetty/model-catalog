@@ -12,6 +12,7 @@ const EnvSchema = z.object({
   OPENROUTER_API_KEY: z.string().optional(),
   GEMINI_API_KEY: z.string(),
   GROQ_API_KEY: z.string(),
+  TOGETHER_API_KEY: z.string().optional(),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;
