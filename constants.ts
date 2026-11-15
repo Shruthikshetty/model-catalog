@@ -18,4 +18,5 @@ export const URL = {
   CEREBRAS_MODELS: "https://api.cerebras.ai/v1/models",
   ELEVENLABS_MODELS: "https://api.elevenlabs.io/v1/models",
   ELEVENLABS_VOICES: "https://api.elevenlabs.io/v1/voices",
+  NVIDIA_MODELS: "https://integrate.api.nvidia.com/v1/models",
 } as const;

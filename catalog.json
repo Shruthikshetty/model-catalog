@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T12:53:29.446Z",
-  "total_models": 1686,
+  "updated_at": "2026-11-15T15:04:15.086Z",
+  "total_models": 1766,
   "models": [
     {
       "provider_id": "cerebras",
@@ -9180,6 +9180,3585 @@
       "is_deprecated": false
     },
     {
+      "provider_id": "nvidia",
+      "id": "01-ai/yi-large",
+      "canonical_id": "nvidia/01-ai/yi-large",
+      "name": "yi large",
+      "origin_provider": "01-ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "adept/fuyu-8b",
+      "canonical_id": "nvidia/adept/fuyu-8b",
+      "name": "fuyu 8b",
+      "origin_provider": "adept",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "ai21labs/jamba-1.5-large-instruct",
+      "canonical_id": "nvidia/ai21labs/jamba-1.5-large-instruct",
+      "name": "jamba 1.5 large instruct",
+      "origin_provider": "ai21labs",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "aisingapore/sea-lion-7b-instruct",
+      "canonical_id": "nvidia/aisingapore/sea-lion-7b-instruct",
+      "name": "sea lion 7b instruct",
+      "origin_provider": "aisingapore",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "bigcode/starcoder2-15b",
+      "canonical_id": "nvidia/bigcode/starcoder2-15b",
+      "name": "starcoder2 15b",
+      "origin_provider": "bigcode",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "databricks/dbrx-instruct",
+      "canonical_id": "nvidia/databricks/dbrx-instruct",
+      "name": "dbrx instruct",
+      "origin_provider": "databricks",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "canonical_id": "nvidia/deepseek-ai/deepseek-coder-6.7b-instruct",
+      "name": "deepseek coder 6.7b instruct",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "deepseek-ai/deepseek-v4.1-flash",
+      "canonical_id": "nvidia/deepseek-ai/deepseek-v4.1-flash",
+      "name": "deepseek v4.1 flash",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/codegemma-1.1-7b",
+      "canonical_id": "nvidia/google/codegemma-1.1-7b",
+      "name": "codegemma 1.1 7b",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/codegemma-7b",
+      "canonical_id": "nvidia/google/codegemma-7b",
+      "name": "codegemma 7b",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": 8192,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/deplot",
+      "canonical_id": "nvidia/google/deplot",
+      "name": "deplot",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/gemma-2b",
+      "canonical_id": "nvidia/google/gemma-2b",
+      "name": "gemma 2b",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": 8192,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/gemma-3-12b-it",
+      "canonical_id": "nvidia/google/gemma-3-12b-it",
+      "name": "gemma 3 12b it",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/gemma-3-4b-it",
+      "canonical_id": "nvidia/google/gemma-3-4b-it",
+      "name": "gemma 3 4b it",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/gemma-4-31b-it",
+      "canonical_id": "nvidia/google/gemma-4-31b-it",
+      "name": "gemma 4 31b it",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 256000,
+      "description": null,
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "google/recurrentgemma-2b",
+      "canonical_id": "nvidia/google/recurrentgemma-2b",
+      "name": "recurrentgemma 2b",
+      "origin_provider": "google",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "ibm/granite-3.0-3b-a800m-instruct",
+      "canonical_id": "nvidia/ibm/granite-3.0-3b-a800m-instruct",
+      "name": "granite 3.0 3b a800m instruct",
+      "origin_provider": "ibm",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "ibm/granite-3.0-8b-instruct",
+      "canonical_id": "nvidia/ibm/granite-3.0-8b-instruct",
+      "name": "granite 3.0 8b instruct",
+      "origin_provider": "ibm",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "ibm/granite-34b-code-instruct",
+      "canonical_id": "nvidia/ibm/granite-34b-code-instruct",
+      "name": "granite 34b code instruct",
+      "origin_provider": "ibm",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "ibm/granite-8b-code-instruct",
+      "canonical_id": "nvidia/ibm/granite-8b-code-instruct",
+      "name": "granite 8b code instruct",
+      "origin_provider": "ibm",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "meta/codellama-70b",
+      "canonical_id": "nvidia/meta/codellama-70b",
+      "name": "codellama 70b",
+      "origin_provider": "meta",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "meta/llama-3.2-90b-vision-instruct",
+      "canonical_id": "nvidia/meta/llama-3.2-90b-vision-instruct",
+      "name": "llama 3.2 90b vision instruct",
+      "origin_provider": "meta",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 2048,
+      "description": null,
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "meta/llama-guard-4-12b",
+      "canonical_id": "nvidia/meta/llama-guard-4-12b",
+      "name": "llama guard 4 12b",
+      "origin_provider": "meta",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "meta/llama2-70b",
+      "canonical_id": "nvidia/meta/llama2-70b",
+      "name": "llama2 70b",
+      "origin_provider": "meta",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": 8192,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "meta/muse-glimmer-30b",
+      "canonical_id": "nvidia/meta/muse-glimmer-30b",
+      "name": "muse glimmer 30b",
+      "origin_provider": "meta",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "microsoft/kosmos-2",
+      "canonical_id": "nvidia/microsoft/kosmos-2",
+      "name": "kosmos 2",
+      "origin_provider": "microsoft",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "microsoft/phi-3-vision-128k-instruct",
+      "canonical_id": "nvidia/microsoft/phi-3-vision-128k-instruct",
+      "name": "phi 3 vision 128k instruct",
+      "origin_provider": "microsoft",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32064,
+      "max_output_tokens": 32064,
+      "description": null,
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "microsoft/phi-3.5-moe-instruct",
+      "canonical_id": "nvidia/microsoft/phi-3.5-moe-instruct",
+      "name": "phi 3.5 moe instruct",
+      "origin_provider": "microsoft",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "minimaxai/minimax-m3.1-flash",
+      "canonical_id": "nvidia/minimaxai/minimax-m3.1-flash",
+      "name": "minimax m3.1 flash",
+      "origin_provider": "minimaxai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "mistralai/codestral-22b-instruct-v0.1",
+      "canonical_id": "nvidia/mistralai/codestral-22b-instruct-v0.1",
+      "name": "codestral 22b instruct v0.1",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "canonical_id": "nvidia/mistralai/mistral-7b-instruct-v0.3",
+      "name": "mistral 7b instruct v0.3",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "mistralai/mistral-large",
+      "canonical_id": "nvidia/mistralai/mistral-large",
+      "name": "mistral large",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 16384,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "mistralai/mistral-large-2-instruct",
+      "canonical_id": "nvidia/mistralai/mistral-large-2-instruct",
+      "name": "mistral large 2 instruct",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "mistralai/mistral-large-4-1t-a52b",
+      "canonical_id": "nvidia/mistralai/mistral-large-4-1t-a52b",
+      "name": "mistral large 4 1t a52b",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "mistralai/mixtral-8x22b-v0.1",
+      "canonical_id": "nvidia/mistralai/mixtral-8x22b-v0.1",
+      "name": "mixtral 8x22b v0.1",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "moonshotai/kimi-k2.6",
+      "canonical_id": "nvidia/moonshotai/kimi-k2.6",
+      "name": "kimi k2.6",
+      "origin_provider": "moonshot",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nv-mistralai/mistral-nemo-12b-instruct",
+      "canonical_id": "nvidia/nv-mistralai/mistral-nemo-12b-instruct",
+      "name": "mistral nemo 12b instruct",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/ai-synthetic-video-detector",
+      "canonical_id": "nvidia/nvidia/ai-synthetic-video-detector",
+      "name": "ai synthetic video detector",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/cosmos-reason2-8b",
+      "canonical_id": "nvidia/nvidia/cosmos-reason2-8b",
+      "name": "cosmos reason2 8b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/embed-qa-4",
+      "canonical_id": "nvidia/nvidia/embed-qa-4",
+      "name": "embed qa 4",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/ising-calibration-1.5-31b",
+      "canonical_id": "nvidia/nvidia/ising-calibration-1.5-31b",
+      "name": "ising calibration 1.5 31b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "canonical_id": "nvidia/nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "name": "llama 3.1 nemoguard 8b content safety",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "canonical_id": "nvidia/nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "name": "llama 3.1 nemoguard 8b topic control",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.1-nemotron-51b-instruct",
+      "canonical_id": "nvidia/nvidia/llama-3.1-nemotron-51b-instruct",
+      "name": "llama 3.1 nemotron 51b instruct",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "canonical_id": "nvidia/nvidia/llama-3.1-nemotron-70b-instruct",
+      "name": "llama 3.1 nemotron 70b instruct",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "canonical_id": "nvidia/nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "name": "llama 3.1 nemotron safety guard 8b v3",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "canonical_id": "nvidia/nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "name": "llama 3.1 nemotron ultra 253b v1",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "canonical_id": "nvidia/nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "name": "llama 3.2 nemoretriever 1b vlm embed v1",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-3.2-nv-embedqa-1b-v1",
+      "canonical_id": "nvidia/nvidia/llama-3.2-nv-embedqa-1b-v1",
+      "name": "llama 3.2 nv embedqa 1b v1",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "canonical_id": "nvidia/nvidia/llama-nemotron-embed-vl-1b-v2",
+      "name": "llama nemotron embed vl 1b v2",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding",
+        "vision"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/llama3-chatqa-1.5-70b",
+      "canonical_id": "nvidia/nvidia/llama3-chatqa-1.5-70b",
+      "name": "llama3 chatqa 1.5 70b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+      "canonical_id": "nvidia/nvidia/mistral-nemo-minitron-8b-8k-instruct",
+      "name": "mistral nemo minitron 8b 8k instruct",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3-embed-1b",
+      "canonical_id": "nvidia/nvidia/nemotron-3-embed-1b",
+      "name": "nemotron 3 embed 1b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "canonical_id": "nvidia/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "name": "nemotron 3 nano omni 30b a3b reasoning",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3-super-120b-a12b",
+      "canonical_id": "nvidia/nvidia/nemotron-3-super-120b-a12b",
+      "name": "nemotron 3 super 120b a12b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "canonical_id": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "name": "nemotron 3 ultra 550b a55b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3.5-bolt-e4b",
+      "canonical_id": "nvidia/nvidia/nemotron-3.5-bolt-e4b",
+      "name": "nemotron 3.5 bolt e4b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "canonical_id": "nvidia/nvidia/nemotron-3.5-content-safety",
+      "name": "nemotron 3.5 content safety",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3.5-embed-1b",
+      "canonical_id": "nvidia/nvidia/nemotron-3.5-embed-1b",
+      "name": "nemotron 3.5 embed 1b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3.5-embed-8b",
+      "canonical_id": "nvidia/nvidia/nemotron-3.5-embed-8b",
+      "name": "nemotron 3.5 embed 8b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "canonical_id": "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "name": "nemotron 3.5 lightning 30b a3b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "canonical_id": "nvidia/nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "name": "nemotron 3.5 super vl 120b a12b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "vision",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-4-340b-instruct",
+      "canonical_id": "nvidia/nvidia/nemotron-4-340b-instruct",
+      "name": "nemotron 4 340b instruct",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-4-340b-reward",
+      "canonical_id": "nvidia/nvidia/nemotron-4-340b-reward",
+      "name": "nemotron 4 340b reward",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-nano-3-30b-a3b",
+      "canonical_id": "nvidia/nvidia/nemotron-nano-3-30b-a3b",
+      "name": "nemotron nano 3 30b a3b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-parse",
+      "canonical_id": "nvidia/nvidia/nemotron-parse",
+      "name": "nemotron parse",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nemotron-parse-2.0",
+      "canonical_id": "nvidia/nvidia/nemotron-parse-2.0",
+      "name": "nemotron parse 2.0",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/neva-22b",
+      "canonical_id": "nvidia/nvidia/neva-22b",
+      "name": "neva 22b",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nv-embedqa-mistral-7b-v2",
+      "canonical_id": "nvidia/nvidia/nv-embedqa-mistral-7b-v2",
+      "name": "nv embedqa mistral 7b v2",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/nvclip",
+      "canonical_id": "nvidia/nvidia/nvclip",
+      "name": "nvclip",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/riva-translate-4b-instruct",
+      "canonical_id": "nvidia/nvidia/riva-translate-4b-instruct",
+      "name": "riva translate 4b instruct",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/riva-translate-4b-instruct-v2",
+      "canonical_id": "nvidia/nvidia/riva-translate-4b-instruct-v2",
+      "name": "riva translate 4b instruct v2",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "nvidia/vila",
+      "canonical_id": "nvidia/nvidia/vila",
+      "name": "vila",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "openai/gpt-oss-20b",
+      "canonical_id": "nvidia/openai/gpt-oss-20b",
+      "name": "gpt oss 20b",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "poolside/laguna-xs-2.1",
+      "canonical_id": "nvidia/poolside/laguna-xs-2.1",
+      "name": "laguna xs 2.1",
+      "origin_provider": "poolside",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "snowflake/arctic-embed-l",
+      "canonical_id": "nvidia/snowflake/arctic-embed-l",
+      "name": "arctic embed l",
+      "origin_provider": "snowflake",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "stepfun-ai/step-5-preview",
+      "canonical_id": "nvidia/stepfun-ai/step-5-preview",
+      "name": "step 5 preview",
+      "origin_provider": "stepfun-ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "writer/palmyra-creative-122b",
+      "canonical_id": "nvidia/writer/palmyra-creative-122b",
+      "name": "palmyra creative 122b",
+      "origin_provider": "writer",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "writer/palmyra-fin-70b-32k",
+      "canonical_id": "nvidia/writer/palmyra-fin-70b-32k",
+      "name": "palmyra fin 70b 32k",
+      "origin_provider": "writer",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "writer/palmyra-med-70b",
+      "canonical_id": "nvidia/writer/palmyra-med-70b",
+      "name": "palmyra med 70b",
+      "origin_provider": "writer",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "writer/palmyra-med-70b-32k",
+      "canonical_id": "nvidia/writer/palmyra-med-70b-32k",
+      "name": "palmyra med 70b 32k",
+      "origin_provider": "writer",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "z-ai/glm-5.3-flash",
+      "canonical_id": "nvidia/z-ai/glm-5.3-flash",
+      "name": "glm 5.3 flash",
+      "origin_provider": "z-ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": null,
+      "tags": [
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nvidia",
+      "id": "zyphra/zamba2-7b-instruct",
+      "canonical_id": "nvidia/zyphra/zamba2-7b-instruct",
+      "name": "zamba2 7b instruct",
+      "origin_provider": "zyphra",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
       "provider_id": "openai",
       "id": "chat-latest",
       "canonical_id": "openai/chat-latest",
@@ -16885,7 +20464,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": 393216,
+      "max_output_tokens": 384000,
       "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
       "tags": [
         "vision",
@@ -30397,52 +33976,6 @@
     },
     {
       "provider_id": "openrouter",
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "canonical_id": "openrouter/qwen/qwen3-vl-30b-a3b-thinking",
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-      "origin_provider": "qwen",
-      "inputs": [
-        "text",
-        "image"
-      ],
-      "outputs": [
-        "text"
-      ],
-      "capabilities": {
-        "vision": true,
-        "functionCalling": true,
-        "webSearch": false,
-        "codeExecution": false,
-        "realtime": false,
-        "videoReasoning": false,
-        "fileInput": false,
-        "supportsStreaming": true,
-        "supportsSystemPrompt": true,
-        "reasoning": {
-          "supported": true,
-          "type": "fixed",
-          "effort_levels": null,
-          "budget_tokens": null,
-          "can_toggle_off": false,
-          "default_state": "enabled"
-        }
-      },
-      "image_options": null,
-      "tts_options": null,
-      "video_options": null,
-      "context_length": 262144,
-      "max_output_tokens": 235929,
-      "description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels...",
-      "tags": [
-        "vision",
-        "reasoning",
-        "tools",
-        "chat"
-      ],
-      "is_deprecated": true
-    },
-    {
-      "provider_id": "openrouter",
       "id": "qwen/qwen3-vl-8b-instruct",
       "canonical_id": "openrouter/qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
@@ -32336,50 +35869,6 @@
     },
     {
       "provider_id": "openrouter",
-      "id": "stepfun/step-3.5-flash",
-      "canonical_id": "openrouter/stepfun/step-3.5-flash",
-      "name": "StepFun: Step 3.5 Flash",
-      "origin_provider": "stepfun",
-      "inputs": [
-        "text"
-      ],
-      "outputs": [
-        "text"
-      ],
-      "capabilities": {
-        "vision": false,
-        "functionCalling": true,
-        "webSearch": false,
-        "codeExecution": false,
-        "realtime": false,
-        "videoReasoning": false,
-        "fileInput": false,
-        "supportsStreaming": true,
-        "supportsSystemPrompt": true,
-        "reasoning": {
-          "supported": true,
-          "type": "fixed",
-          "effort_levels": null,
-          "budget_tokens": null,
-          "can_toggle_off": false,
-          "default_state": "enabled"
-        }
-      },
-      "image_options": null,
-      "tts_options": null,
-      "video_options": null,
-      "context_length": 262144,
-      "max_output_tokens": 65536,
-      "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token....",
-      "tags": [
-        "reasoning",
-        "tools",
-        "chat"
-      ],
-      "is_deprecated": true
-    },
-    {
-      "provider_id": "openrouter",
       "id": "stepfun/step-3.7-flash",
       "canonical_id": "openrouter/stepfun/step-3.7-flash",
       "name": "StepFun: Step 3.7 Flash",
@@ -32479,49 +35968,6 @@
         "chat"
       ],
       "is_deprecated": false
-    },
-    {
-      "provider_id": "openrouter",
-      "id": "tencent/hunyuan-a13b-instruct",
-      "canonical_id": "openrouter/tencent/hunyuan-a13b-instruct",
-      "name": "Tencent: Hunyuan A13B Instruct",
-      "origin_provider": "tencent",
-      "inputs": [
-        "text"
-      ],
-      "outputs": [
-        "text"
-      ],
-      "capabilities": {
-        "vision": false,
-        "functionCalling": false,
-        "webSearch": false,
-        "codeExecution": false,
-        "realtime": false,
-        "videoReasoning": false,
-        "fileInput": false,
-        "supportsStreaming": true,
-        "supportsSystemPrompt": true,
-        "reasoning": {
-          "supported": true,
-          "type": "toggle",
-          "effort_levels": null,
-          "budget_tokens": null,
-          "can_toggle_off": true,
-          "default_state": "disabled"
-        }
-      },
-      "image_options": null,
-      "tts_options": null,
-      "video_options": null,
-      "context_length": 131072,
-      "max_output_tokens": 117964,
-      "description": "Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total parameter count of 80B and support for reasoning via Chain-of-Thought. It offers competitive benchmark...",
-      "tags": [
-        "reasoning",
-        "chat"
-      ],
-      "is_deprecated": true
     },
     {
       "provider_id": "openrouter",
@@ -35199,7 +38645,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": 943718,
+      "max_output_tokens": 131072,
       "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
       "tags": [
         "reasoning",
