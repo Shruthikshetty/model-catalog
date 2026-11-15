@@ -14,6 +14,7 @@ const EnvSchema = z.object({
   GROQ_API_KEY: z.string().min(1),
   TOGETHER_API_KEY: z.string().min(1),
   FIREWORKS_API_KEY: z.string().min(1),
+  MISTRAL_API_KEY: z.string().min(1),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;

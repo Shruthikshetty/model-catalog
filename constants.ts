@@ -14,4 +14,5 @@ export const URL = {
   TOGETHER_MODELS: "https://api.together.ai/v1/models",
   FIREWORKS_MODELS: "https://api.fireworks.ai/inference/v1/models",
   POE_MODELS: "https://api.poe.com/v1/models",
+  MISTRAL_MODELS: "https://api.mistral.ai/v1/models",
 } as const;

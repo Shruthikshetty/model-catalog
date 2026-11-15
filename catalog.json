@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T08:30:43.765Z",
-  "total_models": 1620,
+  "updated_at": "2026-11-15T11:47:35.060Z",
+  "total_models": 1673,
   "models": [
     {
       "provider_id": "fireworks",
@@ -4838,6 +4838,2418 @@
       "is_deprecated": false
     },
     {
+      "provider_id": "mistral",
+      "id": "codestral-2508",
+      "canonical_id": "mistral/codestral-2508",
+      "name": "codestral-2508",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 128000,
+      "description": "Our cutting-edge language model for coding released August 2025.",
+      "tags": [
+        "tools",
+        "code",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "codestral-embed",
+      "canonical_id": "mistral/codestral-embed",
+      "name": "codestral-embed",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": "Our state-of-the-art embedding model for semantically understanding code released in May 2025.",
+      "tags": [
+        "embedding",
+        "code"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "codestral-embed-2505",
+      "canonical_id": "mistral/codestral-embed-2505",
+      "name": "codestral-embed",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": "Our state-of-the-art embedding model for semantically understanding code released in May 2025.",
+      "tags": [
+        "embedding",
+        "code"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "codestral-latest",
+      "canonical_id": "mistral/codestral-latest",
+      "name": "codestral-2508",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 128000,
+      "description": "Our cutting-edge language model for coding released August 2025.",
+      "tags": [
+        "tools",
+        "code",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "labs-leanstral-1-5",
+      "canonical_id": "mistral/labs-leanstral-1-5",
+      "name": "labs-leanstral-1-5-1",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 131072,
+      "description": "A mid & post-trained version of mistral small 4 for Lean (260618 SFT)",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "mistral",
+      "id": "labs-leanstral-1-5-1",
+      "canonical_id": "mistral/labs-leanstral-1-5-1",
+      "name": "labs-leanstral-1-5-1",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 131072,
+      "description": "A mid & post-trained version of mistral small 4 for Lean (260618 SFT)",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "magistral-medium-latest",
+      "canonical_id": "mistral/magistral-medium-latest",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "magistral-small-latest",
+      "canonical_id": "mistral/magistral-small-latest",
+      "name": "mistral-small-2603",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Mistral Small 4.",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "ministral-14b-2512",
+      "canonical_id": "mistral/ministral-14b-2512",
+      "name": "ministral-14b-2512",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Ministral 3 (a.k.a. Tinystral) 14B Instruct.",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "ministral-14b-latest",
+      "canonical_id": "mistral/ministral-14b-latest",
+      "name": "ministral-14b-2512",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Ministral 3 (a.k.a. Tinystral) 14B Instruct.",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "ministral-3b-2512",
+      "canonical_id": "mistral/ministral-3b-2512",
+      "name": "ministral-3b-2512",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 131072,
+      "description": "Ministral 3 (a.k.a. Tinystral) 3B Instruct.",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "ministral-3b-latest",
+      "canonical_id": "mistral/ministral-3b-latest",
+      "name": "ministral-3b-2512",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131072,
+      "max_output_tokens": 131072,
+      "description": "Ministral 3 (a.k.a. Tinystral) 3B Instruct.",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "ministral-8b-2512",
+      "canonical_id": "mistral/ministral-8b-2512",
+      "name": "ministral-8b-2512",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Ministral 3 (a.k.a. Tinystral) 8B Instruct.",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "ministral-8b-latest",
+      "canonical_id": "mistral/ministral-8b-latest",
+      "name": "ministral-8b-2512",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Ministral 3 (a.k.a. Tinystral) 8B Instruct.",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-code-fim-latest",
+      "canonical_id": "mistral/mistral-code-fim-latest",
+      "name": "codestral-2508",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 128000,
+      "description": "Our cutting-edge language model for coding released August 2025.",
+      "tags": [
+        "tools",
+        "code",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-code-latest",
+      "canonical_id": "mistral/mistral-code-latest",
+      "name": "codestral-2508",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 128000,
+      "description": "Our cutting-edge language model for coding released August 2025.",
+      "tags": [
+        "tools",
+        "code",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-embed",
+      "canonical_id": "mistral/mistral-embed",
+      "name": "mistral-embed-2312",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": "Official mistral-embed-2312 Mistral model",
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-embed-2312",
+      "canonical_id": "mistral/mistral-embed-2312",
+      "name": "mistral-embed-2312",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "embedding"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 8192,
+      "max_output_tokens": null,
+      "description": "Official mistral-embed-2312 Mistral model",
+      "tags": [
+        "embedding"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-medium",
+      "canonical_id": "mistral/mistral-medium",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-medium-2604",
+      "canonical_id": "mistral/mistral-medium-2604",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-medium-3",
+      "canonical_id": "mistral/mistral-medium-3",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-medium-3-5",
+      "canonical_id": "mistral/mistral-medium-3-5",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-medium-3.5",
+      "canonical_id": "mistral/mistral-medium-3.5",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-medium-latest",
+      "canonical_id": "mistral/mistral-medium-latest",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-moderation-2603",
+      "canonical_id": "mistral/mistral-moderation-2603",
+      "name": "mistral-moderation-2603",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 131071,
+      "max_output_tokens": null,
+      "description": "Official mistral-moderation-2603 Mistral model",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-ocr-2512",
+      "canonical_id": "mistral/mistral-ocr-2512",
+      "name": "Mistral OCR 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Mistral OCR 3.0 Mistral model",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-ocr-3",
+      "canonical_id": "mistral/mistral-ocr-3",
+      "name": "Mistral OCR 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Mistral OCR 3.0 Mistral model",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-ocr-3-0",
+      "canonical_id": "mistral/mistral-ocr-3-0",
+      "name": "Mistral OCR 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Mistral OCR 3.0 Mistral model",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-ocr-4",
+      "canonical_id": "mistral/mistral-ocr-4",
+      "name": "Mistral OCR 4.1",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Mistral OCR 4.1 Mistral model",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-ocr-4-1",
+      "canonical_id": "mistral/mistral-ocr-4-1",
+      "name": "Mistral OCR 4.1",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Mistral OCR 4.1 Mistral model",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-ocr-latest",
+      "canonical_id": "mistral/mistral-ocr-latest",
+      "name": "Mistral OCR 4.1",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Mistral OCR 4.1 Mistral model",
+      "tags": [
+        "vision",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-small-2603",
+      "canonical_id": "mistral/mistral-small-2603",
+      "name": "mistral-small-2603",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Mistral Small 4.",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-small-latest",
+      "canonical_id": "mistral/mistral-small-latest",
+      "name": "mistral-small-2603",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Mistral Small 4.",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-vibe-cli-fast",
+      "canonical_id": "mistral/mistral-vibe-cli-fast",
+      "name": "mistral-small-2603",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Mistral Small 4.",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-vibe-cli-latest",
+      "canonical_id": "mistral/mistral-vibe-cli-latest",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "mistral-vibe-cli-with-tools",
+      "canonical_id": "mistral/mistral-vibe-cli-with-tools",
+      "name": "mistral-medium-latest",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Official mistral-medium-latest Mistral model",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-2602",
+      "canonical_id": "mistral/voxtral-mini-2602",
+      "name": "Voxtral Mini Transcribe",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Voxtral Mini Transcribe Mistral model",
+      "tags": [
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-latest",
+      "canonical_id": "mistral/voxtral-mini-latest",
+      "name": "Voxtral Mini Transcribe",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 16384,
+      "max_output_tokens": null,
+      "description": "Official Voxtral Mini Transcribe Mistral model",
+      "tags": [
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-realtime-2602",
+      "canonical_id": "mistral/voxtral-mini-realtime-2602",
+      "name": "Voxtral Mini Transcribe Realtime",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": null,
+      "description": "A realtime transcription model released in January 2026",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-realtime-latest",
+      "canonical_id": "mistral/voxtral-mini-realtime-latest",
+      "name": "Voxtral Mini Transcribe Realtime",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": null,
+      "description": "A realtime transcription model released in January 2026",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-transcribe-3",
+      "canonical_id": "mistral/voxtral-mini-transcribe-3",
+      "name": "Voxtral Mini Transcribe 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": null,
+      "description": "Fast, cost-effective transcription with diarization in 40+ languages - ideal for high-volume audio processing at scale.",
+      "tags": [
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-transcribe-3-0",
+      "canonical_id": "mistral/voxtral-mini-transcribe-3-0",
+      "name": "Voxtral Mini Transcribe 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": null,
+      "description": "Fast, cost-effective transcription with diarization in 40+ languages - ideal for high-volume audio processing at scale.",
+      "tags": [
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-transcribe-realtime-2602",
+      "canonical_id": "mistral/voxtral-mini-transcribe-realtime-2602",
+      "name": "Voxtral Mini Transcribe Realtime",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": null,
+      "description": "A realtime transcription model released in January 2026",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-transcribe-realtime-3",
+      "canonical_id": "mistral/voxtral-mini-transcribe-realtime-3",
+      "name": "Voxtral Mini Transcribe Realtime 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": null,
+      "description": "Fast, cost-effective streaming transcription with diarization in 40+ languages - ideal for high-volume audio processing at scale.",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-transcribe-realtime-3-0",
+      "canonical_id": "mistral/voxtral-mini-transcribe-realtime-3-0",
+      "name": "Voxtral Mini Transcribe Realtime 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": true,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": null,
+      "description": "Fast, cost-effective streaming transcription with diarization in 40+ languages - ideal for high-volume audio processing at scale.",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-tts-2603",
+      "canonical_id": "mistral/voxtral-mini-tts-2603",
+      "name": "Voxtral Mini TTS",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": null,
+      "description": "Official Text-to-Speech model",
+      "tags": [
+        "tools",
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-tts-3",
+      "canonical_id": "mistral/voxtral-mini-tts-3",
+      "name": "Voxtral Mini TTS 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": null,
+      "description": "Text-to-speech model that generates natural, expressive speech with controllable emotion and pace in 35+ languages and 50+ dialects.",
+      "tags": [
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-tts-3-0",
+      "canonical_id": "mistral/voxtral-mini-tts-3-0",
+      "name": "Voxtral Mini TTS 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": null,
+      "description": "Text-to-speech model that generates natural, expressive speech with controllable emotion and pace in 35+ languages and 50+ dialects.",
+      "tags": [
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-mini-tts-latest",
+      "canonical_id": "mistral/voxtral-mini-tts-latest",
+      "name": "Voxtral Mini TTS",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 4096,
+      "max_output_tokens": null,
+      "description": "Official Text-to-Speech model",
+      "tags": [
+        "tools",
+        "audio"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-small-2507",
+      "canonical_id": "mistral/voxtral-small-2507",
+      "name": "Voxtral Small Transcribe",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": "A small audio understanding model released in July 2025",
+      "tags": [
+        "tools",
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-small-latest",
+      "canonical_id": "mistral/voxtral-small-latest",
+      "name": "Voxtral Small Transcribe",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 32768,
+      "max_output_tokens": 32768,
+      "description": "A small audio understanding model released in July 2025",
+      "tags": [
+        "tools",
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-small-transcribe-3",
+      "canonical_id": "mistral/voxtral-small-transcribe-3",
+      "name": "Voxtral Small Transcribe 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": null,
+      "description": "Our most accurate transcription model, with state-of-the-art multilingual transcription, diarization and context-biasing in 40+ languages.",
+      "tags": [
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "mistral",
+      "id": "voxtral-small-transcribe-3-0",
+      "canonical_id": "mistral/voxtral-small-transcribe-3-0",
+      "name": "Voxtral Small Transcribe 3.0",
+      "origin_provider": "mistralai",
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": false,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 65536,
+      "max_output_tokens": null,
+      "description": "Our most accurate transcription model, with state-of-the-art multilingual transcription, diarization and context-biasing in 40+ languages.",
+      "tags": [
+        "audio",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
       "provider_id": "openai",
       "id": "chat-latest",
       "canonical_id": "openai/chat-latest",
@@ -8325,7 +10737,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": 943718,
+      "max_output_tokens": 384000,
       "description": "This model always redirects to the latest model in the DeepSeek Flash family.",
       "tags": [
         "vision",
@@ -12245,7 +14657,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": 384000,
+      "max_output_tokens": 943718,
       "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
       "tags": [
         "reasoning",
@@ -12543,7 +14955,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1048576,
-      "max_output_tokens": 393216,
+      "max_output_tokens": 384000,
       "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
       "tags": [
         "vision",
