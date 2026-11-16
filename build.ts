@@ -19,6 +19,7 @@ import { getOpenCodeCatalog } from "./providers/opencode";
 import { getAnthropicCatalog } from "./providers/anthropic";
 import { getNoKeepCatalog } from "./providers/nokeep";
 import { getNanoGptCatalog } from "./providers/nanogpt";
+import { getVertexCatalog } from "./providers/vertex";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -44,6 +45,7 @@ const PROVIDERS = [
   { name: "Anthropic", fetcher: getAnthropicCatalog },
   { name: "NoKeep", fetcher: getNoKeepCatalog },
   { name: "NanoGPT", fetcher: getNanoGptCatalog },
+  { name: "Google Vertex AI", fetcher: getVertexCatalog },
 ];
 
 // functions ---------------------------------
