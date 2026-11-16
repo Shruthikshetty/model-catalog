@@ -72,10 +72,10 @@ async function buildCatalog(): Promise<void> {
 
   const models: CatalogModel[] = results.flat();
 
-  // Sort deterministically by provider_id, then id
+  // Sort deterministically by providerId, then id
   models.sort((a, b) => {
-    if (a.provider_id !== b.provider_id) {
-      return a.provider_id.localeCompare(b.provider_id);
+    if (a.providerId !== b.providerId) {
+      return a.providerId.localeCompare(b.providerId);
     }
     return a.id.localeCompare(b.id);
   });
@@ -83,8 +83,8 @@ async function buildCatalog(): Promise<void> {
   // Construct root catalog container
   const rawCatalog = {
     version: 1,
-    updated_at: new Date().toISOString(),
-    total_models: models.length,
+    updatedAt: new Date().toISOString(),
+    totalModels: models.length,
     models,
   };
 
@@ -95,7 +95,7 @@ async function buildCatalog(): Promise<void> {
   await Bun.write(OUTPUT_PATH, JSON.stringify(catalog, null, 2));
 
   console.log(
-    `Successfully generated ${OUTPUT_PATH} with ${catalog.total_models} models!`,
+    `Successfully generated ${OUTPUT_PATH} with ${catalog.totalModels} models!`,
   );
 }
 

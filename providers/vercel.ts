@@ -185,11 +185,11 @@ export async function getVercelCatalog(): Promise<CatalogModel[]> {
     const originProvider = raw.owned_by || modelId.split("/")[0] || "unknown";
 
     const catalogModel: CatalogModel = {
-      provider_id: "vercel",
+      providerId: "vercel",
       id: modelId,
-      canonical_id: `vercel/${modelId}`,
+      canonicalId: `vercel/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: originProvider,
+      originProvider: originProvider,
       inputs,
       outputs,
       capabilities: {
@@ -205,20 +205,20 @@ export async function getVercelCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: reasoningType,
-          effort_levels: effortLevels,
-          budget_tokens: budgetTokens,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: effortLevels,
+          budgetTokens: budgetTokens,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length: raw.context_window ?? null,
-      max_output_tokens: raw.max_tokens ?? null,
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength: raw.context_window ?? null,
+      maxOutputTokens: raw.max_tokens ?? null,
       description: raw.description || null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     const validated = CatalogModelSchema.parse(catalogModel);

@@ -142,11 +142,11 @@ export async function getNinjaChatCatalog(): Promise<CatalogModel[]> {
       null;
 
     const catalogModel: CatalogModel = {
-      provider_id: "ninjachat",
+      providerId: "ninjachat",
       id: modelId,
-      canonical_id: `ninjachat/${modelId}`,
+      canonicalId: `ninjachat/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: raw.owned_by?.toLowerCase().trim() || "ninjachat",
+      originProvider: raw.owned_by?.toLowerCase().trim() || "ninjachat",
       inputs,
       outputs,
       capabilities: {
@@ -162,20 +162,20 @@ export async function getNinjaChatCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? (hasReasoningEffort ? "effort" : "toggle") : null,
-          effort_levels: isReasoning && hasReasoningEffort ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning && hasReasoningEffort ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length: contextLength,
-      max_output_tokens: maxOutputTokens,
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength: contextLength,
+      maxOutputTokens: maxOutputTokens,
       description: raw.description || null,
       tags,
-      is_deprecated: raw.status === "deprecated",
+      isDeprecated: raw.status === "deprecated",
     };
 
     catalogModels.push(catalogModel);

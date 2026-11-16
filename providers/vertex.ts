@@ -176,11 +176,11 @@ export async function getVertexCatalog(): Promise<CatalogModel[]> {
     if (outputs.includes("image")) {
       imageOptions = {
         sizes: ["1024x1024"],
-        aspect_ratios: ["1:1", "3:4", "4:3", "9:16", "16:9"],
+        aspectRatios: ["1:1", "3:4", "4:3", "9:16", "16:9"],
         qualities: ["standard"],
         styles: null,
-        supports_seed: true,
-        provider_param_key: "google",
+        supportsSeed: true,
+        providerParamKey: "google",
       };
     }
 
@@ -197,11 +197,11 @@ export async function getVertexCatalog(): Promise<CatalogModel[]> {
     }
 
     const catalogModel: CatalogModel = {
-      provider_id: "google-vertex",
+      providerId: "google-vertex",
       id: raw.id,
-      canonical_id: `google-vertex/${raw.id}`,
+      canonicalId: `google-vertex/${raw.id}`,
       name: raw.name,
-      origin_provider: "google",
+      originProvider: "google",
       inputs,
       outputs,
       capabilities: {
@@ -217,20 +217,20 @@ export async function getVertexCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "budget" : null,
-          effort_levels: null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: imageOptions,
-      tts_options: ttsOptions,
-      video_options: null,
-      context_length: lite?.max_input_tokens ?? lite?.max_tokens ?? 1048576,
-      max_output_tokens: lite?.max_output_tokens ?? 65536,
+      imageOptions: imageOptions,
+      ttsOptions: ttsOptions,
+      videoOptions: null,
+      contextLength: lite?.max_input_tokens ?? lite?.max_tokens ?? 1048576,
+      maxOutputTokens: lite?.max_output_tokens ?? 65536,
       description: null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

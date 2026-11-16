@@ -142,11 +142,11 @@ export async function getMistralCatalog(): Promise<CatalogModel[]> {
     if (!isEmbedding && !isAudioOutput) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "mistral",
+      providerId: "mistral",
       id: modelId,
-      canonical_id: `mistral/${modelId}`,
+      canonicalId: `mistral/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: raw.owned_by?.toLowerCase().trim() || "mistral",
+      originProvider: raw.owned_by?.toLowerCase().trim() || "mistral",
       inputs,
       outputs,
       capabilities: {
@@ -162,24 +162,24 @@ export async function getMistralCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.max_context_length ??
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: raw.description ?? null,
       tags,
-      is_deprecated: Boolean(
+      isDeprecated: Boolean(
         (raw.deprecation && new Date(raw.deprecation) <= new Date()) ||
           (lite?.deprecation_date && new Date(lite.deprecation_date) <= new Date()),
       ),

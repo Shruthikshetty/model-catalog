@@ -190,11 +190,11 @@ export async function getAnthropicCatalog(): Promise<CatalogModel[]> {
       null;
 
     const catalogModel: CatalogModel = {
-      provider_id: "anthropic",
+      providerId: "anthropic",
       id: modelId,
-      canonical_id: `anthropic/${modelId}`,
+      canonicalId: `anthropic/${modelId}`,
       name: raw.display_name || cleanDisplayName(modelId),
-      origin_provider: "anthropic",
+      originProvider: "anthropic",
       inputs,
       outputs,
       capabilities: {
@@ -210,20 +210,20 @@ export async function getAnthropicCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? (hasEffort ? "effort" : "budget") : null,
-          effort_levels: effortLevels.length > 0 ? effortLevels : (isReasoning ? ["low", "medium", "high"] : null),
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: effortLevels.length > 0 ? effortLevels : (isReasoning ? ["low", "medium", "high"] : null),
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length: contextLength,
-      max_output_tokens: maxOutputTokens,
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength: contextLength,
+      maxOutputTokens: maxOutputTokens,
       description: null,
       tags,
-      is_deprecated: isDeprecated,
+      isDeprecated: isDeprecated,
     };
 
     catalogModels.push(catalogModel);

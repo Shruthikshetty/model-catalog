@@ -117,11 +117,11 @@ export async function getNvidiaCatalog(): Promise<CatalogModel[]> {
     if (!isEmbedding) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "nvidia",
+      providerId: "nvidia",
       id: modelId,
-      canonical_id: `nvidia/${modelId}`,
+      canonicalId: `nvidia/${modelId}`,
       name: cleanDisplayName(modelId),
-      origin_provider: extractOrigin(raw.owned_by, modelId),
+      originProvider: extractOrigin(raw.owned_by, modelId),
       inputs,
       outputs,
       capabilities: {
@@ -137,23 +137,23 @@ export async function getNvidiaCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

@@ -14,7 +14,7 @@
 ## 🚀 How It Works
 
 1. **Provider Extraction**: Discovers canonical models directly from AI provider APIs (OpenAI, xAI, Google AI Studio, Vercel AI Gateway, OpenRouter, Groq, Together AI, Fireworks AI, Poe, Mistral AI, Cerebras, ElevenLabs, NVIDIA NIM, Cohere, Alibaba DashScope, NinjaChat, OpenCode, Anthropic, NoKeep, NanoGPT, Google Vertex AI, etc.).
-2. **Metadata Hydration**: Enriches models with token limits (`context_length`, `max_output_tokens`) and capability flags (`vision`, `functionCalling`, `reasoning`) from verified reference registries.
+2. **Metadata Hydration**: Enriches models with token limits (`contextLength`, `maxOutputTokens`) and capability flags (`vision`, `functionCalling`, `reasoning`) from verified reference registries.
 3. **Multimodal Configurations**: Standardizes feature options for image generation (dimensions, aspect ratios, qualities) and text-to-speech (voices, audio formats).
 4. **Zod Validation**: Validates every entry against strict type schemas defined in `types.ts`.
 5. **Static Distribution**: Generates a single, lightweight `catalog.json` and deploys to GitHub Pages for instant consumption by web, desktop, and mobile applications.

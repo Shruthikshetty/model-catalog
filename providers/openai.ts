@@ -64,11 +64,11 @@ export const OPENAI_TTS_FORMATS = ["mp3", "opus", "aac", "flac", "wav", "pcm"];
 // API Reference: https://platform.openai.com/docs/api-reference/images/create
 export const OPENAI_IMAGE_OPTIONS: ImageOptions = {
   sizes: ["1024x1024", "1024x1792", "1792x1024", "512x512", "256x256"],
-  aspect_ratios: ["1:1", "9:16", "16:9"],
+  aspectRatios: ["1:1", "9:16", "16:9"],
   qualities: ["standard", "hd"],
   styles: ["vivid", "natural"],
-  supports_seed: false,
-  provider_param_key: "openai",
+  supportsSeed: false,
+  providerParamKey: "openai",
 };
 
 export const OPENAI_TTS_OPTIONS: TtsOptions = {
@@ -182,11 +182,11 @@ export async function getOpenAiCatalog(): Promise<CatalogModel[]> {
     if (!isImage && !isTts && !isEmbedding && !isWhisper) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "openai",
+      providerId: "openai",
       id: modelId,
-      canonical_id: `openai/${modelId}`,
+      canonicalId: `openai/${modelId}`,
       name: cleanDisplayName(modelId),
-      origin_provider: "openai",
+      originProvider: "openai",
       inputs,
       outputs,
       capabilities: {
@@ -202,20 +202,20 @@ export async function getOpenAiCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: false,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: false,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: isImage ? OPENAI_IMAGE_OPTIONS : null,
-      tts_options: isTts ? OPENAI_TTS_OPTIONS : null,
-      video_options: null,
-      context_length: lite?.max_input_tokens ?? lite?.max_tokens ?? null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      imageOptions: isImage ? OPENAI_IMAGE_OPTIONS : null,
+      ttsOptions: isTts ? OPENAI_TTS_OPTIONS : null,
+      videoOptions: null,
+      contextLength: lite?.max_input_tokens ?? lite?.max_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: lite?.deprecation_date
+      isDeprecated: lite?.deprecation_date
         ? new Date(lite.deprecation_date) <= new Date()
         : false,
     };

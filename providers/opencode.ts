@@ -131,11 +131,11 @@ export async function getOpenCodeCatalog(): Promise<CatalogModel[]> {
     const maxOutputTokens = raw.limit?.output ?? null;
 
     const catalogModel: CatalogModel = {
-      provider_id: "opencode",
+      providerId: "opencode",
       id: modelId,
-      canonical_id: `opencode/${modelId}`,
+      canonicalId: `opencode/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: originProvider,
+      originProvider: originProvider,
       inputs,
       outputs,
       capabilities: {
@@ -151,20 +151,20 @@ export async function getOpenCodeCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? (hasEffortUpdates ? "effort" : "toggle") : null,
-          effort_levels: isReasoning && hasEffortUpdates ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning && hasEffortUpdates ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length: contextLength,
-      max_output_tokens: maxOutputTokens,
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength: contextLength,
+      maxOutputTokens: maxOutputTokens,
       description: raw.description || null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

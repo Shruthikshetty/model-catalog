@@ -35,8 +35,8 @@ export const ReasoningEffortLevelSchema = z.enum([
 export const ReasoningConfigSchema = z.object({
   supported: z.boolean().default(false),
   type: ReasoningTypeSchema.nullable().default(null),
-  effort_levels: z.array(ReasoningEffortLevelSchema).nullable().default(null), // ["low", "medium", "high"]
-  budget_tokens: z
+  effortLevels: z.array(ReasoningEffortLevelSchema).nullable().default(null), // ["low", "medium", "high"]
+  budgetTokens: z
     .object({
       min: z.number(),
       max: z.number(),
@@ -44,8 +44,8 @@ export const ReasoningConfigSchema = z.object({
     })
     .nullable()
     .default(null),
-  can_toggle_off: z.boolean().default(true),
-  default_state: z.enum(["enabled", "disabled"]).default("disabled"),
+  canToggleOff: z.boolean().default(true),
+  defaultState: z.enum(["enabled", "disabled"]).default("disabled"),
 });
 
 // Model Capabilities
@@ -64,21 +64,21 @@ export const ModelCapabilitiesSchema = z.object({
   reasoning: ReasoningConfigSchema.default({
     supported: false,
     type: null,
-    effort_levels: null,
-    budget_tokens: null,
-    can_toggle_off: true,
-    default_state: "disabled",
+    effortLevels: null,
+    budgetTokens: null,
+    canToggleOff: true,
+    defaultState: "disabled",
   }),
 });
 
 // Image Generation (DALL-E, Flux, etc.)
 export const ImageOptionsSchema = z.object({
   sizes: z.array(z.string()).default([]), // ["1024x1024", "1024x1792"]
-  aspect_ratios: z.array(z.string()).nullable().default(null), // ["1:1", "16:9"]
+  aspectRatios: z.array(z.string()).nullable().default(null), // ["1:1", "16:9"]
   qualities: z.array(z.string()).nullable().default(null), // ["standard", "hd"]
   styles: z.array(z.string()).nullable().default(null), // ["vivid", "natural"] for DALL-E 3
-  supports_seed: z.boolean().default(false),
-  provider_param_key: z.string(),
+  supportsSeed: z.boolean().default(false),
+  providerParamKey: z.string(),
 });
 
 // TTS (Text-to-Speech)
@@ -103,40 +103,40 @@ export const TtsOptionsSchema = z.object({
 // Video Generation
 export const VideoOptionsSchema = z.object({
   durations: z.array(z.number()), // [5, 10]
-  aspect_ratios: z.array(z.string()), // ["16:9", "9:16"]
+  aspectRatios: z.array(z.string()), // ["16:9", "9:16"]
   resolutions: z.array(z.string()), // ["720p", "1080p"]
-  default_duration: z.number().default(5),
-  default_aspect_ratio: z.string().default("16:9"),
-  default_resolution: z.string().default("720p"),
+  defaultDuration: z.number().default(5),
+  defaultAspectRatio: z.string().default("16:9"),
+  defaultResolution: z.string().default("720p"),
 });
 
 // the model schema
 export const CatalogModelSchema = z.object({
-  provider_id: z.string(), // "openai", "xai", "google", etc.
+  providerId: z.string(), // "openai", "xai", "google", etc.
   id: z.string(), // Exact ID sent in API request: "gpt-4o", "grok-2"
-  canonical_id: z.string(), // Unified ID: "openai/gpt-4o", "xai/grok-2"
+  canonicalId: z.string(), // Unified ID: "openai/gpt-4o", "xai/grok-2"
   name: z.string(), // Clean display name: "GPT-4o"
-  origin_provider: z.string(), // Origin family: "openai" (even when accessed via OpenRouter)
+  originProvider: z.string(), // Origin family: "openai" (even when accessed via OpenRouter)
   inputs: z.array(ModalitySchema).default(["text"]),
   outputs: z.array(ModalitySchema).default(["text"]),
   capabilities: ModelCapabilitiesSchema,
   // Specialized feature configs (null if model doesn't support that modality)
-  image_options: ImageOptionsSchema.nullable().default(null),
-  tts_options: TtsOptionsSchema.nullable().default(null),
-  video_options: VideoOptionsSchema.nullable().default(null),
+  imageOptions: ImageOptionsSchema.nullable().default(null),
+  ttsOptions: TtsOptionsSchema.nullable().default(null),
+  videoOptions: VideoOptionsSchema.nullable().default(null),
   // Token Limits
-  context_length: z.number().int().nullable().default(null), // Max input window
-  max_output_tokens: z.number().int().nullable().default(null), // Max generation limit
+  contextLength: z.number().int().nullable().default(null), // Max input window
+  maxOutputTokens: z.number().int().nullable().default(null), // Max generation limit
   description: z.string().nullable().default(null),
   tags: z.array(z.string()).default([]),
-  is_deprecated: z.boolean().default(false),
+  isDeprecated: z.boolean().default(false),
 });
 
 // The Generated File Container (catalog.json)
 export const CatalogSchema = z.object({
   version: z.number().default(1),
-  updated_at: z.string(),
-  total_models: z.number(),
+  updatedAt: z.string(),
+  totalModels: z.number(),
   models: z.array(CatalogModelSchema),
 });
 

@@ -127,11 +127,11 @@ export async function getFireworksCatalog(): Promise<CatalogModel[]> {
     }
 
     const catalogModel: CatalogModel = {
-      provider_id: "fireworks",
+      providerId: "fireworks",
       id: modelId,
-      canonical_id: `fireworks/${modelId}`,
+      canonicalId: `fireworks/${modelId}`,
       name: cleanDisplayName(slug),
-      origin_provider: extractOriginProvider(slug, lite?.litellm_provider),
+      originProvider: extractOriginProvider(slug, lite?.litellm_provider),
       inputs,
       outputs,
       capabilities: {
@@ -147,24 +147,24 @@ export async function getFireworksCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: false,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: false,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.context_length ??
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: lite?.deprecation_date
+      isDeprecated: lite?.deprecation_date
         ? new Date(lite.deprecation_date) <= new Date()
         : false,
     };

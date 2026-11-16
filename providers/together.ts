@@ -58,21 +58,21 @@ export type TogetherRawModel = {
 // Source: https://docs.together.ai/docs/inference/images/parameters
 export const TOGETHER_IMAGE_OPTIONS: ImageOptions = {
   sizes: ["1024x1024", "1024x768", "768x1024", "1280x720", "720x1280"],
-  aspect_ratios: ["1:1", "4:3", "3:4", "16:9", "9:16"],
+  aspectRatios: ["1:1", "4:3", "3:4", "16:9", "9:16"],
   qualities: ["standard"],
   styles: null,
-  supports_seed: true,
-  provider_param_key: "together",
+  supportsSeed: true,
+  providerParamKey: "together",
 };
 
 // Source: https://docs.together.ai/docs/inference/videos/parameters
 export const TOGETHER_VIDEO_OPTIONS: VideoOptions = {
   durations: [5, 10],
-  aspect_ratios: ["16:9", "9:16"],
+  aspectRatios: ["16:9", "9:16"],
   resolutions: ["720p", "1080p"],
-  default_duration: 5,
-  default_aspect_ratio: "16:9",
-  default_resolution: "720p",
+  defaultDuration: 5,
+  defaultAspectRatio: "16:9",
+  defaultResolution: "720p",
 };
 
 // functions ---------------------------------
@@ -198,11 +198,11 @@ export async function getTogetherCatalog(): Promise<CatalogModel[]> {
     }
 
     const catalogModel: CatalogModel = {
-      provider_id: "together",
+      providerId: "together",
       id: modelId,
-      canonical_id: `together/${modelId}`,
+      canonicalId: `together/${modelId}`,
       name: raw.display_name || cleanDisplayName(modelId),
-      origin_provider:
+      originProvider:
         raw.organization?.toLowerCase() ||
         lite?.litellm_provider ||
         modelId.split("/")[0]?.toLowerCase() ||
@@ -222,24 +222,24 @@ export async function getTogetherCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: false,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: false,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: isImage ? TOGETHER_IMAGE_OPTIONS : null,
-      tts_options: null,
-      video_options: isVideo ? TOGETHER_VIDEO_OPTIONS : null,
-      context_length:
+      imageOptions: isImage ? TOGETHER_IMAGE_OPTIONS : null,
+      ttsOptions: null,
+      videoOptions: isVideo ? TOGETHER_VIDEO_OPTIONS : null,
+      contextLength:
         raw.context_length ??
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: lite?.deprecation_date
+      isDeprecated: lite?.deprecation_date
         ? new Date(lite.deprecation_date) <= new Date()
         : false,
     };

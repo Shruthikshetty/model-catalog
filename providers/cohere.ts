@@ -147,11 +147,11 @@ export async function getCohereCatalog(): Promise<CatalogModel[]> {
     if (isChat) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "cohere",
+      providerId: "cohere",
       id: modelId,
-      canonical_id: `cohere/${modelId}`,
+      canonicalId: `cohere/${modelId}`,
       name: cleanDisplayName(modelId),
-      origin_provider: "cohere",
+      originProvider: "cohere",
       inputs,
       outputs,
       capabilities: {
@@ -167,23 +167,23 @@ export async function getCohereCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.context_length && raw.context_length > 0
           ? raw.context_length
           : lite?.max_input_tokens ?? lite?.max_tokens ?? null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: raw.is_deprecated ?? false,
+      isDeprecated: raw.is_deprecated ?? false,
     };
 
     catalogModels.push(catalogModel);

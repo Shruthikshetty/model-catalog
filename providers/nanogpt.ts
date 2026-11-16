@@ -160,11 +160,11 @@ export async function getNanoGptCatalog(): Promise<CatalogModel[]> {
     }
 
     const catalogModel: CatalogModel = {
-      provider_id: "nanogpt",
+      providerId: "nanogpt",
       id: modelId,
-      canonical_id: `nanogpt/${modelId}`,
+      canonicalId: `nanogpt/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: extractOriginProvider(modelId, raw.owned_by),
+      originProvider: extractOriginProvider(modelId, raw.owned_by),
       inputs,
       outputs,
       capabilities: {
@@ -180,20 +180,20 @@ export async function getNanoGptCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? (hasEfforts ? "effort" : "toggle") : null,
-          effort_levels: effortLevels.length > 0 ? effortLevels : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: effortLevels.length > 0 ? effortLevels : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length: raw.context_length ?? null,
-      max_output_tokens: raw.max_output_tokens ?? null,
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength: raw.context_length ?? null,
+      maxOutputTokens: raw.max_output_tokens ?? null,
       description: raw.description || null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

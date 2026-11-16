@@ -168,11 +168,11 @@ export async function getElevenLabsCatalog(): Promise<CatalogModel[]> {
     if (isVoiceConversion) tags.push("sts", "voice-conversion");
 
     const catalogModel: CatalogModel = {
-      provider_id: "elevenlabs",
+      providerId: "elevenlabs",
       id: modelId,
-      canonical_id: `elevenlabs/${modelId}`,
+      canonicalId: `elevenlabs/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: "elevenlabs",
+      originProvider: "elevenlabs",
       inputs,
       outputs,
       capabilities: {
@@ -188,20 +188,20 @@ export async function getElevenLabsCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: false,
           type: null,
-          effort_levels: null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: "disabled",
+          effortLevels: null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: "disabled",
         },
       },
-      image_options: null,
-      tts_options: defaultTtsOptions,
-      video_options: null,
-      context_length: raw.maximum_text_length_per_request ?? null,
-      max_output_tokens: null,
+      imageOptions: null,
+      ttsOptions: defaultTtsOptions,
+      videoOptions: null,
+      contextLength: raw.maximum_text_length_per_request ?? null,
+      maxOutputTokens: null,
       description: raw.description ?? null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

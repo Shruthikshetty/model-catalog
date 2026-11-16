@@ -39,11 +39,11 @@ type GoogleModelsResponse = {
 // API Reference: https://ai.google.dev/api/predict
 export const GOOGLE_IMAGE_OPTIONS: ImageOptions = {
   sizes: ["1024x1024"],
-  aspect_ratios: ["1:1", "3:4", "4:3", "9:16", "16:9"],
+  aspectRatios: ["1:1", "3:4", "4:3", "9:16", "16:9"],
   qualities: ["standard"],
   styles: null,
-  supports_seed: true,
-  provider_param_key: "google",
+  supportsSeed: true,
+  providerParamKey: "google",
 };
 
 // Exclude legacy tuning checkpoints or obsolete embeddings if any
@@ -144,11 +144,11 @@ export async function getGoogleCatalog(): Promise<CatalogModel[]> {
     if (!isImage && !isEmbedding) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "google",
+      providerId: "google",
       id: modelId,
-      canonical_id: `google/${modelId}`,
+      canonicalId: `google/${modelId}`,
       name: raw.displayName || cleanDisplayName(modelId),
-      origin_provider: "google",
+      originProvider: "google",
       inputs,
       outputs,
       capabilities: {
@@ -165,31 +165,31 @@ export async function getGoogleCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "budget" : null,
-          effort_levels: null,
-          budget_tokens: isReasoning
+          effortLevels: null,
+          budgetTokens: isReasoning
             ? {
                 min: 0,
                 max: 65536,
                 default: 8192,
               }
             : null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: isImage ? GOOGLE_IMAGE_OPTIONS : null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: isImage ? GOOGLE_IMAGE_OPTIONS : null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.inputTokenLimit ??
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens:
+      maxOutputTokens:
         raw.outputTokenLimit ?? lite?.max_output_tokens ?? null,
       description: raw.description || null,
       tags,
-      is_deprecated: lite?.deprecation_date
+      isDeprecated: lite?.deprecation_date
         ? new Date(lite.deprecation_date) <= new Date()
         : false,
     };

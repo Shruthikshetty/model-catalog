@@ -207,11 +207,11 @@ export async function getPoeCatalog(): Promise<CatalogModel[]> {
     if (inputs.includes("audio")) tags.push("audio");
 
     const catalogModel: CatalogModel = {
-      provider_id: "poe",
+      providerId: "poe",
       id: modelId,
-      canonical_id: `poe/${modelId}`,
+      canonicalId: `poe/${modelId}`,
       name: raw.metadata?.display_name || cleanDisplayName(modelId),
-      origin_provider: raw.owned_by?.toLowerCase().trim() || "poe",
+      originProvider: raw.owned_by?.toLowerCase().trim() || "poe",
       inputs,
       outputs: ["text"],
       capabilities: {
@@ -227,21 +227,21 @@ export async function getPoeCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? effortLevels : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? effortLevels : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.context_length ?? raw.context_window?.context_length ?? null,
-      max_output_tokens: raw.context_window?.max_output_tokens ?? null,
+      maxOutputTokens: raw.context_window?.max_output_tokens ?? null,
       description: raw.description ?? null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

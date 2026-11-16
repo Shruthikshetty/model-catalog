@@ -127,11 +127,11 @@ export async function getGroqCatalog(): Promise<CatalogModel[]> {
     if (!isAudio) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "groq",
+      providerId: "groq",
       id: modelId,
-      canonical_id: `groq/${modelId}`,
+      canonicalId: `groq/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider:
+      originProvider:
         raw.owned_by?.toLowerCase() || lite?.litellm_provider || "groq",
       inputs: inputs.length > 0 ? inputs : ["text"],
       outputs: outputs.length > 0 ? outputs : ["text"],
@@ -150,29 +150,29 @@ export async function getGroqCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: false,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: false,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.context_length ??
         raw.context_window ??
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens:
+      maxOutputTokens:
         raw.max_output_length ??
         raw.max_completion_tokens ??
         lite?.max_output_tokens ??
         null,
       description: null,
       tags,
-      is_deprecated:
+      isDeprecated:
         raw.active === false ||
         (lite?.deprecation_date
           ? new Date(lite.deprecation_date) <= new Date()

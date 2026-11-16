@@ -188,11 +188,11 @@ export async function getOpenRouterCatalog(): Promise<CatalogModel[]> {
     const originProvider = modelId.split("/")[0] || "openrouter";
 
     const catalogModel: CatalogModel = {
-      provider_id: "openrouter",
+      providerId: "openrouter",
       id: modelId,
-      canonical_id: `openrouter/${modelId}`,
+      canonicalId: `openrouter/${modelId}`,
       name: raw.name?.trim() || cleanDisplayName(modelId),
-      origin_provider: originProvider,
+      originProvider: originProvider,
       inputs,
       outputs,
       capabilities: {
@@ -208,24 +208,24 @@ export async function getOpenRouterCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: reasoningType,
-          effort_levels: effortLevels,
-          budget_tokens: null,
-          can_toggle_off: canToggleOff,
-          default_state: defaultState,
+          effortLevels: effortLevels,
+          budgetTokens: null,
+          canToggleOff: canToggleOff,
+          defaultState: defaultState,
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         raw.context_length ?? raw.top_provider?.context_length ?? null,
-      max_output_tokens:
+      maxOutputTokens:
         raw.top_provider?.max_completion_tokens ??
         raw.per_request_limits?.completion_tokens ??
         null,
       description: raw.description ?? null,
       tags,
-      is_deprecated: raw.expiration_date
+      isDeprecated: raw.expiration_date
         ? new Date(raw.expiration_date) <= new Date()
         : false,
     };

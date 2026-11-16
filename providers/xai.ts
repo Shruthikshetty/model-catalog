@@ -33,21 +33,21 @@ type XAiModelsResponse = {
 // Source: https://docs.x.ai/docs/guides/image-generation
 export const XAI_IMAGE_OPTIONS: ImageOptions = {
   sizes: ["1024x1024"],
-  aspect_ratios: ["1:1", "16:9", "9:16"],
+  aspectRatios: ["1:1", "16:9", "9:16"],
   qualities: ["standard"],
   styles: null,
-  supports_seed: true,
-  provider_param_key: "xai",
+  supportsSeed: true,
+  providerParamKey: "xai",
 };
 
 // Source: https://docs.x.ai/docs/guides/video-generation
 export const XAI_VIDEO_OPTIONS: VideoOptions = {
   durations: [5, 10],
-  aspect_ratios: ["16:9", "9:16", "1:1"],
+  aspectRatios: ["16:9", "9:16", "1:1"],
   resolutions: ["720p", "1080p"],
-  default_duration: 5,
-  default_aspect_ratio: "16:9",
-  default_resolution: "720p",
+  defaultDuration: 5,
+  defaultAspectRatio: "16:9",
+  defaultResolution: "720p",
 };
 
 // functions ---------------------------------
@@ -144,11 +144,11 @@ export async function getXAiCatalog(): Promise<CatalogModel[]> {
     if (!isImage && !isVideo && !isAudio) tags.push("chat");
 
     const catalogModel: CatalogModel = {
-      provider_id: "xai",
+      providerId: "xai",
       id: modelId,
-      canonical_id: `xai/${modelId}`,
+      canonicalId: `xai/${modelId}`,
       name: cleanDisplayName(modelId),
-      origin_provider: "xai",
+      originProvider: "xai",
       inputs,
       outputs,
       capabilities: {
@@ -164,24 +164,24 @@ export async function getXAiCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: effortLevels,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: effortLevels,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: isImage ? XAI_IMAGE_OPTIONS : null,
-      tts_options: null,
-      video_options: isVideo ? XAI_VIDEO_OPTIONS : null,
-      context_length:
+      imageOptions: isImage ? XAI_IMAGE_OPTIONS : null,
+      ttsOptions: null,
+      videoOptions: isVideo ? XAI_VIDEO_OPTIONS : null,
+      contextLength:
         raw.context_length ??
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: lite?.deprecation_date
+      isDeprecated: lite?.deprecation_date
         ? new Date(lite.deprecation_date) <= new Date()
         : false,
     };

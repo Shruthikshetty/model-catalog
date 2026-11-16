@@ -100,11 +100,11 @@ export async function getNoKeepCatalog(): Promise<CatalogModel[]> {
     if (outputs.includes("image")) {
       imageOptions = {
         sizes: [],
-        aspect_ratios: raw.aspect_ratios || ["1:1"],
+        aspectRatios: raw.aspect_ratios || ["1:1"],
         qualities: raw.pricing?.per_image ? Object.keys(raw.pricing.per_image) : ["standard"],
         styles: null,
-        supports_seed: true,
-        provider_param_key: "nokeep",
+        supportsSeed: true,
+        providerParamKey: "nokeep",
       };
     }
 
@@ -116,11 +116,11 @@ export async function getNoKeepCatalog(): Promise<CatalogModel[]> {
 
       videoOptions = {
         durations,
-        aspect_ratios: aspectRatios,
+        aspectRatios: aspectRatios,
         resolutions,
-        default_duration: durations[0] ?? 5,
-        default_aspect_ratio: aspectRatios[0] ?? "16:9",
-        default_resolution: resolutions[0] ?? "720p",
+        defaultDuration: durations[0] ?? 5,
+        defaultAspectRatio: aspectRatios[0] ?? "16:9",
+        defaultResolution: resolutions[0] ?? "720p",
       };
     }
 
@@ -136,11 +136,11 @@ export async function getNoKeepCatalog(): Promise<CatalogModel[]> {
     }
 
     const catalogModel: CatalogModel = {
-      provider_id: "nokeep",
+      providerId: "nokeep",
       id: modelId,
-      canonical_id: `nokeep/${modelId}`,
+      canonicalId: `nokeep/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: raw.owned_by?.toLowerCase().trim() || "nokeep",
+      originProvider: raw.owned_by?.toLowerCase().trim() || "nokeep",
       inputs,
       outputs,
       capabilities: {
@@ -156,20 +156,20 @@ export async function getNoKeepCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: effortLevels.length > 0 ? effortLevels : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: effortLevels.length > 0 ? effortLevels : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: imageOptions,
-      tts_options: null,
-      video_options: videoOptions,
-      context_length: raw.context_length ?? null,
-      max_output_tokens: raw.max_output_tokens ?? null,
+      imageOptions: imageOptions,
+      ttsOptions: null,
+      videoOptions: videoOptions,
+      contextLength: raw.context_length ?? null,
+      maxOutputTokens: raw.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);

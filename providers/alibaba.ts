@@ -176,11 +176,11 @@ export async function getAlibabaCatalog(): Promise<CatalogModel[]> {
       null;
 
     const catalogModel: CatalogModel = {
-      provider_id: "alibaba",
+      providerId: "alibaba",
       id: modelId,
-      canonical_id: `alibaba/${modelId}`,
+      canonicalId: `alibaba/${modelId}`,
       name: raw.name || cleanDisplayName(modelId),
-      origin_provider: raw.provider?.toLowerCase().trim() || "alibaba",
+      originProvider: raw.provider?.toLowerCase().trim() || "alibaba",
       inputs,
       outputs,
       capabilities: {
@@ -196,20 +196,20 @@ export async function getAlibabaCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length: contextLength,
-      max_output_tokens: maxOutputTokens,
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength: contextLength,
+      maxOutputTokens: maxOutputTokens,
       description: raw.description || null,
       tags,
-      is_deprecated: Boolean(raw.inference_offline_info),
+      isDeprecated: Boolean(raw.inference_offline_info),
     };
 
     catalogModels.push(catalogModel);
@@ -217,3 +217,4 @@ export async function getAlibabaCatalog(): Promise<CatalogModel[]> {
 
   return catalogModels;
 }
+

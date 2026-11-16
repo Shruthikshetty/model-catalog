@@ -91,11 +91,11 @@ export async function getCerebrasCatalog(): Promise<CatalogModel[]> {
     if (hasTools) tags.push("tools");
 
     const catalogModel: CatalogModel = {
-      provider_id: "cerebras",
+      providerId: "cerebras",
       id: modelId,
-      canonical_id: `cerebras/${modelId}`,
+      canonicalId: `cerebras/${modelId}`,
       name: cleanDisplayName(modelId),
-      origin_provider: extractOriginProvider(
+      originProvider: extractOriginProvider(
         modelId,
         raw.owned_by?.toLowerCase().trim() || "cerebras",
       ),
@@ -114,23 +114,23 @@ export async function getCerebrasCatalog(): Promise<CatalogModel[]> {
         reasoning: {
           supported: isReasoning,
           type: isReasoning ? "effort" : null,
-          effort_levels: isReasoning ? ["low", "medium", "high"] : null,
-          budget_tokens: null,
-          can_toggle_off: true,
-          default_state: isReasoning ? "enabled" : "disabled",
+          effortLevels: isReasoning ? ["low", "medium", "high"] : null,
+          budgetTokens: null,
+          canToggleOff: true,
+          defaultState: isReasoning ? "enabled" : "disabled",
         },
       },
-      image_options: null,
-      tts_options: null,
-      video_options: null,
-      context_length:
+      imageOptions: null,
+      ttsOptions: null,
+      videoOptions: null,
+      contextLength:
         lite?.max_input_tokens ??
         lite?.max_tokens ??
         null,
-      max_output_tokens: lite?.max_output_tokens ?? null,
+      maxOutputTokens: lite?.max_output_tokens ?? null,
       description: null,
       tags,
-      is_deprecated: false,
+      isDeprecated: false,
     };
 
     catalogModels.push(catalogModel);
