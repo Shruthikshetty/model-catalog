@@ -21,4 +21,5 @@ export const URL = {
   NVIDIA_MODELS: "https://integrate.api.nvidia.com/v1/models",
   COHERE_MODELS: "https://api.cohere.com/v1/models",
   ALIBABA_MODELS: "https://dashscope-intl.aliyuncs.com/api/v1/models",
+  NINJACHAT_MODELS: "https://www.ninjachat.ai/api/v1/models",
 } as const;

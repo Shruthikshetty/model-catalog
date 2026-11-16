@@ -19,6 +19,7 @@ const EnvSchema = z.object({
   ELEVENLABS_API_KEY: z.string().min(1),
   COHERE_API_KEY: z.string().min(1),
   ALIBABA_API_KEY: z.string().min(1),
+  NINJA_CHAT_API_KEY: z.string().min(1),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;
