@@ -25,4 +25,5 @@ export const URL = {
   OPENCODE_MODELS: "https://opencode.ai/zen/v1/models",
   ANTHROPIC_MODELS: "https://api.anthropic.com/v1/models",
   NOKEEP_MODELS: "https://nokeep.ai/v1/models",
+  NANOGPT_MODELS: "https://nano-gpt.com/api/v1/models?detailed=true",
 } as const;

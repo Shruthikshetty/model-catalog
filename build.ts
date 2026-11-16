@@ -18,6 +18,7 @@ import { getNinjaChatCatalog } from "./providers/ninjachat";
 import { getOpenCodeCatalog } from "./providers/opencode";
 import { getAnthropicCatalog } from "./providers/anthropic";
 import { getNoKeepCatalog } from "./providers/nokeep";
+import { getNanoGptCatalog } from "./providers/nanogpt";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -42,6 +43,7 @@ const PROVIDERS = [
   { name: "OpenCode", fetcher: getOpenCodeCatalog },
   { name: "Anthropic", fetcher: getAnthropicCatalog },
   { name: "NoKeep", fetcher: getNoKeepCatalog },
+  { name: "NanoGPT", fetcher: getNanoGptCatalog },
 ];
 
 // functions ---------------------------------

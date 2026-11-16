@@ -6,10 +6,6 @@ import { z } from "zod";
 const EnvSchema = z.object({
   OPENAI_API_KEY: z.string().min(1),
   XAI_API_KEY: z.string().min(1),
-  OPENROUTER_API_KEY: z
-    .string()
-    .optional()
-    .transform((val) => (val === "" ? undefined : val)),
   GEMINI_API_KEY: z.string().min(1),
   GROQ_API_KEY: z.string().min(1),
   TOGETHER_API_KEY: z.string().min(1),
@@ -21,10 +17,6 @@ const EnvSchema = z.object({
   ALIBABA_API_KEY: z.string().min(1),
   NINJA_CHAT_API_KEY: z.string().min(1),
   ANTHROPIC_API_KEY: z.string().min(1),
-  NOKEEP_API_KEY: z
-    .string()
-    .optional()
-    .transform((val) => (val === "" ? undefined : val)),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;

@@ -1,4 +1,3 @@
-import env from "../env";
 import { URL } from "../constants";
 import {
   type CatalogModel,
@@ -51,16 +50,11 @@ type NoKeepModelsResponse = {
  * Fetches the model catalog from NoKeep API.
  */
 export async function fetchNoKeepModels(): Promise<NoKeepRawModel[]> {
-  const headers: Record<string, string> = {
-    "Content-Type": "application/json",
-  };
-  if (env.NOKEEP_API_KEY) {
-    headers.Authorization = `Bearer ${env.NOKEEP_API_KEY}`;
-  }
-
   const response = await fetch(URL.NOKEEP_MODELS, {
     method: "GET",
-    headers,
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 
   if (!response.ok) {

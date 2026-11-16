@@ -1,5 +1,4 @@
 import { URL } from "../constants";
-import env from "../env";
 import {
   CatalogModelSchema,
   type CatalogModel,
@@ -92,17 +91,11 @@ export function isKnownEffortLevel(
 
 // functions ---------------------------------
 export async function fetchOpenRouterModels(): Promise<OpenRouterRawModel[]> {
-  const headers: Record<string, string> = {
-    "Content-Type": "application/json",
-  };
-
-  if (env.OPENROUTER_API_KEY) {
-    headers["Authorization"] = `Bearer ${env.OPENROUTER_API_KEY}`;
-  }
-
   const response = await fetch(URL.OPENROUTER_MODELS, {
     method: "GET",
-    headers,
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 
   if (!response.ok) {
