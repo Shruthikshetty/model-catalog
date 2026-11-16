@@ -41,19 +41,19 @@ export const EXCLUDED_MODEL_PREFIXES = [
 // Source: https://platform.openai.com/docs/guides/text-to-speech#voice-options
 // API Reference: https://platform.openai.com/docs/api-reference/audio/createSpeech
 export const OPENAI_TTS_VOICES: TtsVoice[] = [
-  { id: "alloy", label: "Alloy" },
-  { id: "ash", label: "Ash" },
-  { id: "ballad", label: "Ballad" },
-  { id: "coral", label: "Coral" },
-  { id: "echo", label: "Echo" },
-  { id: "fable", label: "Fable" },
-  { id: "nova", label: "Nova" },
-  { id: "onyx", label: "Onyx" },
-  { id: "sage", label: "Sage" },
-  { id: "shimmer", label: "Shimmer" },
-  { id: "verse", label: "Verse" },
-  { id: "marin", label: "Marin" },
-  { id: "cedar", label: "Cedar" },
+  { id: "alloy", label: "Alloy", gender: null },
+  { id: "ash", label: "Ash", gender: null },
+  { id: "ballad", label: "Ballad", gender: null },
+  { id: "coral", label: "Coral", gender: null },
+  { id: "echo", label: "Echo", gender: null },
+  { id: "fable", label: "Fable", gender: null },
+  { id: "nova", label: "Nova", gender: null },
+  { id: "onyx", label: "Onyx", gender: null },
+  { id: "sage", label: "Sage", gender: null },
+  { id: "shimmer", label: "Shimmer", gender: null },
+  { id: "verse", label: "Verse", gender: null },
+  { id: "marin", label: "Marin", gender: null },
+  { id: "cedar", label: "Cedar", gender: null },
 ];
 
 // Source: https://platform.openai.com/docs/api-reference/audio/createSpeech#audio-createspeech-response_format

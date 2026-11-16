@@ -78,14 +78,14 @@ export const ImageOptionsSchema = z.object({
   qualities: z.array(z.string()).nullable().default(null), // ["standard", "hd"]
   styles: z.array(z.string()).nullable().default(null), // ["vivid", "natural"] for DALL-E 3
   supports_seed: z.boolean().default(false),
-  provider_param_key: z.string().default("openai"),
+  provider_param_key: z.string(),
 });
 
 // TTS (Text-to-Speech)
 export const TtsVoiceSchema = z.object({
   id: z.string(), // "alloy"
   label: z.string(), // "Alloy"
-  gender: z.enum(["male", "female", "neutral"]).optional(),
+  gender: z.enum(["male", "female", "neutral"]).nullable().default(null),
 });
 
 export const TtsOptionsSchema = z.object({

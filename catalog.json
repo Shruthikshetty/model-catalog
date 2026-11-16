@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T11:56:51.998Z",
-  "total_models": 2917,
+  "updated_at": "2026-11-16T16:55:59.571Z",
+  "total_models": 2921,
   "models": [
     {
       "provider_id": "alibaba",
@@ -25379,6 +25379,100 @@
     },
     {
       "provider_id": "nanogpt",
+      "id": "deepseek/deepseek-v4.1-flash-1017-abliterated",
+      "canonical_id": "nanogpt/deepseek/deepseek-v4.1-flash-1017-abliterated",
+      "name": "DeepSeek V4.1 Flash 1017 Abliterated",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "none",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": "An abliterated (refusal-removed) version of DeepSeek V4.1 Flash 1017. Text only, with tool calling, optional reasoning and a 1M-token context window. Its behavior may differ from DeepSeek V4.1 Flash 1017. Served by a single host; it may be unavailable while that host is down.",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nanogpt",
+      "id": "deepseek/deepseek-v4.1-flash-1017-abliterated:thinking",
+      "canonical_id": "nanogpt/deepseek/deepseek-v4.1-flash-1017-abliterated:thinking",
+      "name": "DeepSeek V4.1 Flash 1017 Abliterated Thinking",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "none",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": "An abliterated (refusal-removed) version of DeepSeek V4.1 Flash 1017. Text only, with tool calling, optional reasoning and a 1M-token context window. Its behavior may differ from DeepSeek V4.1 Flash 1017. Served by a single host; it may be unavailable while that host is down.",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nanogpt",
       "id": "deepseek/deepseek-v4.1-flash-1017-uncensored",
       "canonical_id": "nanogpt/deepseek/deepseek-v4.1-flash-1017-uncensored",
       "name": "DeepSeek V4.1 Flash 1017 Uncensored",
@@ -30603,6 +30697,48 @@
       "context_length": 32768,
       "max_output_tokens": 8192,
       "description": "Uncensored version of Qwen 2.5 32B Instruct with restrictions removed.",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nanogpt",
+      "id": "hyperresearch/ousia-1",
+      "canonical_id": "nanogpt/hyperresearch/ousia-1",
+      "name": "Ousia 1",
+      "origin_provider": "hyperresearch",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 32000,
+      "description": "Ousia 1 is a web research model from Hyperresearch: it searches the web for your question and answers with numbered citations and a list of its sources. Answers usually take 30 to 70 seconds and arrive all at once, and harder questions can take several minutes. It follows the answer language and length set in a system message, but not formatting instructions. Leave the output limit unset or at least 15,000 tokens: a smaller limit cuts the research short. Text only, with no tool calling. Ousia 1 searches the web for you: searches based on your question are sent to search providers, some of which may use them to improve their services. Not zero-retention.",
       "tags": [
         "chat"
       ],
@@ -62833,55 +62969,68 @@
         "voices": [
           {
             "id": "alloy",
-            "label": "Alloy"
+            "label": "Alloy",
+            "gender": null
           },
           {
             "id": "ash",
-            "label": "Ash"
+            "label": "Ash",
+            "gender": null
           },
           {
             "id": "ballad",
-            "label": "Ballad"
+            "label": "Ballad",
+            "gender": null
           },
           {
             "id": "coral",
-            "label": "Coral"
+            "label": "Coral",
+            "gender": null
           },
           {
             "id": "echo",
-            "label": "Echo"
+            "label": "Echo",
+            "gender": null
           },
           {
             "id": "fable",
-            "label": "Fable"
+            "label": "Fable",
+            "gender": null
           },
           {
             "id": "nova",
-            "label": "Nova"
+            "label": "Nova",
+            "gender": null
           },
           {
             "id": "onyx",
-            "label": "Onyx"
+            "label": "Onyx",
+            "gender": null
           },
           {
             "id": "sage",
-            "label": "Sage"
+            "label": "Sage",
+            "gender": null
           },
           {
             "id": "shimmer",
-            "label": "Shimmer"
+            "label": "Shimmer",
+            "gender": null
           },
           {
             "id": "verse",
-            "label": "Verse"
+            "label": "Verse",
+            "gender": null
           },
           {
             "id": "marin",
-            "label": "Marin"
+            "label": "Marin",
+            "gender": null
           },
           {
             "id": "cedar",
-            "label": "Cedar"
+            "label": "Cedar",
+            "gender": null
           }
         ],
         "formats": [
@@ -65466,55 +65615,68 @@
         "voices": [
           {
             "id": "alloy",
-            "label": "Alloy"
+            "label": "Alloy",
+            "gender": null
           },
           {
             "id": "ash",
-            "label": "Ash"
+            "label": "Ash",
+            "gender": null
           },
           {
             "id": "ballad",
-            "label": "Ballad"
+            "label": "Ballad",
+            "gender": null
           },
           {
             "id": "coral",
-            "label": "Coral"
+            "label": "Coral",
+            "gender": null
           },
           {
             "id": "echo",
-            "label": "Echo"
+            "label": "Echo",
+            "gender": null
           },
           {
             "id": "fable",
-            "label": "Fable"
+            "label": "Fable",
+            "gender": null
           },
           {
             "id": "nova",
-            "label": "Nova"
+            "label": "Nova",
+            "gender": null
           },
           {
             "id": "onyx",
-            "label": "Onyx"
+            "label": "Onyx",
+            "gender": null
           },
           {
             "id": "sage",
-            "label": "Sage"
+            "label": "Sage",
+            "gender": null
           },
           {
             "id": "shimmer",
-            "label": "Shimmer"
+            "label": "Shimmer",
+            "gender": null
           },
           {
             "id": "verse",
-            "label": "Verse"
+            "label": "Verse",
+            "gender": null
           },
           {
             "id": "marin",
-            "label": "Marin"
+            "label": "Marin",
+            "gender": null
           },
           {
             "id": "cedar",
-            "label": "Cedar"
+            "label": "Cedar",
+            "gender": null
           }
         ],
         "formats": [
@@ -65576,55 +65738,68 @@
         "voices": [
           {
             "id": "alloy",
-            "label": "Alloy"
+            "label": "Alloy",
+            "gender": null
           },
           {
             "id": "ash",
-            "label": "Ash"
+            "label": "Ash",
+            "gender": null
           },
           {
             "id": "ballad",
-            "label": "Ballad"
+            "label": "Ballad",
+            "gender": null
           },
           {
             "id": "coral",
-            "label": "Coral"
+            "label": "Coral",
+            "gender": null
           },
           {
             "id": "echo",
-            "label": "Echo"
+            "label": "Echo",
+            "gender": null
           },
           {
             "id": "fable",
-            "label": "Fable"
+            "label": "Fable",
+            "gender": null
           },
           {
             "id": "nova",
-            "label": "Nova"
+            "label": "Nova",
+            "gender": null
           },
           {
             "id": "onyx",
-            "label": "Onyx"
+            "label": "Onyx",
+            "gender": null
           },
           {
             "id": "sage",
-            "label": "Sage"
+            "label": "Sage",
+            "gender": null
           },
           {
             "id": "shimmer",
-            "label": "Shimmer"
+            "label": "Shimmer",
+            "gender": null
           },
           {
             "id": "verse",
-            "label": "Verse"
+            "label": "Verse",
+            "gender": null
           },
           {
             "id": "marin",
-            "label": "Marin"
+            "label": "Marin",
+            "gender": null
           },
           {
             "id": "cedar",
-            "label": "Cedar"
+            "label": "Cedar",
+            "gender": null
           }
         ],
         "formats": [
@@ -85847,7 +86022,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": 117964,
+      "max_output_tokens": 65536,
       "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
       "tags": [
         "reasoning",
@@ -90094,6 +90269,52 @@
       "context_length": 1048576,
       "max_output_tokens": 65536,
       "description": "The official release of Hy4 delivers comprehensive and substantial improvements over Hy4 Preview, with particularly strong gains in agentic capabilities and performance across a wide range of long-horizon, real-world productivity...",
+      "tags": [
+        "vision",
+        "reasoning",
+        "tools",
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "openrouter",
+      "id": "tencent/hy4-flash",
+      "canonical_id": "openrouter/tencent/hy4-flash",
+      "name": "Tencent: Hy4 flash",
+      "origin_provider": "tencent",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency and cost. It targets code assistance, agent...",
       "tags": [
         "vision",
         "reasoning",

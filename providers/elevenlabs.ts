@@ -1,6 +1,7 @@
 import env from "../env";
 import { URL } from "../constants";
 import {
+  TtsVoiceSchema,
   type CatalogModel,
   type Modality,
   type TtsOptions,
@@ -116,7 +117,7 @@ export async function fetchElevenLabsVoices(): Promise<TtsVoice[]> {
   const json = (await response.json()) as ElevenLabsVoicesResponse;
   const rawVoices = json.voices || [];
 
-  return rawVoices.map((v) => {
+  return TtsVoiceSchema.array().parse(rawVoices.map((v) => {
     let gender: "male" | "female" | "neutral" | undefined;
     const g = v.labels?.gender?.toLowerCase();
     if (g === "female") gender = "female";
@@ -128,7 +129,7 @@ export async function fetchElevenLabsVoices(): Promise<TtsVoice[]> {
       label: v.name,
       ...(gender ? { gender } : {}),
     };
-  });
+  }));
 }
 
 /**
