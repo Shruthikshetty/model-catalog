@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T09:02:39.731Z",
-  "total_models": 2174,
+  "updated_at": "2026-11-16T11:00:21.677Z",
+  "total_models": 2261,
   "models": [
     {
       "provider_id": "alibaba",
@@ -6298,7 +6298,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1000000,
-      "max_output_tokens": 262114,
+      "max_output_tokens": 131072,
       "description": "Qwen4-Max is the next-generation flagship multimodal model in the Qwen family, combining text generation, image and video understanding, and deep reasoning. It is designed for coding, office productivity, frontend design, and complex agentic tasks. With support for web search, tool calling, and structured outputs, along with compatibility with the OpenAI and Anthropic APIs, it enables developers to build intelligent applications capable of multimodal understanding and task execution.",
       "tags": [
         "chat",
@@ -34732,6 +34732,4114 @@
       "is_deprecated": false
     },
     {
+      "provider_id": "opencode",
+      "id": "beam-free",
+      "canonical_id": "opencode/beam-free",
+      "name": "Beam Free",
+      "origin_provider": "reflection",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "big-pickle",
+      "canonical_id": "opencode/big-pickle",
+      "name": "Big Pickle",
+      "origin_provider": "opencode",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 32000,
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-fable-5",
+      "canonical_id": "opencode/claude-fable-5",
+      "name": "Claude Fable 5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Claude model for creative writing, analysis, and controlled agent workflows",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-fable-5-1",
+      "canonical_id": "opencode/claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Claude model for demanding reasoning and long-horizon agentic work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-fable-5-2",
+      "canonical_id": "opencode/claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Claude model for demanding reasoning and long-horizon agentic work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-haiku-4-5",
+      "canonical_id": "opencode/claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 64000,
+      "description": "Fast Claude model for responsive assistance, classification, and lightweight agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-haiku-5-5",
+      "canonical_id": "opencode/claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Fast Claude model for responsive assistance, classification, and lightweight agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-opus-4-5",
+      "canonical_id": "opencode/claude-opus-4-5",
+      "name": "Claude Opus 4.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 64000,
+      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-opus-4-6",
+      "canonical_id": "opencode/claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "High-end Claude for difficult coding, planning, and slower expert reasoning",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-opus-4-7",
+      "canonical_id": "opencode/claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-opus-4-8",
+      "canonical_id": "opencode/claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Top Claude Opus tier for the hardest reasoning, coding, and long-horizon agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-opus-5",
+      "canonical_id": "opencode/claude-opus-5",
+      "name": "Claude Opus 5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Strongest Claude Opus model for coding, agents, and professional work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-opus-5-5",
+      "canonical_id": "opencode/claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Claude model for long-running agentic coding and knowledge work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-sonnet-4-5",
+      "canonical_id": "opencode/claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 64000,
+      "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-sonnet-4-6",
+      "canonical_id": "opencode/claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 64000,
+      "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-sonnet-5",
+      "canonical_id": "opencode/claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Everyday Claude agent model for coding, planning, browsing, and general work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "claude-sonnet-5-5",
+      "canonical_id": "opencode/claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "deepseek-v4-pro",
+      "canonical_id": "opencode/deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 384000,
+      "description": "Open MoE flagship with million-token context for coding and long agent runs",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "deepseek-v4.1-flash",
+      "canonical_id": "opencode/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 384000,
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "deepseek-v4.1-flash-free",
+      "canonical_id": "opencode/deepseek-v4.1-flash-free",
+      "name": "DeepSeek V4.1 Flash Free",
+      "origin_provider": "deepseek",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 32000,
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "flint-40b-free",
+      "canonical_id": "opencode/flint-40b-free",
+      "name": "Flint 40B Free",
+      "origin_provider": "recursive",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 65536,
+      "description": "Open-weight mixture-of-experts model with about 2.5B active parameters for local coding agents",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-3.5-flash",
+      "canonical_id": "opencode/gemini-3.5-flash",
+      "name": "Gemini 3.5 Flash",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-3.5-flash-lite",
+      "canonical_id": "opencode/gemini-3.5-flash-lite",
+      "name": "Gemini 3.5 Flash Lite",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-3.6-flash",
+      "canonical_id": "opencode/gemini-3.6-flash",
+      "name": "Gemini 3.6 Flash",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-3.7-flash",
+      "canonical_id": "opencode/gemini-3.7-flash",
+      "name": "Gemini 3.7 Flash",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-3.8-flash",
+      "canonical_id": "opencode/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-4-argon",
+      "canonical_id": "opencode/gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-4-carbon",
+      "canonical_id": "opencode/gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Google's most capable reasoning model for complex software engineering, deep math and science, high factual accuracy, and long-horizon autonomous agents",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gemini-4-hydrogen",
+      "canonical_id": "opencode/gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "origin_provider": "google",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Google's Gemini 4 model for everyday coding and agentic workflows, with four thinking levels and a 1M-token context window",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "glm-5",
+      "canonical_id": "opencode/glm-5",
+      "name": "GLM-5",
+      "origin_provider": "zhipuai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 204800,
+      "max_output_tokens": 131072,
+      "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "glm-5.1",
+      "canonical_id": "opencode/glm-5.1",
+      "name": "GLM-5.1",
+      "origin_provider": "zhipuai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 204800,
+      "max_output_tokens": 131072,
+      "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "glm-5.2",
+      "canonical_id": "opencode/glm-5.2",
+      "name": "GLM-5.2",
+      "origin_provider": "zhipuai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "glm-5.3",
+      "canonical_id": "opencode/glm-5.3",
+      "name": "GLM-5.3",
+      "origin_provider": "zhipuai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "glm-5.3-flash",
+      "canonical_id": "opencode/glm-5.3-flash",
+      "name": "GLM-5.3-Flash",
+      "origin_provider": "zhipuai",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "glm-5.3-flash-free",
+      "canonical_id": "opencode/glm-5.3-flash-free",
+      "name": "GLM-5.3-Flash Free",
+      "origin_provider": "zhipuai",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 32000,
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5",
+      "canonical_id": "opencode/gpt-5",
+      "name": "GPT-5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5-codex",
+      "canonical_id": "opencode/gpt-5-codex",
+      "name": "GPT-5 Codex",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5-nano",
+      "canonical_id": "opencode/gpt-5-nano",
+      "name": "GPT-5 Nano",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.1",
+      "canonical_id": "opencode/gpt-5.1",
+      "name": "GPT-5.1",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.1-codex",
+      "canonical_id": "opencode/gpt-5.1-codex",
+      "name": "GPT-5.1 Codex",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.1-codex-max",
+      "canonical_id": "opencode/gpt-5.1-codex-max",
+      "name": "GPT-5.1 Codex Max",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.1-codex-mini",
+      "canonical_id": "opencode/gpt-5.1-codex-mini",
+      "name": "GPT-5.1 Codex Mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.2",
+      "canonical_id": "opencode/gpt-5.2",
+      "name": "GPT-5.2",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.2-codex",
+      "canonical_id": "opencode/gpt-5.2-codex",
+      "name": "GPT-5.2 Codex",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.3-codex",
+      "canonical_id": "opencode/gpt-5.3-codex",
+      "name": "GPT-5.3 Codex",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.3-codex-spark",
+      "canonical_id": "opencode/gpt-5.3-codex-spark",
+      "name": "GPT-5.3 Codex Spark",
+      "origin_provider": "openai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 128000,
+      "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.4",
+      "canonical_id": "opencode/gpt-5.4",
+      "name": "GPT-5.4",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Agent-ready GPT for coding and computer-use workflows at a lower cost",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.4-mini",
+      "canonical_id": "opencode/gpt-5.4-mini",
+      "name": "GPT-5.4 Mini",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.4-nano",
+      "canonical_id": "opencode/gpt-5.4-nano",
+      "name": "GPT-5.4 Nano",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 400000,
+      "max_output_tokens": 128000,
+      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.4-pro",
+      "canonical_id": "opencode/gpt-5.4-pro",
+      "name": "GPT-5.4 Pro",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Frontier GPT model for professional reasoning, coding, and multimodal work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.5",
+      "canonical_id": "opencode/gpt-5.5",
+      "name": "GPT-5.5",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Default frontier GPT for coding, computer use, research, and knowledge work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.5-pro",
+      "canonical_id": "opencode/gpt-5.5-pro",
+      "name": "GPT-5.5 Pro",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Frontier GPT model for professional reasoning, coding, and multimodal work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.6-luna",
+      "canonical_id": "opencode/gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Cost-efficient GPT-5.6 model for fast, high-volume workloads",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.6-sol",
+      "canonical_id": "opencode/gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Frontier GPT-5.6 model for complex professional work, coding, and agentic workflows",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-5.6-terra",
+      "canonical_id": "opencode/gpt-5.6-terra",
+      "name": "GPT-5.6 Terra",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Balanced GPT-5.6 model for capable, cost-efficient everyday work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-6-astra",
+      "canonical_id": "opencode/gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-6-luna",
+      "canonical_id": "opencode/gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "OpenAI's most efficient model for focused, high-volume tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-6-sol",
+      "canonical_id": "opencode/gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "OpenAI model for complex coding and agentic workflows",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "gpt-6.1-sol",
+      "canonical_id": "opencode/gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "origin_provider": "openai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1050000,
+      "max_output_tokens": 128000,
+      "description": "Near-Astra performance for complex coding, computer use, and professional work at a lower cost.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "grok-4.5",
+      "canonical_id": "opencode/grok-4.5",
+      "name": "Grok 4.5",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 500000,
+      "max_output_tokens": 500000,
+      "description": "xAI's Grok model for chat, coding, agentic tools, and lower hallucination risk",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "grok-4.6",
+      "canonical_id": "opencode/grok-4.6",
+      "name": "Grok 4.6",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 500000,
+      "max_output_tokens": 500000,
+      "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "grok-4.7",
+      "canonical_id": "opencode/grok-4.7",
+      "name": "Grok 4.7",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 500000,
+      "max_output_tokens": 500000,
+      "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "grok-build-0.1",
+      "canonical_id": "opencode/grok-build-0.1",
+      "name": "Grok Build 0.1",
+      "origin_provider": "xai",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 256000,
+      "description": "Fast Grok coding model tuned for agentic engineering and iterative edits",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "hy4-flash-free",
+      "canonical_id": "opencode/hy4-flash-free",
+      "name": "Hy4 flash Free",
+      "origin_provider": "tencent",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 65536,
+      "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "iceman-free",
+      "canonical_id": "opencode/iceman-free",
+      "name": "Iceman Free",
+      "origin_provider": "opencode",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 131072,
+      "description": "Stealth model, free for a limited time",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "inkling-2-small-free",
+      "canonical_id": "opencode/inkling-2-small-free",
+      "name": "Inkling 2 Small Free",
+      "origin_provider": "thinkingmachines",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": "Inkling 2 Small, free for a limited time",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "kimi-k2.5",
+      "canonical_id": "opencode/kimi-k2.5",
+      "name": "Kimi K2.5",
+      "origin_provider": "moonshotai",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 65536,
+      "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "kimi-k2.6",
+      "canonical_id": "opencode/kimi-k2.6",
+      "name": "Kimi K2.6",
+      "origin_provider": "moonshotai",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 65536,
+      "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "kimi-k2.7-code",
+      "canonical_id": "opencode/kimi-k2.7-code",
+      "name": "Kimi K2.7 Code",
+      "origin_provider": "moonshotai",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "kimi-k3",
+      "canonical_id": "opencode/kimi-k3",
+      "name": "Kimi K3",
+      "origin_provider": "moonshotai",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 1048576,
+      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "longcat-2.5-free",
+      "canonical_id": "opencode/longcat-2.5-free",
+      "name": "LongCat 2.5 Free",
+      "origin_provider": "meituan",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 262144,
+      "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "mimo-v2.6-flash-free",
+      "canonical_id": "opencode/mimo-v2.6-flash-free",
+      "name": "MiMo-V2.6-Flash Free",
+      "origin_provider": "xiaomi",
+      "inputs": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 32000,
+      "description": "MiMo Flash model for multimodal coding agents and long-context automation",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "minimax-m2.5",
+      "canonical_id": "opencode/minimax-m2.5",
+      "name": "MiniMax-M2.5",
+      "origin_provider": "minimax",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 204800,
+      "max_output_tokens": 131072,
+      "description": "MiniMax model for chat, coding, office work, and agentic tasks",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "minimax-m2.7",
+      "canonical_id": "opencode/minimax-m2.7",
+      "name": "MiniMax-M2.7",
+      "origin_provider": "minimax",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 204800,
+      "max_output_tokens": 131072,
+      "description": "MiniMax model for chat, coding, office work, and agentic tasks",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "minimax-m3",
+      "canonical_id": "opencode/minimax-m3",
+      "name": "MiniMax-M3",
+      "origin_provider": "minimax",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 512000,
+      "max_output_tokens": 128000,
+      "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "minimax-m3.1-flash-free",
+      "canonical_id": "opencode/minimax-m3.1-flash-free",
+      "name": "MiniMax M3.1 Flash Free",
+      "origin_provider": "minimax",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 512000,
+      "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "mistral-large-4",
+      "canonical_id": "opencode/mistral-large-4",
+      "name": "Mistral Large 4",
+      "origin_provider": "mistral",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 524288,
+      "max_output_tokens": 262144,
+      "description": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "muse-ember-1.0",
+      "canonical_id": "opencode/muse-ember-1.0",
+      "name": "Muse Ember 1.0",
+      "origin_provider": "meta",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 270000,
+      "description": "Reasoning model from Meta with text, image, video and PDF input and tool use",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "muse-spark-1.2",
+      "canonical_id": "opencode/muse-spark-1.2",
+      "name": "Muse Spark 1.2",
+      "origin_provider": "meta",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": "Muse Spark 1.2 is a coding-focused update to Muse Spark 1.1 with improvements in code generation, complex debugging, codebase understanding, and end-to-end developer workflows.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "muse-spark-1.3",
+      "canonical_id": "opencode/muse-spark-1.3",
+      "name": "Muse Spark 1.3",
+      "origin_provider": "meta",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It improves long-horizon agent collaboration, instruction following, and coding efficiency relative to Muse Spark 1.2.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "muse-wonder-1.0",
+      "canonical_id": "opencode/muse-wonder-1.0",
+      "name": "Muse Wonder",
+      "origin_provider": "meta",
+      "inputs": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": "Muse Wonder is a frontier multimodal reasoning model from Meta for personal and professional agents, long-horizon coding, and computer use. It combines Active Memory, which carries relevant context across conversations, with Active Focus, which keeps it working through blockers toward a goal.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "nemotron-3.5-lightning-free",
+      "canonical_id": "opencode/nemotron-3.5-lightning-free",
+      "name": "Nemotron 3.5 Lightning Free",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 262144,
+      "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "nemotron-3.5-super-vl-free",
+      "canonical_id": "opencode/nemotron-3.5-super-vl-free",
+      "name": "Nemotron 3.5 Super VL Free",
+      "origin_provider": "nvidia",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1048576,
+      "max_output_tokens": 131072,
+      "description": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "qwen3.5-plus",
+      "canonical_id": "opencode/qwen3.5-plus",
+      "name": "Qwen3.5 Plus",
+      "origin_provider": "alibaba",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 65536,
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "qwen3.6-plus",
+      "canonical_id": "opencode/qwen3.6-plus",
+      "name": "Qwen3.6 Plus",
+      "origin_provider": "alibaba",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 65536,
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "qwen3.8-flash",
+      "canonical_id": "opencode/qwen3.8-flash",
+      "name": "Qwen3.8 Flash",
+      "origin_provider": "alibaba",
+      "inputs": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": true,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "opencode",
+      "id": "qwen3.8-max",
+      "canonical_id": "opencode/qwen3.8-max",
+      "name": "Qwen3.8 Max",
+      "origin_provider": "alibaba",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": false,
+        "reasoning": {
+          "supported": true,
+          "type": "toggle",
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 262144,
+      "max_output_tokens": 131072,
+      "description": "2.4-trillion-parameter MoE flagship for coding, professional work, multimodal understanding, and long-horizon agentic workflows",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
       "provider_id": "openrouter",
       "id": "~anthropic/claude-fable-latest",
       "canonical_id": "openrouter/~anthropic/claude-fable-latest",
@@ -50777,7 +54885,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 131072,
-      "max_output_tokens": 65536,
+      "max_output_tokens": 117964,
       "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
       "tags": [
         "reasoning",
@@ -53955,7 +58063,7 @@
       "tts_options": null,
       "video_options": null,
       "context_length": 1000000,
-      "max_output_tokens": 393216,
+      "max_output_tokens": 131072,
       "description": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, with a 1M-token context window and reasoning enabled by default....",
       "tags": [
         "vision",

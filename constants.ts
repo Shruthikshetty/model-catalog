@@ -22,4 +22,5 @@ export const URL = {
   COHERE_MODELS: "https://api.cohere.com/v1/models",
   ALIBABA_MODELS: "https://dashscope-intl.aliyuncs.com/api/v1/models",
   NINJACHAT_MODELS: "https://www.ninjachat.ai/api/v1/models",
+  OPENCODE_MODELS: "https://opencode.ai/zen/v1/models",
 } as const;
