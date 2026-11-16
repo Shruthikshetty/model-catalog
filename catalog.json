@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T11:00:21.677Z",
-  "total_models": 2261,
+  "updated_at": "2026-11-16T11:07:59.312Z",
+  "total_models": 2276,
   "models": [
     {
       "provider_id": "alibaba",
@@ -8573,6 +8573,793 @@
       "description": "GLM-5.3 is Zhipu AI’s most powerful model for programming capabilities to date, demonstrating a 50% improvement over GLM-5.2 in internal subjective evaluations. In terms of cybersecurity, GLM-5.3 performs on par with Mythos 5 in tasks such as white-box code review and vulnerability discovery, showcasing its strong potential for cybersecurity defense scenarios.",
       "tags": [
         "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-fable-5",
+      "canonical_id": "anthropic/claude-fable-5",
+      "name": "Claude Fable 5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-fable-5-1",
+      "canonical_id": "anthropic/claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-fable-5-2",
+      "canonical_id": "anthropic/claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-haiku-4-5-20251001",
+      "canonical_id": "anthropic/claude-haiku-4-5-20251001",
+      "name": "Claude Haiku 4.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "budget",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 64000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-haiku-5-5",
+      "canonical_id": "anthropic/claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-opus-4-5-20251101",
+      "canonical_id": "anthropic/claude-opus-4-5-20251101",
+      "name": "Claude Opus 4.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 64000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-opus-4-6",
+      "canonical_id": "anthropic/claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-opus-4-7",
+      "canonical_id": "anthropic/claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-opus-4-8",
+      "canonical_id": "anthropic/claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-opus-5",
+      "canonical_id": "anthropic/claude-opus-5",
+      "name": "Claude Opus 5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-opus-5-5",
+      "canonical_id": "anthropic/claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-sonnet-4-5-20250929",
+      "canonical_id": "anthropic/claude-sonnet-4-5-20250929",
+      "name": "Claude Sonnet 4.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "budget",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 200000,
+      "max_output_tokens": 64000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": true
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-sonnet-4-6",
+      "canonical_id": "anthropic/claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-sonnet-5",
+      "canonical_id": "anthropic/claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "anthropic",
+      "id": "claude-sonnet-5-5",
+      "canonical_id": "anthropic/claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "origin_provider": "anthropic",
+      "inputs": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": true,
+        "codeExecution": true,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": true,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 128000,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
         "reasoning",
         "tools"
       ],

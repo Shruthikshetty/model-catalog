@@ -16,6 +16,7 @@ import { getCohereCatalog } from "./providers/cohere";
 import { getAlibabaCatalog } from "./providers/alibaba";
 import { getNinjaChatCatalog } from "./providers/ninjachat";
 import { getOpenCodeCatalog } from "./providers/opencode";
+import { getAnthropicCatalog } from "./providers/anthropic";
 
 // constants ---------------------------------
 const OUTPUT_PATH = "./catalog.json";
@@ -38,6 +39,7 @@ const PROVIDERS = [
   { name: "Alibaba", fetcher: getAlibabaCatalog },
   { name: "NinjaChat", fetcher: getNinjaChatCatalog },
   { name: "OpenCode", fetcher: getOpenCodeCatalog },
+  { name: "Anthropic", fetcher: getAnthropicCatalog },
 ];
 
 // functions ---------------------------------

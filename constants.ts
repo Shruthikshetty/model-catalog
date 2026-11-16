@@ -23,4 +23,5 @@ export const URL = {
   ALIBABA_MODELS: "https://dashscope-intl.aliyuncs.com/api/v1/models",
   NINJACHAT_MODELS: "https://www.ninjachat.ai/api/v1/models",
   OPENCODE_MODELS: "https://opencode.ai/zen/v1/models",
+  ANTHROPIC_MODELS: "https://api.anthropic.com/v1/models",
 } as const;

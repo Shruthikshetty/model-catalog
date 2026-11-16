@@ -13,7 +13,7 @@
 
 ## 🚀 How It Works
 
-1. **Provider Extraction**: Discovers canonical models directly from AI provider APIs (OpenAI, xAI, Google AI Studio, Vercel AI Gateway, OpenRouter, Groq, Together AI, Fireworks AI, Poe, Mistral AI, Cerebras, ElevenLabs, NVIDIA NIM, Cohere, Alibaba DashScope, NinjaChat, OpenCode, etc.).
+1. **Provider Extraction**: Discovers canonical models directly from AI provider APIs (OpenAI, xAI, Google AI Studio, Vercel AI Gateway, OpenRouter, Groq, Together AI, Fireworks AI, Poe, Mistral AI, Cerebras, ElevenLabs, NVIDIA NIM, Cohere, Alibaba DashScope, NinjaChat, OpenCode, Anthropic, etc.).
 2. **Metadata Hydration**: Enriches models with token limits (`context_length`, `max_output_tokens`) and capability flags (`vision`, `functionCalling`, `reasoning`) from verified reference registries.
 3. **Multimodal Configurations**: Standardizes feature options for image generation (dimensions, aspect ratios, qualities) and text-to-speech (voices, audio formats).
 4. **Zod Validation**: Validates every entry against strict type schemas defined in `types.ts`.
@@ -46,6 +46,7 @@ ELEVENLABS_API_KEY=your_key_here
 COHERE_API_KEY=your_key_here
 ALIBABA_API_KEY=your_key_here
 NINJA_CHAT_API_KEY=your_key_here
+ANTHROPIC_API_KEY=your_key_here
 OPENROUTER_API_KEY=your_key_here # optional
 ```
 
