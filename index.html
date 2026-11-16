@@ -440,7 +440,7 @@
         document.getElementById('model-count').textContent = `${allModels.length} models`;
 
         // Populate provider filter
-        const providers = Array.from(new Set(allModels.map(m => m.provider_id))).sort();
+        const providers = Array.from(new Set(allModels.map(m => m.providerId))).sort();
         const providerSelect = document.getElementById('provider-filter');
         providers.forEach(p => {
           const opt = document.createElement('option');
@@ -469,7 +469,7 @@
 
       currentFiltered = allModels.filter(m => {
         // Provider filter
-        if (provider !== 'all' && m.provider_id !== provider) return false;
+        if (provider !== 'all' && m.providerId !== provider) return false;
 
         // Modality pill filter
         if (currentFilter === 'text' && (!m.outputs?.includes('text') || m.outputs?.includes('image') || m.outputs?.includes('video') || m.outputs?.includes('audio'))) return false;
@@ -485,7 +485,7 @@
         if (search) {
           const matchId = m.id.toLowerCase().includes(search);
           const matchName = m.name.toLowerCase().includes(search);
-          const matchProvider = m.provider_id.toLowerCase().includes(search);
+          const matchProvider = m.providerId.toLowerCase().includes(search);
           const matchTags = (m.tags || []).some(t => t.toLowerCase().includes(search));
           return matchId || matchName || matchProvider || matchTags;
         }
@@ -536,7 +536,7 @@
         if (m.inputs?.includes('audio')) badges.push(`<span class="cap-badge stt">🎙️ STT</span>`);
         if (m.capabilities?.vision) badges.push(`<span class="cap-badge vision">👁 Vision</span>`);
         if (m.capabilities?.reasoning?.supported) {
-          const levels = m.capabilities.reasoning.effort_levels ? ` (${m.capabilities.reasoning.effort_levels.join('/')})` : '';
+          const levels = m.capabilities.reasoning.effortLevels ? ` (${m.capabilities.reasoning.effortLevels.join('/')})` : '';
           badges.push(`<span class="cap-badge reasoning">🧠 Reasoning${levels}</span>`);
         }
         if (m.capabilities?.functionCalling) badges.push(`<span class="cap-badge tools">🔧 Tools</span>`);
@@ -547,15 +547,15 @@
           : '<span style="color:var(--text-muted); font-size:12px;">-</span>';
 
         return `
-          <tr onclick="openModal('${encodeURIComponent(m.canonical_id)}')">
-            <td><span class="provider-tag">${m.provider_id}</span></td>
+          <tr onclick="openModal('${encodeURIComponent(m.canonicalId)}')">
+            <td><span class="provider-tag">${m.providerId}</span></td>
             <td>
               <div class="model-name">${m.name}</div>
               <div class="model-id">${m.id}</div>
             </td>
             <td style="font-size: 13px; color: var(--text-muted);">${inOut}</td>
-            <td class="token-val">${formatNumber(m.context_length)}</td>
-            <td class="token-val">${formatNumber(m.max_output_tokens)}</td>
+            <td class="token-val">${formatNumber(m.contextLength)}</td>
+            <td class="token-val">${formatNumber(m.maxOutputTokens)}</td>
             <td><div class="capabilities-list">${badges.join('') || emptyFallback}</div></td>
           </tr>
         `;
@@ -570,31 +570,31 @@
 
     function openModal(encodedCanonicalId) {
       const canonicalId = decodeURIComponent(encodedCanonicalId);
-      const model = allModels.find(m => m.canonical_id === canonicalId);
+      const model = allModels.find(m => m.canonicalId === canonicalId);
       if (!model) return;
 
       document.getElementById('modal-title').textContent = model.name;
-      document.getElementById('modal-id').textContent = `${model.provider_id} • ${model.id}`;
+      document.getElementById('modal-id').textContent = `${model.providerId} • ${model.id}`;
       
       let detailsHtml = `
-        <p><strong>Context Window:</strong> ${model.context_length ? model.context_length.toLocaleString() + ' tokens' : 'N/A'}</p>
-        <p><strong>Max Output Tokens:</strong> ${model.max_output_tokens ? model.max_output_tokens.toLocaleString() + ' tokens' : 'N/A'}</p>
+        <p><strong>Context Window:</strong> ${model.contextLength ? model.contextLength.toLocaleString() + ' tokens' : 'N/A'}</p>
+        <p><strong>Max Output Tokens:</strong> ${model.maxOutputTokens ? model.maxOutputTokens.toLocaleString() + ' tokens' : 'N/A'}</p>
       `;
 
-      if (model.video_options) {
-        detailsHtml += `<p style="margin-top: 8px;"><strong>Video Durations:</strong> ${model.video_options.durations?.join(', ')}s</p>`;
-        detailsHtml += `<p><strong>Aspect Ratios:</strong> ${model.video_options.aspect_ratios?.join(', ')}</p>`;
-        detailsHtml += `<p><strong>Resolutions:</strong> ${model.video_options.resolutions?.join(', ')}</p>`;
+      if (model.videoOptions) {
+        detailsHtml += `<p style="margin-top: 8px;"><strong>Video Durations:</strong> ${model.videoOptions.durations?.join(', ')}s</p>`;
+        detailsHtml += `<p><strong>Aspect Ratios:</strong> ${model.videoOptions.aspectRatios?.join(', ')}</p>`;
+        detailsHtml += `<p><strong>Resolutions:</strong> ${model.videoOptions.resolutions?.join(', ')}</p>`;
       }
 
-      if (model.image_options) {
-        detailsHtml += `<p style="margin-top: 8px;"><strong>Image Sizes:</strong> ${model.image_options.sizes?.join(', ') || 'Default'}</p>`;
-        if (model.image_options.styles) detailsHtml += `<p><strong>Image Styles:</strong> ${model.image_options.styles.join(', ')}</p>`;
+      if (model.imageOptions) {
+        detailsHtml += `<p style="margin-top: 8px;"><strong>Image Sizes:</strong> ${model.imageOptions.sizes?.join(', ') || 'Default'}</p>`;
+        if (model.imageOptions.styles) detailsHtml += `<p><strong>Image Styles:</strong> ${model.imageOptions.styles.join(', ')}</p>`;
       }
 
-      if (model.tts_options) {
-        detailsHtml += `<p style="margin-top: 8px;"><strong>Available Voices (${model.tts_options.voices?.length || 0}):</strong> ${model.tts_options.voices?.map(v => v.label).join(', ')}</p>`;
-        detailsHtml += `<p><strong>Audio Formats:</strong> ${model.tts_options.formats?.join(', ')}</p>`;
+      if (model.ttsOptions) {
+        detailsHtml += `<p style="margin-top: 8px;"><strong>Available Voices (${model.ttsOptions.voices?.length || 0}):</strong> ${model.ttsOptions.voices?.map(v => v.label).join(', ')}</p>`;
+        detailsHtml += `<p><strong>Audio Formats:</strong> ${model.ttsOptions.formats?.join(', ')}</p>`;
       }
 
       document.getElementById('modal-details').innerHTML = detailsHtml;
