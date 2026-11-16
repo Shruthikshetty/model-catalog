@@ -21,6 +21,10 @@ const EnvSchema = z.object({
   ALIBABA_API_KEY: z.string().min(1),
   NINJA_CHAT_API_KEY: z.string().min(1),
   ANTHROPIC_API_KEY: z.string().min(1),
+  NOKEEP_API_KEY: z
+    .string()
+    .optional()
+    .transform((val) => (val === "" ? undefined : val)),
 });
 
 export type ENV = z.infer<typeof EnvSchema>;

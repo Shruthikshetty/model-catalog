@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T11:07:59.312Z",
-  "total_models": 2276,
+  "updated_at": "2026-11-16T11:40:45.591Z",
+  "total_models": 2288,
   "models": [
     {
       "provider_id": "alibaba",
@@ -20737,6 +20737,49 @@
     },
     {
       "provider_id": "ninjachat",
+      "id": "codestral-2508",
+      "canonical_id": "ninjachat/codestral-2508",
+      "name": "Codestral 2508",
+      "origin_provider": "mistral-ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 65536,
+      "description": "Mistral's low-latency coding model for chat generation, function calling, and repository-scale context.",
+      "tags": [
+        "chat",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "ninjachat",
       "id": "command-a",
       "canonical_id": "ninjachat/command-a",
       "name": "Command A",
@@ -26375,6 +26418,48 @@
     },
     {
       "provider_id": "ninjachat",
+      "id": "mistral-large",
+      "canonical_id": "ninjachat/mistral-large",
+      "name": "Mistral Large",
+      "origin_provider": "mistral-ai",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 8192,
+      "description": "Mistral AI's Mistral Large for multilingual tasks, coding, and general-purpose work.",
+      "tags": [
+        "chat"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "ninjachat",
       "id": "mistral-large-3",
       "canonical_id": "ninjachat/mistral-large-3",
       "name": "Mistral Large 3",
@@ -26636,6 +26721,56 @@
       "tags": [
         "chat",
         "vision",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "ninjachat",
+      "id": "mistral-small-4",
+      "canonical_id": "ninjachat/mistral-small-4",
+      "name": "Mistral Small 4",
+      "origin_provider": "mistral-ai",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 256000,
+      "max_output_tokens": 131072,
+      "description": "Mistral's efficient 119B/6.5B-active hybrid model unifying instruct, reasoning, and coding.",
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
         "tools"
       ],
       "is_deprecated": false
@@ -30843,6 +30978,521 @@
       "context_length": null,
       "max_output_tokens": null,
       "description": "Alibaba Tongyi's Z-Image Turbo for very low-cost text-to-image drafts.",
+      "tags": [
+        "image-generation"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "chroma",
+      "canonical_id": "nokeep/chroma",
+      "name": "Chroma",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [],
+        "aspect_ratios": [
+          "1:1"
+        ],
+        "qualities": [
+          "1K"
+        ],
+        "styles": null,
+        "supports_seed": true,
+        "provider_param_key": "nokeep"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image-generation"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "deepseek-v4.1-flash-1017-uncensored",
+      "canonical_id": "nokeep/deepseek-v4.1-flash-1017-uncensored",
+      "name": "DeepSeek V4.1 Flash 1017 Uncensored",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "deepseek-v4.1-flash-uncensored",
+      "canonical_id": "nokeep/deepseek-v4.1-flash-uncensored",
+      "name": "DeepSeek V4.1 Flash Uncensored",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": true,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 1000000,
+      "max_output_tokens": 131072,
+      "description": null,
+      "tags": [
+        "chat",
+        "vision",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "glm-5.3-flash-uncensored",
+      "canonical_id": "nokeep/glm-5.3-flash-uncensored",
+      "name": "GLM 5.3 Flash Uncensored",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "text"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": true,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": true,
+          "type": "effort",
+          "effort_levels": [
+            "low",
+            "high"
+          ],
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "enabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": null,
+      "context_length": 128000,
+      "max_output_tokens": 32768,
+      "description": null,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "krea-2-turbo",
+      "canonical_id": "nokeep/krea-2-turbo",
+      "name": "Krea 2 Turbo",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [],
+        "aspect_ratios": [
+          "1:1",
+          "3:2",
+          "16:9",
+          "21:9",
+          "9:16",
+          "2:3",
+          "3:4",
+          "4:5"
+        ],
+        "qualities": [
+          "1K",
+          "2K"
+        ],
+        "styles": null,
+        "supports_seed": true,
+        "provider_param_key": "nokeep"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image-generation"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "minimax-h3-max",
+      "canonical_id": "nokeep/minimax-h3-max",
+      "name": "MiniMax H3 Max",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "video",
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": {
+        "durations": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "aspect_ratios": [
+          "16:9",
+          "21:9",
+          "4:3",
+          "1:1",
+          "3:4",
+          "9:16"
+        ],
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "default_duration": 5,
+        "default_aspect_ratio": "16:9",
+        "default_resolution": "480p"
+      },
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "video-generation"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "minimax-h3-max-turbo",
+      "canonical_id": "nokeep/minimax-h3-max-turbo",
+      "name": "MiniMax H3 Max Turbo",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "video",
+        "audio"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": null,
+      "tts_options": null,
+      "video_options": {
+        "durations": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "aspect_ratios": [
+          "16:9",
+          "21:9",
+          "4:3",
+          "1:1",
+          "3:4",
+          "9:16"
+        ],
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "default_duration": 5,
+        "default_aspect_ratio": "16:9",
+        "default_resolution": "480p"
+      },
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "video-generation"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "wai-illustrious",
+      "canonical_id": "nokeep/wai-illustrious",
+      "name": "WAI Illustrious",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [],
+        "aspect_ratios": [
+          "1:1"
+        ],
+        "qualities": [
+          "1K"
+        ],
+        "styles": null,
+        "supports_seed": true,
+        "provider_param_key": "nokeep"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
+      "tags": [
+        "image-generation"
+      ],
+      "is_deprecated": false
+    },
+    {
+      "provider_id": "nokeep",
+      "id": "z-image-turbo",
+      "canonical_id": "nokeep/z-image-turbo",
+      "name": "Z-Image Turbo",
+      "origin_provider": "nokeep",
+      "inputs": [
+        "text"
+      ],
+      "outputs": [
+        "image"
+      ],
+      "capabilities": {
+        "vision": false,
+        "functionCalling": false,
+        "webSearch": false,
+        "codeExecution": false,
+        "realtime": false,
+        "videoReasoning": false,
+        "fileInput": false,
+        "supportsStreaming": true,
+        "supportsSystemPrompt": true,
+        "reasoning": {
+          "supported": false,
+          "type": null,
+          "effort_levels": null,
+          "budget_tokens": null,
+          "can_toggle_off": true,
+          "default_state": "disabled"
+        }
+      },
+      "image_options": {
+        "sizes": [],
+        "aspect_ratios": [
+          "1:1"
+        ],
+        "qualities": [
+          "1K"
+        ],
+        "styles": null,
+        "supports_seed": true,
+        "provider_param_key": "nokeep"
+      },
+      "tts_options": null,
+      "video_options": null,
+      "context_length": null,
+      "max_output_tokens": null,
+      "description": null,
       "tags": [
         "image-generation"
       ],
